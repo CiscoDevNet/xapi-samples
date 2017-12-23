@@ -1,0 +1,41 @@
+﻿<Extensions>
+  <Version>1.4</Version>
+  <Panel>
+    <Icon>Microphone</Icon>
+    <Type>Statusbar</Type>
+    <Page>
+      <Name>UltraSound Configuration</Name>
+      <Row>
+        <Name>Proximity</Name>
+        <Widget>
+          <WidgetId>proximity_switch</WidgetId>
+          <Type>ToggleButton</Type>
+          <Options>size=1</Options>
+        </Widget>
+        <Widget>
+          <WidgetId>unused</WidgetId>
+          <Name> </Name>
+          <Type>Text</Type>
+          <Options>size=3</Options>
+        </Widget>
+      </Row>
+      <Row>
+        <Name>MaxVolume</Name>
+        <Widget>
+          <WidgetId>ultrasound_maxvolume</WidgetId>
+          <Name> </Name>
+          <Type>Text</Type>
+          <Options>size=1;fontSize=normal;align=center</Options>
+        </Widget>
+        <Widget>
+          <WidgetId>unused</WidgetId>
+          <Name>(0 to 90)</Name>
+          <Type>Text</Type>
+          <Options>size=3;align=left;fontSize=normal</Options>
+        </Widget>
+      </Row>
+      <Options/>
+    </Page>
+    <Name>Configuration</Name>
+  </Panel>
+</Extensions>
