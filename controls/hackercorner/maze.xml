@@ -1,0 +1,85 @@
+﻿<Extensions>
+  <Version>1.4</Version>
+  <Panel>
+    <Icon>Disc</Icon>
+    <Type>Home</Type>
+    <Page>
+      <Name>Play the Maze</Name>
+      <Row>
+        <Name>Instructions</Name>
+        <Widget>
+          <WidgetId>instructions</WidgetId>
+          <Name>Then here you are, lost in an hostile maze, looking for the treasure. Pick a direction...</Name>
+          <Type>Text</Type>
+          <Options>size=4;align=left;fontSize=normal</Options>
+        </Widget>
+      </Row>
+      <Row>
+        <Name>Pick a direction</Name>
+        <Widget>
+          <WidgetId>directions</WidgetId>
+          <Name>help</Name>
+          <Type>DirectionalPad</Type>
+          <Options>size=4</Options>
+        </Widget>
+      </Row>
+      <Row>
+        <Name>Restart</Name>
+        <Widget>
+          <WidgetId>restart</WidgetId>
+          <Name>play again</Name>
+          <Type>Button</Type>
+          <Options>size=2</Options>
+        </Widget>
+        <Widget>
+          <WidgetId>widget_7</WidgetId>
+          <Type>Text</Type>
+          <Options>size=2</Options>
+        </Widget>
+      </Row>
+      <PageId>PlayMaze</PageId>
+      <Options>hideRowNames=0</Options>
+    </Page>
+    <Page>
+      <Name>Options</Name>
+      <Row>
+        <Name>Media</Name>
+        <Widget>
+          <WidgetId>helper_media</WidgetId>
+          <Type>GroupButton</Type>
+          <Options>size=4</Options>
+          <ValueSpace>
+            <Value>
+              <Key>Touch10</Key>
+              <Name>TouchPad</Name>
+            </Value>
+            <Value>
+              <Key>Spark</Key>
+              <Name>Cisco Spark</Name>
+            </Value>
+          </ValueSpace>
+        </Widget>
+      </Row>
+      <Row>
+        <Name>Spark email</Name>
+        <Widget>
+          <WidgetId>spark_email</WidgetId>
+          <Name>Text</Name>
+          <Type>Text</Type>
+          <Options>size=4</Options>
+        </Widget>
+      </Row>
+      <Row>
+        <Name/>
+        <Widget>
+          <WidgetId>map_placeholder</WidgetId>
+          <Name>Text</Name>
+          <Type>Text</Type>
+          <Options>size=4;fontSize=normal;align=center</Options>
+        </Widget>
+      </Row>
+      <Options/>
+    </Page>
+    <Name>Play</Name>
+  </Panel>
+</Extensions>
