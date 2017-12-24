@@ -219,24 +219,26 @@ function showOutcome(res, initial) {
 
 // Displays help on the Touch10 or send the configuration to Cisco Spark
 function showHelp() {
-    console.log("showing map in Alert Panel")
+  console.log("showing map in Alert Panel")
 
-    // Width depends on device
-    // [TODO] check device
-    xapi.status.get("SystemUnit ProductPlatform").then((product) => {
-        let width = 31 // when the Alert is shown on the device output screen
-        if (product == "Touch10") {
-            console.debug('running on a Touch10')
-            width = 51 // when the Alter is shown on a Touch10
-        }
+  // Width depends on device
+  // [TODO] check device
+  xapi.status.get("SystemUnit ProductPlatform").then((product) => {
+    console.debug(`running on a ${product}`)
+    
+    let width = 51 // when the Alert is shown on a Touch 10
+    if (product == "DX80") {
+      console.debug('has no Touch10 attached')
+      width = 31 // when the Alert is shown on a screen
+    }
 
-        // show Alter panel 
-        xapi.command('UserInterface Message Alert Display', {
-            Title: 'With a little help from ... the bot',
-            Text: game.buildMapAsWrapped(width, true),
-            Duration: 5
-        })
+    // show Aletr panel 
+    xapi.command('UserInterface Message Alert Display', {
+      Title: 'With a little help from ... the bot',
+        Text: game.buildMapAsWrapped(width, true),
+        Duration: 5
     })
+  })
 }
 
 
