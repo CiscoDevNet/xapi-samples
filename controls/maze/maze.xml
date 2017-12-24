@@ -1,0 +1,46 @@
+<Extensions>
+  <Version>1.4</Version>
+  <Panel>
+    <Icon>Disc</Icon>
+    <Type>Home</Type>
+    <Page>
+      <Name>Play the Maze</Name>
+      <Row>
+        <Name>Instructions</Name>
+        <Widget>
+          <WidgetId>instructions</WidgetId>
+          <Name>Then here you are, lost in an hostile maze, looking for the treasure. Pick a direction...</Name>
+          <Type>Text</Type>
+          <Options>size=4;align=left;fontSize=normal</Options>
+        </Widget>
+      </Row>
+      <Row>
+        <Name>Pick a direction</Name>
+        <Widget>
+          <WidgetId>directions</WidgetId>
+          <Name>help</Name>
+          <Type>DirectionalPad</Type>
+          <Options>size=4</Options>
+        </Widget>
+      </Row>
+      <Row>
+        <Name>Restart</Name>
+        <Widget>
+          <WidgetId>restart</WidgetId>
+          <Name>play again</Name>
+          <Type>Button</Type>
+          <Options>size=2</Options>
+        </Widget>
+        <Widget>
+          <WidgetId>unused</WidgetId>
+          <Name> </Name>
+          <Type>Text</Type>
+          <Options>size=2</Options>
+        </Widget>
+      </Row>
+      <PageId>PlayMaze</PageId>
+      <Options>hideRowNames=0</Options>
+    </Page>
+    <Name>Play</Name>
+  </Panel>
+</Extensions>
