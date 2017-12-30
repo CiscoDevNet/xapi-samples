@@ -1,0 +1,128 @@
+﻿<Extensions>
+  <Version>1.4</Version>
+  <Panel>
+    <Icon>Disc</Icon>
+    <Type>Home</Type>
+    <Page>
+      <Name>Play the Maze</Name>
+      <Row>
+        <Name>Score</Name>
+        <Widget>
+          <WidgetId>score</WidgetId>
+          <Name>not started</Name>
+          <Type>Text</Type>
+          <Options>size=2;fontSize=normal</Options>
+        </Widget>
+        <Widget>
+          <WidgetId>restart</WidgetId>
+          <Name>restart</Name>
+          <Type>Button</Type>
+          <Options>size=2</Options>
+        </Widget>
+      </Row>
+      <Row>
+        <Name>Instructions</Name>
+        <Widget>
+          <WidgetId>instructions</WidgetId>
+          <Name>Then here you are, lost in an hostile maze, looking for the treasure. Pick a direction...</Name>
+          <Type>Text</Type>
+          <Options>size=4;align=left;fontSize=normal</Options>
+        </Widget>
+      </Row>
+      <Row>
+        <Name>Pick a direction</Name>
+        <Widget>
+          <WidgetId>directions</WidgetId>
+          <Name>help</Name>
+          <Type>DirectionalPad</Type>
+          <Options>size=4</Options>
+        </Widget>
+      </Row>
+      <PageId>PlayMaze</PageId>
+      <Options>hideRowNames=0</Options>
+    </Page>
+    <Page>
+      <Name>Rules</Name>
+      <Row>
+        <Name>Instructions</Name>
+        <Widget>
+          <WidgetId>rules</WidgetId>
+          <Name>Navigate around the maze and find the treasure. Press help to show the map, note that it will cost you 500 points every time you ask for it. Here are the symbols displayed on the map. </Name>
+          <Type>Text</Type>
+          <Options>size=4;fontSize=small</Options>
+        </Widget>
+      </Row>
+      <Row>
+        <Name>Symbols</Name>
+        <Widget>
+          <WidgetId>symbol_location</WidgetId>
+          <Name>'o' : your current location</Name>
+          <Type>Text</Type>
+          <Options>size=2;fontSize=small</Options>
+        </Widget>
+        <Widget>
+          <WidgetId>symbol_treasure</WidgetId>
+          <Name>'?' : the treasure (+1000)</Name>
+          <Type>Text</Type>
+          <Options>size=2;fontSize=small</Options>
+        </Widget>
+      </Row>
+      <Row>
+        <Name> </Name>
+        <Widget>
+          <WidgetId>symbol_nothing</WidgetId>
+          <Name>'_' : nothing here (+50)</Name>
+          <Type>Text</Type>
+          <Options>size=2;fontSize=small</Options>
+        </Widget>
+        <Widget>
+          <WidgetId>symbol_border</WidgetId>
+          <Name>'|' : maze border (-200)</Name>
+          <Type>Text</Type>
+          <Options>size=2;fontSize=small</Options>
+        </Widget>
+      </Row>
+      <Row>
+        <Name> </Name>
+        <Widget>
+          <WidgetId>symbol_wall</WidgetId>
+          <Name>'X' : a wall (-100)</Name>
+          <Type>Text</Type>
+          <Options>size=2;fontSize=small</Options>
+        </Widget>
+        <Widget>
+          <WidgetId>symbol_cat</WidgetId>
+          <Name>'C' : a cat (+200)</Name>
+          <Type>Text</Type>
+          <Options>size=2;fontSize=small</Options>
+        </Widget>
+      </Row>
+      <Row>
+        <Name> </Name>
+        <Widget>
+          <WidgetId>symbol_dog</WidgetId>
+          <Name>'D' : a dog (-200)</Name>
+          <Type>Text</Type>
+          <Options>size=2;fontSize=small</Options>
+        </Widget>
+        <Widget>
+          <WidgetId>symbol_monster</WidgetId>
+          <Name>'M': a monster (-500)</Name>
+          <Type>Text</Type>
+          <Options>size=2;fontSize=small</Options>
+        </Widget>
+      </Row>
+      <Row>
+        <Name>About</Name>
+        <Widget>
+          <WidgetId>widget_1</WidgetId>
+          <Name>by @SteveSfartz (Cisco DevNet)</Name>
+          <Type>Text</Type>
+          <Options>size=4;align=center;fontSize=small</Options>
+        </Widget>
+      </Row>
+      <Options>hideRowNames=0</Options>
+    </Page>
+    <Name>Play</Name>
+  </Panel>
+</Extensions>
