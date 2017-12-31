@@ -11,18 +11,27 @@ function fine(entry) {
     console.debug(entry)
 }
 
-function Maze(structure, walls, phrases, scores) {
+function Maze(structure, walls, phrases, scores, treasure) {
     this.structure = structure
     this.walls = walls
     this.phrases = phrases
     this.scores = scores
-    
+    this.treasure = treasure
+
     this.score = 0
-    this.position = [1,1]
+    this.position = [1, 1]
 }
 
 Maze.prototype.updateScore = function (points) {
     this.score += points
+}
+
+Maze.prototype.isOver = function () {
+    return (this.score < 0)
+}
+
+Maze.prototype.isWon = function () {
+    return (this.score >= this.scores[this.treasure])
 }
 
 Maze.prototype.tryMove = function (direction) {
@@ -47,15 +56,15 @@ Maze.prototype.tryMove = function (direction) {
 
     // update position
     this.position = result.pos
-    
+
     // update score
     this.updateScore(result.points)
     fine(`score updated to ${this.score}`)
-    
+
     // return move outcome
     result.direction = direction
     result.score = this.score
-    
+
     return result
 }
 
@@ -76,17 +85,17 @@ Maze.prototype.right = function () {
 }
 
 Maze.prototype._getPointsFor = function (character) {
-  if (!this.scores) {
-    fine('no scoring for this game')
-    return 0
-  }
-  
-  let points = this.scores[character]
-  if (!points) {
-    return 0
-  }
-  
-  return points
+    if (!this.scores) {
+        fine('no scoring for this game')
+        return 0
+    }
+
+    let points = this.scores[character]
+    if (!points) {
+        return 0
+    }
+
+    return points
 }
 
 // Returns the outcome of the specified move, but does not actually perform it
@@ -103,7 +112,7 @@ Maze.prototype._move = function (pos, x, y) {
 
     // If this is a wall, stay at current position
     if (this.walls.includes(thingCharacter)) {
-      
+
         fine(`staying at: ${pos}`)
         return {
             'success': false,
@@ -114,6 +123,7 @@ Maze.prototype._move = function (pos, x, y) {
         }
     }
 
+    // Move to new position
     var newPos = [newX, newY]
     fine(`now at: ${newPos}`)
     return {
@@ -205,19 +215,19 @@ Maze.prototype._setPosition = function (x, y) {
 //
 
 function showProgress(count, delay, cb, final, initial) {
-  return new Promise(function (resolve, reject) {
-    var counter = 0
-    if (!initial) initial = ""
-    var progress = ".....".padEnd(count, '.')
-    var timer = setInterval(function (event) {
-        cb(initial + progress.substring(0, counter + 1))
-        counter++;
-        if (counter >= count) {
-            clearInterval(timer)
-            resolve(cb(final))
-        }
-    }, delay)
-  })
+    return new Promise(function (resolve, reject) {
+        var counter = 0
+        if (!initial) initial = ""
+        var progress = ".....".padEnd(count, '.')
+        var timer = setInterval(function (event) {
+            cb(initial + progress.substring(0, counter + 1))
+            counter++;
+            if (counter >= count) {
+                clearInterval(timer)
+                resolve(cb(final))
+            }
+        }, delay)
+    })
 }
 
 
@@ -233,9 +243,9 @@ function showScore(message) {
 
     // Display current score unless a message is specifid    
     if (!message) {
-       message = game.score
+        message = game.score
     }
-    
+
     xapi.command('UserInterface Extensions Widget SetValue', {
         WidgetId: 'score',
         Value: message
@@ -252,71 +262,81 @@ function showInstructions(message) {
 }
 
 
+function showDifficulty(level) {
+    xapi.command('UserInterface Extensions Widget SetValue', {
+        WidgetId: 'difficulty',
+        Value: level
+    })
+}
+
+
 // Displays the outcome of the latest move
 function showOutcome(res, initial) {
     console.log('computing instructions from latest move')
-    
+
     // Tell the reason if the move was not successful
     let message = res.outcome
     if (res.success) {
         // Tell the thing met at the new location
         message = res.thing
     }
-    
+
     // update instructions
     showProgress(5, 500, showInstructions, message, initial).then(() => {
         // Check score, if <0 game over
-        if (game.score < 0) {
-          showScore("Game Over")
+        if (game.isOver()) {
+            showScore("Game Over")
         }
         else {
-          // refresh score
-          showScore()
+            // refresh score
+            showScore()
         }
-     
+
     })
 }
 
 
 // Displays the Maze's map on an Alert Panel
 function showHelp() {
-  console.debug("showing map in Alert Panel")
+    console.debug("showing map in Alert Panel")
 
-  // Does the user has enough points ?
-  if (game.score < 500) {
-    console.debug("not enough points to show the map")
-    showInstructions("sorry you don't have enough points")
-    return
-  }
-  
-  // Remove 500 points
-  game.updateScore(-500)
-  
-  // The maze needs to be wrapped as In-Room Controls do not support multi-lines
-  // Each line's width depends on the device: 51 for Touch10 dispay, 31 for Screen display
-  xapi.status.get("SystemUnit ProductPlatform").then((product) => {
-    console.debug(`running on a ${product}`)
-    
-    let width = 40 // when the Alert is shown on a Touch 10
-    if (product == "DX80") {
-      console.debug('has no Touch10 attached')
-      width = 31 // when the Alert is shown on a screen
+    // Does the user has enough points ?
+    if (game.score < 500) {
+        console.debug("not enough points to show the map")
+        showInstructions("sorry you don't have enough points")
+        return
     }
 
-    // show Alert panel 
-    xapi.command('UserInterface Message Alert Display', {
-      Title: 'With a little help from ... the bot',
-        Text: game.buildMapAsWrapped(width, true),
-        Duration: 5
-    }).then(() => {
-      showScore()
+    // Remove 500 points
+    game.updateScore(-500)
+
+    // The maze needs to be wrapped as In-Room Controls do not support multi-lines
+    // Each line's width depends on the device: 51 for Touch10 dispay, 31 for Screen display
+    xapi.status.get("SystemUnit ProductPlatform").then((product) => {
+        console.debug(`running on a ${product}`)
+
+        let width = 45 // when the Alert is shown on a Touch 10
+        if (product == "DX80") {
+            console.debug('has no Touch10 attached')
+            width = 30 // when the Alert is shown on a screen
+        }
+
+        // Show Alert panel 
+        // Increase the duration with the difficulty to leave time for the user to memorize the map
+        // Note that the panel will stay on if duration is >= 10.
+        xapi.command('UserInterface Message Alert Display', {
+            Title: 'With a little help from ... the bot',
+            Text: game.buildMapAsWrapped(width, true),
+            Duration: 5 * (difficulty + 1)
+        }).then(() => {
+            showScore()
+        })
     })
-  })
 }
 
 
 function onGui(event) {
-    
+
     if (event.Type == 'clicked') {
 
         // Restart button
@@ -324,16 +344,22 @@ function onGui(event) {
             restart()
             return
         }
-        
+
         // Check game is still running
-        if (game.score < 0) {
-          showInstructions("Looks like you did not make it! Hit restart to play again.")
-          return
+        if (game.isOver()) {
+            showInstructions("Sorry you did not make it! Hit restart to play again.")
+            return
         }
-        
+
+        // Check treasure has not been found
+        if (game.isWon()) {
+            showInstructions("Looks like you already found the treasure! Hit restart to play again.")
+            return
+        }
+
         if (event.WidgetId == 'directions') {
             var direction = event.Value
-            
+
             // If center was hitted, display help
             if (direction == 'center') {
                 showHelp()
@@ -346,56 +372,100 @@ function onGui(event) {
             return
         }
     }
+
+    if (event.Type == 'pressed') {
+        if (event.WidgetId == 'difficulty') {
+            difficulty = event.Value
+            debug(`set difficulty level to: ${difficulty}`)
+        }
+    }
 }
 xapi.event.on('UserInterface Extensions Widget Action', onGui);
 
 
 function restart() {
     console.log('resetting the maze')
-    showScore(" ")  
 
-    let structure = []
-    structure[0] = ['|', '-', '-', '-', '-', '-', '|']
-    structure[1] = ['|', 'M', 'C', '_', '_', '_', '|']
-    structure[2] = ['|', '_', '_', 'X', 'D', '_', '|']
-    structure[3] = ['|', '_', 'X', '?', 'X', '_', '|']
-    structure[4] = ['|', '_', '_', '_', '_', 'X', '|']
-    structure[5] = ['|', '-', '-', '-', '-', '-', '|']
+    // Show current level while game initializes
+    showScore(levels[difficulty])
 
-    let walls = ['|', '-', 'X']
-
-    let phrases = {}
-    phrases['|'] = "cannot get there, this a maze border you just hitted"
-    phrases['-'] = "cannot get there, this a maze border you just hitted"
-    phrases['X'] = "ouch, you bumped a wall"
-    phrases['_'] = "nothing here, let's continue exploring."
-    phrases['C'] = "hello kitty, you look hungry. Are you lost too? Jump in."
-    phrases['D'] = "WOW, an agressive dog is lying here. You've been bitten!"
-    phrases['M'] = "Too late, the ugly monster saw you. RUN!!!"
-    phrases['?'] = "CONGRATS, you found the treasure!!!"
-
-    let scores = {}
-    scores['|'] = -200
-    scores['-'] = -200
-    scores['X'] = -100
-    scores['_'] = 50
-    scores['C'] = 200
-    scores['D'] = -200
-    scores['M'] = -400
-    scores['?'] = 1000
-    
     // Create the maze 
-    game = new Maze(structure, walls, phrases, scores)
+    game = new Maze(structures[difficulty], walls, phrases, scores, '?')
     game.pickInitialPosition('_')
     game.updateScore(1000)
 
     // Update UI
     showProgress(10, 200, showInstructions, 'Then here you are: lost in an hostile maze, looking for a treasure. Pick a direction...', 'loading')
-    .then(() => {
-      showScore()  
-    })
+        .then(() => {
+            showScore()
+            showDifficulty(difficulty)
+        })
 }
 
+
+//
+// Maze artefacts
+//
+
+// Build structures
+var structures = []
+
+var structure = []
+structure[0] = ['|', '-', '-', '-', '-', '-', '|']
+structure[1] = ['|', 'M', 'C', '_', '_', '_', '|']
+structure[2] = ['|', '_', '_', 'X', 'D', '_', '|']
+structure[3] = ['|', '_', 'X', '?', 'X', '_', '|']
+structure[4] = ['|', '_', '_', '_', '_', 'X', '|']
+structure[5] = ['|', '-', '-', '-', '-', '-', '|']
+structures[0] = structure
+
+structure = []
+structure[0] = ['|', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '|']
+structure[1] = ['|', '_', '_', '_', 'D', 'X', '_', '_', '_', 'M', '_', 'X', '_', '_', 'X', '_', '|']
+structure[2] = ['|', 'C', 'X', '_', '_', 'X', '_', 'X', '_', '_', '_', '_', '_', 'X', 'X', 'C', '|']
+structure[3] = ['|', '_', '_', 'X', '_', '_', '_', 'D', 'X', 'C', '_', 'X', '_', '_', '_', '_', '|']
+structure[4] = ['|', 'D', '_', '?', 'X', '_', '_', '_', '_', 'X', '_', 'X', '_', '_', 'X', '_', '|']
+structure[5] = ['|', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '|']
+structures[1] = structure
+
+structure = []
+structure[0] = ['|', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '|']
+structure[1] = ['|', 'C', '_', '_', 'D', '_', 'M', '_', 'X', '_', '_', '_', 'C', 'D', '_', 'C', '_', '_', '_', 'X', '_', '_', '_', '_', '_', '_', 'X', 'C', '_', 'D', '_', '_', 'X', '|']
+structure[2] = ['|', '_', '_', 'X', 'X', '_', '_', '_', 'X', 'C', 'M', '_', 'X', '_', '_', '_', 'M', 'D', '_', '_', 'X', '_', '_', 'X', 'D', '_', '_', 'X', '_', '_', '_', 'X', 'C', '|']
+structure[3] = ['|', '_', 'X', 'C', '_', 'X', 'X', '_', '_', '_', 'X', 'X', '_', '_', 'D', 'X', 'X', '_', '_', 'X', '_', 'M', 'X', 'C', '_', '_', 'M', '_', '_', 'X', '_', '_', '_', '|']
+structure[4] = ['|', '_', '_', 'D', '_', '_', '?', 'X', '_', 'X', 'C', '_', '_', 'X', 'X', 'X', 'D', '_', '_', '_', 'C', '_', '_', '_', 'X', '_', '_', '_', 'C', 'X', '_', 'D', 'M', '|']
+structure[5] = ['|', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '|']
+structures[2] = structure
+
+var walls = ['|', '-', 'X']
+
+var phrases = {}
+phrases['|'] = "cannot get there, this a maze border you just hitted"
+phrases['-'] = "cannot get there, this a maze border you just hitted"
+phrases['|'] = "cannot get there, this a maze border you just hitted"
+phrases['X'] = "ouch, you bumped a wall"
+phrases['_'] = "nothing here, let's continue exploring."
+phrases['C'] = "hello kitty, you look hungry. Are you lost too? Jump in."
+phrases['D'] = "WOW, an agressive dog is lying here. You've been bitten!"
+phrases['M'] = "Too late, the ugly monster saw you. RUN!!!"
+phrases['?'] = "CONGRATS, you found the treasure!!!"
+
+var scores = {}
+scores['|'] = -200
+scores['-'] = -200
+scores['|'] = -200
+scores['X'] = -100
+scores['_'] = 50
+scores['C'] = 200
+scores['D'] = -200
+scores['M'] = -500
+scores['?'] = 5000
+
+var levels = []
+levels[0] = 'Rookie'
+levels[1] = 'Seasoned'
+levels[2] = 'Expert'
+var difficulty = 0
 
 //
 // Start game
@@ -404,4 +474,3 @@ function restart() {
 console.info("Starting Maze game, v1.0.0")
 var game
 restart()
-

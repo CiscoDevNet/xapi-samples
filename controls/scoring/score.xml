@@ -62,7 +62,7 @@
         </Widget>
         <Widget>
           <WidgetId>symbol_treasure</WidgetId>
-          <Name>'?' : the treasure (+1000)</Name>
+          <Name>'?' : the treasure (+5.000)</Name>
           <Type>Text</Type>
           <Options>size=2;fontSize=small</Options>
         </Widget>
@@ -116,7 +116,7 @@
         <Name>About</Name>
         <Widget>
           <WidgetId>about</WidgetId>
-          <Name>v1.0.0, by @SteveSfartz (https://developer.cisco.com)</Name>
+          <Name>by @SteveSfartz (https://developer.cisco.com)</Name>
           <Type>Text</Type>
           <Options>size=4;align=left;fontSize=small</Options>
         </Widget>

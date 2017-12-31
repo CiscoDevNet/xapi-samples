@@ -1,11 +1,11 @@
 # Handy samples for xAPI In-Room Controls & Macros
 
-This repo regroups a set of macros and controls, check the related folder.
+This repo regroups [macros](./macros) and [controls](./controls) examples, plus handy commands when coding against the xAPI.
 
-Hereafter I present the commands I happen to often use when coding against the xAPI.
-Simply SSH to your Collaboration Device and start a TSH (t-shell) to run these commands.
 
-## Listen to events
+## Listening to events
+
+Simply SSH to your Collaboration Device and run the commands below in a TSH (t-shell).
 
 ```shell
 # Listen to all notifications (events, status, commands)
@@ -21,3 +21,18 @@ xfeedback register /Event/UserInterface/Extensions
 # Stop listening
 xfeedback deregisterall
 ```
+
+
+## Sending messages
+
+```shell
+# Listen to messages
+xfeedback register /Event/Message/Send
+```
+
+```shell
+# Send message
+xCommand Message Send Text: "This is random text"
+```
+
+Check the [message Macro](macros/8-message.js) for an example in javascript.
