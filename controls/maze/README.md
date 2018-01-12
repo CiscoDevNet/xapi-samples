@@ -1,5 +1,8 @@
 # Play an interactive game
 
+**New to Controls & Macros? check the [QuickStart Guide](../../QuickStart.md) to learn to load Controls and Macros to your device**
+
+
 Navigate blind in a maze, look for the treasure. 
 
 ![](./maze.png)
