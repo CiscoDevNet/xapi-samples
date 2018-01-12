@@ -1,0 +1,216 @@
+<Extensions>
+  <Version>1.4</Version>
+  <Panel>
+    <Icon>Lightbulb</Icon>
+    <Type>Home</Type>
+    <Page>
+      <Name>Tuesday</Name>
+      <Row>
+        <Name>2:00 PM - ClassRoom 2</Name>
+        <Widget>
+          <WidgetId>widget_4</WidgetId>
+          <Name>Tour of the latest Spark API Features</Name>
+          <Type>Text</Type>
+          <Options>size=3;fontSize=small</Options>
+        </Widget>
+        <Widget>
+          <WidgetId>widget_5</WidgetId>
+          <Name>DEVNET 3609</Name>
+          <Type>Text</Type>
+          <Options>size=1;fontSize=small</Options>
+        </Widget>
+      </Row>
+      <Row>
+        <Name>3:00 PM - Workshop 3</Name>
+        <Widget>
+          <WidgetId>widget_7</WidgetId>
+          <Name>Create an End-to-End Conversational Bot with BotKit</Name>
+          <Type>Text</Type>
+          <Options>size=3;fontSize=small</Options>
+        </Widget>
+        <Widget>
+          <WidgetId>widget_6</WidgetId>
+          <Name>DEVNET 3071</Name>
+          <Type>Text</Type>
+          <Options>size=1;fontSize=small</Options>
+        </Widget>
+      </Row>
+      <Row>
+        <Name>4:00 PM -  Workshop 1</Name>
+        <Widget>
+          <WidgetId>widget_9</WidgetId>
+          <Name>from Zero to a Network Application with GoLang</Name>
+          <Type>Text</Type>
+          <Options>size=3;fontSize=small</Options>
+        </Widget>
+        <Widget>
+          <WidgetId>widget_8</WidgetId>
+          <Name>DEVNET 1814</Name>
+          <Type>Text</Type>
+          <Options>size=1;fontSize=small</Options>
+        </Widget>
+      </Row>
+      <Options/>
+    </Page>
+    <Page>
+      <Name>Wednesday</Name>
+      <Row>
+        <Name>10:00 AM - ClassRoom 2</Name>
+        <Widget>
+          <WidgetId>widget_17</WidgetId>
+          <Name>Cisco Spark Widgets Technical drill down</Name>
+          <Type>Text</Type>
+          <Options>size=3;fontSize=small</Options>
+        </Widget>
+        <Widget>
+          <WidgetId>widget_16</WidgetId>
+          <Name>DEVNET 1891</Name>
+          <Type>Text</Type>
+          <Options>size=1;fontSize=small</Options>
+        </Widget>
+      </Row>
+      <Row>
+        <Name>3:00 PM - ClassRoom 1</Name>
+        <Widget>
+          <WidgetId>widget_11</WidgetId>
+          <Name>GoLang 101 for ITPros</Name>
+          <Type>Text</Type>
+          <Options>size=3;fontSize=small</Options>
+        </Widget>
+        <Widget>
+          <WidgetId>widget_10</WidgetId>
+          <Name>DEVNET 1808</Name>
+          <Type>Text</Type>
+          <Options>size=1;fontSize=small</Options>
+        </Widget>
+      </Row>
+      <Row>
+        <Name>4:00 PM - ClassRoom 1</Name>
+        <Widget>
+          <WidgetId>widget_13</WidgetId>
+          <Name>Cisco Spark ChatBots 101: design, code, deploy</Name>
+          <Type>Text</Type>
+          <Options>size=3;fontSize=small</Options>
+        </Widget>
+        <Widget>
+          <WidgetId>widget_12</WidgetId>
+          <Name>DEVNET 3604</Name>
+          <Type>Text</Type>
+          <Options>size=1;fontSize=small</Options>
+        </Widget>
+      </Row>
+      <Row>
+        <Name>5:00 PM - Workshop 1</Name>
+        <Widget>
+          <WidgetId>widget_14</WidgetId>
+          <Name>DevNet Workshop: from Zero to a Network Application with GoLang</Name>
+          <Type>Text</Type>
+          <Options>size=3;fontSize=small</Options>
+        </Widget>
+        <Widget>
+          <WidgetId>widget_15</WidgetId>
+          <Name>DEVNET 1814</Name>
+          <Type>Text</Type>
+          <Options>size=1;fontSize=small</Options>
+        </Widget>
+      </Row>
+      <Options/>
+    </Page>
+    <Page>
+      <Name>Thursday</Name>
+      <Row>
+        <Name>9:00 AM - ClassRoom 2</Name>
+        <Widget>
+          <WidgetId>widget_19</WidgetId>
+          <Name>Spark APIs for Admin and Serviceability</Name>
+          <Type>Text</Type>
+          <Options>size=3;fontSize=small</Options>
+        </Widget>
+        <Widget>
+          <WidgetId>widget_18</WidgetId>
+          <Name>DEVNET 3610</Name>
+          <Type>Text</Type>
+          <Options>size=1;fontSize=small</Options>
+        </Widget>
+      </Row>
+      <Row>
+        <Name>2:00 PM - Theater</Name>
+        <Widget>
+          <WidgetId>widget_21</WidgetId>
+          <Name>European DevNet Pros Panel</Name>
+          <Type>Text</Type>
+          <Options>size=3;fontSize=small</Options>
+        </Widget>
+        <Widget>
+          <WidgetId>widget_20</WidgetId>
+          <Name>DEVNET 2399</Name>
+          <Type>Text</Type>
+          <Options>size=1;fontSize=small</Options>
+        </Widget>
+      </Row>
+      <Row>
+        <Name>4:00 PM - ClassRoom 2</Name>
+        <Widget>
+          <WidgetId>widget_23</WidgetId>
+          <Name>Microservices &amp; Serverless architecture principles applied</Name>
+          <Type>Text</Type>
+          <Options>size=3;fontSize=small</Options>
+        </Widget>
+        <Widget>
+          <WidgetId>widget_22</WidgetId>
+          <Name>DEVNET 1871</Name>
+          <Type>Text</Type>
+          <Options>size=1;fontSize=small</Options>
+        </Widget>
+      </Row>
+      <Row>
+        <Name>5:00 PM - Workshop 3</Name>
+        <Widget>
+          <WidgetId>widget_24</WidgetId>
+          <Name>Create an End-to-End Conversational Bot with BotKit</Name>
+          <Type>Text</Type>
+          <Options>size=3;fontSize=small</Options>
+        </Widget>
+        <Widget>
+          <WidgetId>widget_25</WidgetId>
+          <Name>DEVNET 3071</Name>
+          <Type>Text</Type>
+          <Options>size=1;fontSize=small</Options>
+        </Widget>
+      </Row>
+      <Options/>
+    </Page>
+    <Page>
+      <Name>About</Name>
+      <Row>
+        <Name>Where's Stève ?</Name>
+        <Widget>
+          <WidgetId>widget_1</WidgetId>
+          <Name>Easy, I'll be in DevNet Zone all week</Name>
+          <Type>Text</Type>
+          <Options>size=4</Options>
+        </Widget>
+      </Row>
+      <Row>
+        <Name>Spark me</Name>
+        <Widget>
+          <WidgetId>widget_2</WidgetId>
+          <Name>stsfartz@cisco.com</Name>
+          <Type>Text</Type>
+          <Options>size=4</Options>
+        </Widget>
+      </Row>
+      <Row>
+        <Name>Show me the code</Name>
+        <Widget>
+          <WidgetId>widget_3</WidgetId>
+          <Name>https://github.com/ObjectIsAdvantag/xapi-samples</Name>
+          <Type>Text</Type>
+          <Options>size=4;fontSize=small</Options>
+        </Widget>
+      </Row>
+      <Options/>
+    </Page>
+    <Name>Stève at #CLEUR</Name>
+  </Panel>
+</Extensions>

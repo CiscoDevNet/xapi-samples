@@ -2,7 +2,7 @@
 
 French version of the Maze game with scoring system and three difficulty levels.
 
-![](./map.png)
+![](./game.png)
 
 
 Check the rules
