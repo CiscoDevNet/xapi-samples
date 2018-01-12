@@ -8,7 +8,7 @@ Next steps: done with the examples in this repo? here are a few suggestions
 - check the [official Macro Samples repository](https://github.com/CiscoDevNet/roomdevices-macros-samples)
 - load the [Postman collection for xAPI](https://github.com/CiscoDevNet/postman-xapi) to invoke the xAPI from code external to the Room Device
 - open the full [CE Customization PDF Guide](https://www.cisco.com/c/dam/en/us/td/docs/telepresence/endpoint/ce92/sx-mx-dx-room-kit-customization-guide-ce92.pdf)
-- experiment T-shell commands with the sample below.
+- experiment T-shell commands with the samples below.
 
 
 ## Quick intro to T-Shell
