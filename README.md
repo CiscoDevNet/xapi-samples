@@ -1,6 +1,6 @@
 # Handy samples for xAPI In-Room Controls & Macros
 
-This repo contains [Controls](./controls) and [Javascript Macros](./macros) examples to quickly ramp you up with the CE programmability and xAPI. 
+This repo contains [custom Controls](./controls), [Javascript Macros](./macros) examples and [Node.js jsxapi] apps to quickly ramp you up with the CE programmability and xAPI. 
 
 **New to Controls & Macros? check the [QuickStart Guide](./docs/QuickStart.md) to learn to load Controls and Macros to your device**
 
