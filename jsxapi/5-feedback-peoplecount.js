@@ -62,5 +62,4 @@ xapi.on('ready', () => {
             console.log(`Failed to fetch PeopleCount, err: ${err}`);
             console.log(`Are you interacting with a RoomKit?`);
         });
-    }
 });
