@@ -6,6 +6,8 @@
 /**
  * React to event in realtime via xAPI's feedback
  * In this example, we'll display people count changes as they happen
+ * 
+ * /!\ This example only works when run against a 'RoomKit' type of device
  */
 
 //
@@ -48,11 +50,17 @@ xapi.on('ready', () => {
         .get('RoomAnalytics PeopleCount')
         .then((count) => {
             console.log(`Initial count is: ${count.Current}`);
-        });
 
-    // Listen to events
-    console.log('Adding feedback listener to: RoomAnalytics PeopleCount');
-    xapi.feedback.on('/Status/RoomAnalytics/PeopleCount', (count) => {
-        console.log(`Updated count to: ${count.Current}`);
-    });
+            // Listen to events
+            console.log('Adding feedback listener to: RoomAnalytics PeopleCount');
+            xapi.feedback.on('/Status/RoomAnalytics/PeopleCount', (count) => {
+                console.log(`Updated count to: ${count.Current}`);
+            });
+
+        })
+        .catch((err) => {
+            console.log(`Failed to fetch PeopleCount, err: ${err}`);
+            console.log(`Are you interacting with a RoomKit?`);
+        });
+    }
 });

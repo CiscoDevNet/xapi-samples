@@ -30,7 +30,7 @@ const xapi = jsxapi.connect(process.env.JSXAPI_DEVICE_URL, {
     password: password
 });
 xapi.on('error', (err) => {
-    console.error(`connexion failed: ${err.message}, exiting`);
+    console.error(`connexion failed: ${err}, exiting`);
     process.exit(1);
 });
 
