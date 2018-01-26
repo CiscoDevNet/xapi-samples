@@ -1,6 +1,6 @@
 # Maze Game with Scoring & Levels
 
-**New to Controls & Macros? check the [QuickStart Guide](../../QuickStart.md) to learn to load Controls and Macros to your device**
+**New to Controls & Macros? check the [QuickStart Guide](../../docs/QuickStart.md) to learn to load Controls and Macros to your device**
 
 
 French version of the Maze game with scoring system and three difficulty levels.

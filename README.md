@@ -2,7 +2,7 @@
 
 This repo contains [Controls](./controls) and [Javascript Macros](./macros) examples to quickly ramp you up with the CE programmability and xAPI. 
 
-**New to Controls & Macros? check the [QuickStart Guide](./QuickStart.md) to learn to load Controls and Macros to your device**
+**New to Controls & Macros? check the [QuickStart Guide](./docs/QuickStart.md) to learn to load Controls and Macros to your device**
 
 Next steps: done with the examples in this repo? here are a few suggestions
 - check the [official Macro Samples repository](https://github.com/CiscoDevNet/roomdevices-macros-samples)

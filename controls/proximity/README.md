@@ -1,6 +1,6 @@
 # Helper panel to switch Proximity Mode on/off
 
-**New to Controls & Macros? check the [QuickStart Guide](../../QuickStart.md) to learn to load Controls and Macros to your device**
+**New to Controls & Macros? check the [QuickStart Guide](../../docs/QuickStart.md) to learn to load Controls and Macros to your device**
 
 
 Simply press the toggle:

@@ -2,7 +2,7 @@
 
 Run these samples to explore a few of the possibilities of your Room Device programmability:
 
-**New to Controls & Macros? check the [QuickStart Guide](../QuickStart.md) to learn to load Controls and Macros to your device**
+**New to Controls & Macros? check the [QuickStart Guide](../docs/QuickStart.md) to learn to load Controls and Macros to your device**
 
 - [Agenda](agenda/): example of a control showing static information
 - [Proximity](proximity/): Add an helper panel to quickly toggle Proximity Mode on/off

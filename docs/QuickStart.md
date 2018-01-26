@@ -15,7 +15,7 @@ Open the top right menu, click "Import from file".
 
 ![](./img/controls-import-from-file.png)
 
-Supposing you've clone this repository, select the source XML file [agenda-CLEUR.xml](controls/agenda/agenda-CLEUR.xml) placed in the 'controls/agenda' subfolder.
+Supposing you've clone this repository, select the source XML file [agenda-CLEUR.xml](../controls/agenda/agenda-CLEUR.xml) placed in the 'controls/agenda' subfolder.
 
 Now click the "Export configuration" button as show below to push the control to your device. 
 
@@ -29,12 +29,12 @@ In the next step, you'll get details on how to push a Javascript macro on the De
 
 ## Loading a Javascript Macro
 
-First, repeat the steps above with the [levels.xml](controls/levels/levels.xml) file placed in the 'controls/levels' subfolder, and push the control to the device.
+First, repeat the steps above with the [levels.xml](../controls/levels/levels.xml) file placed in the 'controls/levels' subfolder, and push the control to the device.
 You can now interact with the control, but nothing really happens as no logic has been deployed to the device yet.
 
 Now, launch the Macro editor from the 'Integration > Macro Editor' Menu. This would typically take you to http://192.169.1.30/web/customization/macro from the example above.
 
-Click "Import from file..." and select the source JS file [levels.js](controls/levels/levels.js) placed in the same 'controls/levels' subfolder as shown in Step 1 below.
+Click "Import from file..." and select the source JS file [levels.js](../controls/levels/levels.js) placed in the same 'controls/levels' subfolder as shown in Step 1 below.
 
 ![](./img/macro-import-from-file.png)
 
