@@ -24,37 +24,44 @@ if (!process.env.JSXAPI_DEVICE_URL || !process.env.JSXAPI_USERNAME) {
 // Empty passwords are supported
 const password = process.env.JSXAPI_PASSWORD ? process.env.JSXAPI_PASSWORD : "";
 
-// Connect to a device
+// Connect to the device
+console.debug("connecting to your device...");
 const xapi = jsxapi.connect(process.env.JSXAPI_DEVICE_URL, {
     username: process.env.JSXAPI_USERNAME,
-    password: password,
+    password: password
 });
-xapi.on('error', (error) => { 
-    console.debug(`connexion failed: ${error.message}, exiting`);  
+xapi.on('error', (err) => {
+    console.error(`connexion failed: ${err}, exiting`);
     process.exit(1);
 });
-xapi.on('ready', () => { console.debug("connexion successful"); } );
 
 
 //
 // Code logic
 //
 
-// Listen to events
-console.log('Start listening...');
-const off = xapi.feedback.on('/Status', (data) => {
-    const type = Object.getOwnPropertyNames(data)[0];
-    if (type) {
-        console.debug(`Status changed for: ${type}`)
-    }
+xapi.on('ready', () => {
+    console.log("connexion successful");
+
+    // Listen to events
+    console.log('Please start interacting with your device');
+    const off = xapi.feedback.on('/Status', (data) => {
+        const type = Object.getOwnPropertyNames(data)[0];
+        if (type) {
+            console.log(`Status changed for: ${type}`)
+        }
+    });
+
+    // Stop listening after delay
+    const delay = 20; // in seconds
+    setTimeout(() => {
+        console.log('Exiting.');
+
+        // De-register feedback
+        off();
+        xapi.close();
+        
+    }, delay * 1000);
+    console.log(`Will stop listening and exit in ${delay} seconds...`);
+
 });
-
-// Stop listening after delay
-const delay = 20; // in seconds
-setTimeout(() => {
-    console.log('Stop listening');
-
-    // De-register feedback
-    off();
-
-}, delay * 1000);

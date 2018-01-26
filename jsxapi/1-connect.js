@@ -6,18 +6,20 @@
 /**
  * Script that connects to a device, and checks for errors at connection
  * then displays current volume level, and attempts to change level if authorized
- * and finally exists gracefully after 5 seconds.
+ * and finally exists gracefully.
+ * 
+ * /!\ Changing the volume level requires admin priviledges (not authorized from the integrator role)
  */
 
 // Connect to the device
 const jsxapi = require('jsxapi');
 const xapi = jsxapi.connect("ssh://10.10.1.10", {
-    username: 'integrator',
-    password: 'integrator',
+    username: 'admin',
+    password: ''
 });
 
-xapi.on('error', (type) => {
-    switch (type) {
+xapi.on('error', (err) => {
+    switch (err) {
         case "client-socket":
             console.error("Could not connect: invalid URL.");
             process.exit(1);
@@ -31,26 +33,31 @@ xapi.on('error', (type) => {
             process.exit(1);
 
         default:
-            console.error(`Encountered error: ${type}.`);
+            console.error(`Encountered error: ${err}.`);
             process.exit(1);
     }
 });
 
-xapi.on('ready', () => { console.debug("connexion successful"); } );
 
+xapi.on('ready', () => {
+    console.log("connexion successful");
 
-// Display current audio volume
-xapi.status
-    .get('Audio Volume')
-    .then((level) => {
-        console.log(`Current volume level: ${level}`);
-    });
+    // Display current audio volume
+    xapi.status
+        .get('Audio Volume')
+        .then((level) => {
+            console.log(`Current volume level: ${level}`);
+        });
 
-// Reset volume to 50
-xapi.command('Audio Volume Set', { Level: "50" })
-    .then((result) => {
-        console.log(`Reset volume: ${result.status}`);
-    })
-    .catch((error) => { 
-        console.log(`Cannot reset volume, reason: ${error.message}`)
-    });
+    // Reset volume to 50
+    xapi.command('Audio Volume Set', { Level: "50" })
+        .then((result) => {
+            console.log(`Reset volume: ${result.status}`);
+
+            // Ending script
+            xapi.close();
+        })
+        .catch((err) => {
+            console.error(`Cannot reset volume, reason: ${err.message}`)
+        });
+});

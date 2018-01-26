@@ -24,40 +24,43 @@ if (!process.env.JSXAPI_DEVICE_URL || !process.env.JSXAPI_USERNAME) {
 // Empty passwords are supported
 const password = process.env.JSXAPI_PASSWORD ? process.env.JSXAPI_PASSWORD : "";
 
-// Connect to a device
+// Connect to the device
+console.debug("connecting to your device...");
 const xapi = jsxapi.connect(process.env.JSXAPI_DEVICE_URL, {
     username: process.env.JSXAPI_USERNAME,
-    password: password,
+    password: password
 });
-xapi.on('error', (error) => {
-    console.debug(`connexion failed: ${error.message}, exiting`);
+xapi.on('error', (err) => {
+    console.error(`connexion failed: ${err}, exiting`);
     process.exit(1);
 });
-xapi.on('ready', () => { console.debug("connexion successful"); });
 
 
 //
 // Custom logic
 //
 
-// Update Halfwake message
-xapi.config.set('UserInterface OSD HalfwakeMessage', "I am API addict")
-    .then(() => {
-        console.info('updated HalfwakeMessage')
-    })
-    .catch((err) => {
-        console.error(`could not update Halfwake message : ${err.message}`)
-    });
+xapi.on('ready', () => {
+    console.log("connexion successful");
 
-// Update Awake message
-xapi.config.set('UserInterface CustomMessage', "I am G33K")
-.then(() => {
-    console.info('updated Awake message')
-})
-.catch((err) => {
-    console.error(`could not update Awake message : ${err.message}`)
+    // Update Halfwake message
+    xapi.config.set('UserInterface OSD HalfwakeMessage', "I am API addict")
+        .then(() => {
+            console.info('updated HalfwakeMessage')
+        })
+        .catch((err) => {
+            console.error(`could not update Halfwake message : ${err.message}`)
+        });
+
+    // Update Awake message
+    xapi.config.set('UserInterface CustomMessage', "I am G33K")
+        .then(() => {
+            console.log('updated Awake message')
+
+            // Ending script
+            xapi.close();
+        })
+        .catch((err) => {
+            console.error(`could not update Awake message : ${err.message}`)
+        });
 });
-
-
-
-

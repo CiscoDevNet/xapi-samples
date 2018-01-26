@@ -24,12 +24,12 @@ const password = process.env.JSXAPI_PASSWORD ? process.env.JSXAPI_PASSWORD : "";
 const jsxapi = require('jsxapi');
 const xapi = jsxapi.connect(process.env.JSXAPI_DEVICE_URL, {
     username: process.env.JSXAPI_USERNAME,
-    password: password,
+    password: password
 });
 
 // Errors management
-xapi.on('error', (type) => {
-    switch (type) {
+xapi.on('error', (err) => {
+    switch (err) {
         case "client-socket":
             console.error("Could not connect: invalid URL.");
             process.exit(1);
@@ -43,38 +43,33 @@ xapi.on('error', (type) => {
             process.exit(1);
 
         default:
-            console.error(`Encountered error: ${type}.`);
+            console.error(`Encountered error: ${err}.`);
             process.exit(1);
     }
 });
-
-xapi.on('ready', () => { console.debug("connexion successful"); } );
 
 
 //
 // Code logic
 //
 
-// Display current audio volume
-xapi.status
-    .get('Audio Volume')
-    .then((level) => {
-        console.log(`Current volume level: ${level}`);
-    });
+xapi.on('ready', () => {
+    console.log("connexion successful");
 
-// Reset volume to 50
-xapi.command('Audio Volume Set', { Level: "50" })
-    .then((result) => {
-        console.log(`Reset volume: ${result.status}`);
-    })
-    .catch((error) => { 
-        console.log(`Cannot reset volume, reason: ${error.message}`)
-    });
-
-// Gracefully ends after delay
-const delay = 5; // in seconds
-setTimeout(() => {
-    console.log('Exiting...');
-    xapi.close();
-    process.exit(0);
-}, delay * 1000);
+    // Display current audio volume
+    xapi.status
+        .get('Audio Volume')
+        .then((level) => {
+            console.log(`Current volume level: ${level}`);
+        })
+        .then(() => {
+            // Gracefully ends after delay
+            const delay = 5; // in seconds
+            setTimeout(() => {
+                // End
+                console.log('Exiting.');
+                xapi.close();
+            }, delay * 1000);
+            console.log(`Will exit gracefully in ${delay} seconds...`);
+        })
+});

@@ -11,18 +11,23 @@
 const jsxapi = require('jsxapi');
 const xapi = jsxapi.connect("ssh://10.10.1.10", {
     username: 'integrator',
-    password: 'integrator',
+    password: ''
 });
-xapi.on('error', (error) => { 
-    console.debug(`connexion failed: ${error.message}, exiting`);  
+xapi.on('error', (err) => {
+    console.error(`connexion failed: ${err}, exiting`);
     process.exit(1);
 });
-xapi.on('ready', () => { console.debug("connexion successful"); } );
 
+xapi.on('ready', () => {
+    console.log("connexion successful");
 
-// Display current audio volume
-xapi.status
-    .get('Audio Volume')
-    .then((level) => {
-        console.log(`Current volume level: ${level}`);
-    });
+    // Display current audio volume
+    xapi.status
+        .get('Audio Volume')
+        .then((level) => {
+            console.log(`Current volume level: ${level}`);
+
+            // Ending script
+            xapi.close();
+        });
+});

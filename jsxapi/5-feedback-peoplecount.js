@@ -24,35 +24,35 @@ if (!process.env.JSXAPI_DEVICE_URL || !process.env.JSXAPI_USERNAME) {
 // Empty passwords are supported
 const password = process.env.JSXAPI_PASSWORD ? process.env.JSXAPI_PASSWORD : "";
 
-// Connect to a device
+// Connect to the device
+console.debug("connecting to your device...");
 const xapi = jsxapi.connect(process.env.JSXAPI_DEVICE_URL, {
     username: process.env.JSXAPI_USERNAME,
-    password: password,
+    password: password
 });
-xapi.on('error', (error) => { 
-    console.debug(`connexion failed: ${error.message}, exiting`);  
+xapi.on('error', (err) => {
+    console.error(`connexion failed: ${err}, exiting`);
     process.exit(1);
 });
-xapi.on('ready', () => { console.debug("connexion successful"); } );
 
 
 //
 // Code logic
 //
 
-// Fetch current count
-xapi.status
-.get('RoomAnalytics PeopleCount')
-.then((count) => {
-    console.log(`Initial count is: ${count.Current}`);
+xapi.on('ready', () => {
+    console.log("connexion successful");
+
+    // Fetch current count
+    xapi.status
+        .get('RoomAnalytics PeopleCount')
+        .then((count) => {
+            console.log(`Initial count is: ${count.Current}`);
+        });
+
+    // Listen to events
+    console.log('Adding feedback listener to: RoomAnalytics PeopleCount');
+    xapi.feedback.on('/Status/RoomAnalytics/PeopleCount', (count) => {
+        console.log(`Updated count to: ${count.Current}`);
+    });
 });
-
-// Listen to events
-console.log('Adding feedback listener to: RoomAnalytics PeopleCount');
-xapi.feedback.on('/Status/RoomAnalytics/PeopleCount', (count) => {
-    console.log(`Updated count to: ${count.Current}`);
-  });
-
-
-
-

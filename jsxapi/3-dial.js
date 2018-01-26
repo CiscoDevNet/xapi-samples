@@ -24,39 +24,44 @@ if (!process.env.JSXAPI_DEVICE_URL || !process.env.JSXAPI_USERNAME) {
 // Empty passwords are supported
 const password = process.env.JSXAPI_PASSWORD ? process.env.JSXAPI_PASSWORD : "";
 
-// Connect to a device
+// Connect to the device
+console.debug("connecting to your device...");
 const xapi = jsxapi.connect(process.env.JSXAPI_DEVICE_URL, {
     username: process.env.JSXAPI_USERNAME,
-    password: password,
+    password: password
 });
-xapi.on('error', (error) => { 
-    console.debug(`connexion failed: ${error.message}, exiting`);  
+xapi.on('error', (err) => {
+    console.error(`connexion failed: ${err}, exiting`);
     process.exit(1);
 });
-xapi.on('ready', () => { console.debug("connexion successful"); } );
 
 
 //
 // Code logic
 //
 
-// Start a call
-xapi.command('Dial', { Number: 'roomkit@sparkdemos.com' })
-    .then((call) => {
-        console.log(`Started call with status: ${call.status}, id: ${call.CallId}`);
+xapi.on('ready', () => {
+    console.log("connexion successful");
 
-        // Stop call after delay
-        const delay = 20;
-        setTimeout(() => {
-            console.log('Stopping call...');
+    // Start a call
+    xapi.command('Dial', { Number: 'roomkit@sparkdemos.com' })
+        .then((call) => {
+            console.log(`Started call with status: ${call.status}, id: ${call.CallId}`);
 
-            xapi.command('Call Disconnect', { CallId: call.CallId })
-            .then(process.exit);
-        }, delay * 1000);
+            // Stop call after delay
+            const delay = 20;
+            setTimeout(() => {
+                console.log('Disconnecting call, and exiting.');
 
-    })
-    .catch((error) => {
-        // Frequent error here is to have several on-going calls
-        // reason: "Maximum limit of active calls reached"
-        console.log(`Error in call: ${error.message}`)
-    });
+                xapi.command('Call Disconnect', { CallId: call.CallId })
+                    .then(process.exit);
+            }, delay * 1000);
+            console.log(`Call with be disconnected in ${delay} seconds...`);
+
+        })
+        .catch((err) => {
+            // Frequent error here is to have several on-going calls
+            // reason: "Maximum limit of active calls reached"
+            console.error(`Error in call: ${err.message}`)
+        });
+});
