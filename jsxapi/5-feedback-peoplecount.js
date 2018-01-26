@@ -59,7 +59,8 @@ xapi.on('ready', () => {
 
         })
         .catch((err) => {
-            console.log(`Failed to fetch PeopleCount, err: ${err}`);
-            console.log(`Are you interacting with a RoomKit?`);
+            console.log(`Failed to fetch PeopleCount, err: ${err.message}`);
+            console.log(`Are you interacting with a RoomKit? exiting...`);
+            xapi.close();
         });
 });
