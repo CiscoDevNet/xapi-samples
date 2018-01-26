@@ -5,7 +5,7 @@
 
 /**
  * Modify some of your device's configuration settings
- * In this example, we'll change the Halfwake and Activated messages
+ * In this example, we'll change the Halfwake and Awake messages
  */
 
 //
@@ -46,16 +46,16 @@ xapi.config.set('UserInterface OSD HalfwakeMessage', "I am API addict")
         console.info('updated HalfwakeMessage')
     })
     .catch((err) => {
-        console.error(`could not update HalfwakeMessage : ${err.message}`)
+        console.error(`could not update Halfwake message : ${err.message}`)
     });
 
-// Update Welcome message
+// Update Awake message
 xapi.config.set('UserInterface CustomMessage', "I am G33K")
 .then(() => {
-    console.info('updated CustomMessage')
+    console.info('updated Awake message')
 })
 .catch((err) => {
-    console.error(`could not update CustomMessage : ${err.message}`)
+    console.error(`could not update Awake message : ${err.message}`)
 });
 
 

@@ -1,5 +1,5 @@
 {
-  "name": "usecases",
+  "name": "tutorial",
   "version": "0.1.0",
   "description": "Example Scripts using the Node.js jsxapi for Cisco Collaboration Devices",
   "main": "peoplecount.js",

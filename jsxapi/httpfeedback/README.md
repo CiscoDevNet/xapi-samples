@@ -1,5 +1,7 @@
 # Service to follow people count metrics in real time
 
+Start an HTTP Server that registers as a Webhook to your Room Device (via xAPI 's HttpFeedback)
+
 Open a terminal and run the commands as described below: 
 
 ```shell
