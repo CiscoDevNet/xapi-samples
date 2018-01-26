@@ -4,8 +4,8 @@
 //
 
 /**
- * Registers an HTTP Webhook to receive People Count events from the Room Devices.
- * Note that HttpFeedback is the exact xAPI terminology.
+ * React to event in realtime via xAPI's feedback
+ * In this example, we'll display people count changes as they happen
  */
 
 //
@@ -16,7 +16,7 @@ const jsxapi = require('jsxapi');
 
 // Check args
 if (!process.env.JSXAPI_DEVICE_URL || !process.env.JSXAPI_USERNAME) {
-    console.info("Please specify info to connect to your device as JSXAPI_URL, JSXAPI_USERNAME, JSXAPI_PASSWORD env variables");
+    console.info("Please specify info to connect to your device as JSXAPI_DEVICE_URL, JSXAPI_USERNAME, JSXAPI_PASSWORD env variables");
     console.info("Bash example: JSXAPI_DEVICE_URL='ssh://10.10.1.52' JSXAPI_USERNAME='integrator' JSXAPI_PASSWORD='integrator' node example.js");
     process.exit(1);
 }
@@ -50,7 +50,7 @@ xapi.status
 // Listen to events
 console.log('Adding feedback listener to: RoomAnalytics PeopleCount');
 xapi.feedback.on('/Status/RoomAnalytics/PeopleCount', (count) => {
-    console.log(`Current count is: ${count.Current}`);
+    console.log(`Updated count to: ${count.Current}`);
   });
 
 

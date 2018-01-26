@@ -4,7 +4,7 @@
 //
 
 /**
- * Listens to "Status Audio Volume" changes happening on the device.
+ * Listens to "Status Audio Volume" changes as they happen on the device.
  */
 
 
