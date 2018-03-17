@@ -17,5 +17,5 @@ cd jsxapi
 npm install
 
 # Place your device ip-address and credentials
-JSXAPI_DEVICE_URL='ssh://10.10.1.10' JSXAPI_USERNAME='integrator' JSXAPI_PASSWORD='integrator' node 8-rolling-messages
+JSXAPI_DEVICE_URL='ssh://192.168.1.34' JSXAPI_USERNAME='integrator' JSXAPI_PASSWORD='integrator' node 8-rolling-messages
 ```

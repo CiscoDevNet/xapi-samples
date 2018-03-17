@@ -9,7 +9,7 @@
 
 // Connect to the device
 const jsxapi = require('jsxapi');
-const xapi = jsxapi.connect("ssh://10.10.1.10", {
+const xapi = jsxapi.connect("ssh://192.168.1.34", {
     username: 'integrator',
     password: ''
 });

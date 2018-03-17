@@ -1,8 +1,7 @@
 {
   "name": "tutorial",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Example Scripts using the Node.js jsxapi for Cisco Collaboration Devices",
-  "main": "peoplecount.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
