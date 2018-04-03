@@ -16,8 +16,8 @@ const jsxapi = require('jsxapi');
 
 // Check args
 if (!process.env.JSXAPI_DEVICE_URL || !process.env.JSXAPI_USERNAME) {
-    console.info("Please specify info to connect to your device as JSXAPI_DEVICE_URL, JSXAPI_USERNAME, JSXAPI_PASSWORD env variables");
-    console.info("Bash example: JSXAPI_DEVICE_URL='ssh://192.168.1.34' JSXAPI_USERNAME='integrator' JSXAPI_PASSWORD='integrator' node example.js");
+    console.log("Please specify info to connect to your device as JSXAPI_DEVICE_URL, JSXAPI_USERNAME, JSXAPI_PASSWORD env variables");
+    console.log("Bash example: JSXAPI_DEVICE_URL='ssh://192.168.1.34' JSXAPI_USERNAME='integrator' JSXAPI_PASSWORD='integrator' node example.js");
     process.exit(1);
 }
 
@@ -44,7 +44,7 @@ function update(value) {
     // Update Awake message
     xapi.config.set('UserInterface CustomMessage', value)
         .then(() => {
-            console.info('updated Awake message')
+            console.log('updated Awake message')
         })
         .catch((err) => {
             console.error(`could not update Awake message : ${err.message}`)

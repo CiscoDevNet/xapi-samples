@@ -25,7 +25,7 @@ if (!process.env.JSXAPI_DEVICE_URL || !process.env.JSXAPI_USERNAME) {
 const password = process.env.JSXAPI_PASSWORD ? process.env.JSXAPI_PASSWORD : "";
 
 // Connect to the device
-console.debug("connecting to your device...");
+console.log("connecting to your device...");
 const xapi = jsxapi.connect(process.env.JSXAPI_DEVICE_URL, {
     username: process.env.JSXAPI_USERNAME,
     password: password

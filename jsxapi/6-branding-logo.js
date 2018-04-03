@@ -15,8 +15,8 @@ const jsxapi = require('jsxapi');
 
 // Check args
 if (!process.env.JSXAPI_DEVICE_URL || !process.env.JSXAPI_USERNAME) {
-    console.info("Please specify info to connect to your device as JSXAPI_DEVICE_URL, JSXAPI_USERNAME, JSXAPI_PASSWORD env variables");
-    console.info("Bash example: JSXAPI_DEVICE_URL='ssh://192.168.1.34' JSXAPI_USERNAME='integrator' JSXAPI_PASSWORD='integrator' node example.js");
+    console.log("Please specify info to connect to your device as JSXAPI_DEVICE_URL, JSXAPI_USERNAME, JSXAPI_PASSWORD env variables");
+    console.log("Bash example: JSXAPI_DEVICE_URL='ssh://192.168.1.34' JSXAPI_USERNAME='integrator' JSXAPI_PASSWORD='integrator' node example.js");
     process.exit(1);
 }
 
@@ -24,7 +24,7 @@ if (!process.env.JSXAPI_DEVICE_URL || !process.env.JSXAPI_USERNAME) {
 const password = process.env.JSXAPI_PASSWORD ? process.env.JSXAPI_PASSWORD : "";
 
 // Connect to the device
-console.debug("connecting to your device...");
+console.log("connecting to your device...");
 const xapi = jsxapi.connect(process.env.JSXAPI_DEVICE_URL, {
     username: process.env.JSXAPI_USERNAME,
     password: password
@@ -58,7 +58,7 @@ xapi.on('ready', () => {
         body: encoded
     })
         .then(() => {
-            console.info('updated Branding logo in Halfwake mode');
+            console.log('updated Branding logo in Halfwake mode');
 
             // Switch to Halwake mode
             xapi.command('Standby Halfwake')
