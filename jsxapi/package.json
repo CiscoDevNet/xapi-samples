@@ -8,6 +8,6 @@
   "author": "Stève Sfartz <stsfartz@cisco.com>",
   "license": "MIT",
   "dependencies": {
-    "jsxapi": "^4.1.2"
+    "jsxapi": "^4.1.3"
   }
 }

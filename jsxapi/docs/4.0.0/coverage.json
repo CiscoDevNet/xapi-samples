@@ -1,0 +1,142 @@
+{
+  "coverage": "52.89%",
+  "expectCount": 121,
+  "actualCount": 64,
+  "files": {
+    "src/backend/index.js": {
+      "expectCount": 11,
+      "actualCount": 9,
+      "undocumentLines": [
+        46,
+        48
+      ]
+    },
+    "src/xapi/exc.js": {
+      "expectCount": 18,
+      "actualCount": 0,
+      "undocumentLines": [
+        2,
+        3,
+        4,
+        6,
+        7,
+        27,
+        34,
+        8,
+        5,
+        42,
+        1,
+        11,
+        22,
+        43,
+        28,
+        35,
+        12,
+        37
+      ]
+    },
+    "src/xapi/components.js": {
+      "expectCount": 7,
+      "actualCount": 7,
+      "undocumentLines": []
+    },
+    "src/xapi/feedback.js": {
+      "expectCount": 13,
+      "actualCount": 11,
+      "undocumentLines": [
+        12,
+        13
+      ]
+    },
+    "src/xapi/mixins.js": {
+      "expectCount": 9,
+      "actualCount": 9,
+      "undocumentLines": []
+    },
+    "src/json-parser.js": {
+      "expectCount": 8,
+      "actualCount": 2,
+      "undocumentLines": [
+        15,
+        17,
+        27,
+        32,
+        22,
+        21
+      ]
+    },
+    "src/transport/stream.js": {
+      "expectCount": 8,
+      "actualCount": 4,
+      "undocumentLines": [
+        39,
+        17,
+        18,
+        19
+      ]
+    },
+    "src/backend/tsh.js": {
+      "expectCount": 17,
+      "actualCount": 4,
+      "undocumentLines": [
+        44,
+        73,
+        59,
+        38,
+        39,
+        92,
+        102,
+        40,
+        41,
+        81,
+        82,
+        42,
+        145
+      ]
+    },
+    "src/backend/ws.js": {
+      "expectCount": 9,
+      "actualCount": 4,
+      "undocumentLines": [
+        45,
+        66,
+        49,
+        57,
+        61
+      ]
+    },
+    "src/xapi/index.js": {
+      "expectCount": 11,
+      "actualCount": 11,
+      "undocumentLines": []
+    },
+    "src/index.js": {
+      "expectCount": 1,
+      "actualCount": 1,
+      "undocumentLines": []
+    },
+    "src/transport/ssh.js": {
+      "expectCount": 1,
+      "actualCount": 1,
+      "undocumentLines": []
+    },
+    "src/xapi/rpc.js": {
+      "expectCount": 7,
+      "actualCount": 0,
+      "undocumentLines": [
+        130,
+        70,
+        156,
+        40,
+        65,
+        165,
+        93
+      ]
+    },
+    "src/transport/tsh.js": {
+      "expectCount": 1,
+      "actualCount": 1,
+      "undocumentLines": []
+    }
+  }
+}
