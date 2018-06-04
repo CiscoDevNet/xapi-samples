@@ -4,8 +4,8 @@
 //
 
 /**
- * React to event in realtime via xAPI's feedback
- * In this example, we'll display people count changes as they happen
+ * Listen to realtime events via xAPI's feedback function
+ * In this example, we display people count changes as they happen
  * 
  * /!\ This example only works when run against a 'RoomKit' type of device
  */
