@@ -4,7 +4,7 @@
 //
 
 /**
- * Auto-answer call example
+ * Auto-answer call example, filtering out not registered origins
  * 
  * Integrator role: not supported, as tested as of June 2018
  *     - OK: registering a feedback for /Call
@@ -53,12 +53,19 @@ xapi.on('ready', () => {
 
             switch (call.Status) {
                 case "Ringing":
-                    console.log(`Incoming call: ${call.id}`);
+                    console.log(`NEW call: ${call.id}`);
 
-                    // Accept incoming call
-                    xapi.command('Call Accept', {
-                        CallId: call.id
-                    });
+                    // Filter depending the origin of the call
+                    if ((call.Direction == "Incoming")
+                     && (call.Protocol == "Spark")
+                     && (call.DisplayName == "Salon")) {
+
+                        // Accept incoming call
+                        console.log(`Accepting incoming call: ${call.id}`);
+                        xapi.command('Call Accept', {
+                            CallId: call.id
+                        });
+                    }
                     return;
 
                 case "Connected":
