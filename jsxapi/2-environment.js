@@ -64,7 +64,7 @@ xapi.on('ready', () => {
         })
         .then(() => {
             // Gracefully ends after delay
-            const delay = 5; // in seconds
+            const delay = process.env.DELAY || 5; // in seconds
             setTimeout(() => {
                 // End
                 console.log('Exiting.');
