@@ -14,7 +14,8 @@
 var gstate = {
     xapi: undefined,
     email: undefined,
-    accessToken: process.env.ACCESS_TOKEN
+    accessToken: process.env.ACCESS_TOKEN,
+    version: require('./package.json').version
 }
 
 // Initialize the Webex Teams access token
@@ -130,9 +131,17 @@ function fireAction(widgetId) {
 
 
 function sendNotification(message) {
-    var request = require("request");
+    // If no email has been specified, push an alert message
+    if (!gstate.email) {
+        xapi.command('UserInterface Message TextLine Display', {
+            Text: `Please enter an email address for the recipient`,
+            Duration: 20, // in seconds
+        });
+        return;
+    }
 
-    var options = {
+    const request = require("request");
+    const options = {
         method: 'POST',
         url: 'https://api.ciscospark.com/v1/messages',
         headers: {
@@ -158,8 +167,12 @@ function sendNotification(message) {
                 console.log("WARNING: authentication error. Please check the provided token");
                 return;
 
+            case 404:
+                console.log("cannot post message: the email address is not a valid Webex Teams handle");
+                return;
+
             default:
-                console.log(`notification error, status code: ${response.statusCode}`);
+                console.log(`cannot post message, got status code: ${response.statusCode}`);
                 return;
         }
     });
@@ -177,7 +190,7 @@ function updateEmail() {
     // Prompt callback
     gstate.xapi.event.on('UserInterface Message TextInput Response', (event) => {
         if (event.FeedbackId === 'email') {
-            var parts = event.Text.split('@');
+            let parts = event.Text.split('@');
             if (parts.length != 2) {
                 console.log("bad email format, aborting...");
                 return;
@@ -202,6 +215,12 @@ function updateUI() {
         WidgetId: 'recipient_email',
         Value: gstate.email
     });
+
+    // Update version textfield
+    gstate.xapi.command('UserInterface Extensions Widget SetValue', {
+        WidgetId: 'status_version',
+        Value: gstate.version
+    });
 }
 
 
@@ -216,7 +235,16 @@ function readEmailFromUI(state) {
                 if (elem.WidgetId == "recipient_email") {
                     console.log("found recipient email");
                     found = true;
-                    gstate.email = elem.Value;
+
+                    // No address
+                    if (elem.Value === "") {
+                        console.log("no email address set yet");
+                        gstate.email = null;
+                    }
+                    else {
+                        console.log("initializing email from the deployed control");
+                        gstate.email = elem.Value;
+                    }
                 }
             });
 

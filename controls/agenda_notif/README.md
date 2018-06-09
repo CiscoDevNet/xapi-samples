@@ -14,6 +14,8 @@ Create an [incoming webhook](https://apphub.webex.com/categories/other/integrati
 Run the JS script from a bash command line:
 
 ```shell
+git clone https://github.com/ObjectIsAdvantag/xapi-samples
+cd controls
 cd agenda_notif
 npm install
 INCOMING_WEBHOOK_ID="XXXXX" JSXAPI_DEVICE_URL='ssh://192.168.1.34' JSXAPI_USERNAME='integrator' JSXAPI_PASSWORD='integrator' node agenda.js

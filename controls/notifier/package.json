@@ -1,7 +1,7 @@
 {
-  "name": "smart_agenda",
+  "name": "notifier",
   "version": "0.1.0",
-  "description": "Agenda pushing info to Webex Teams spaces",
+  "description": "In-Room Control that lets users set and update an email address, and sends Webex Teams notifications to this address via a bot.",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

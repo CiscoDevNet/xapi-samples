@@ -79,7 +79,7 @@ xapi.on('ready', () => {
     console.log("added feedback listener to: UserInterface Extensions Event Clicked");
     gstate.xapi.event.on('UserInterface Extensions Event Clicked', (event) => {
 
-        console.log(`New event from: ${event.Signal}`);
+        console.log(`new event from: ${event.Signal}`);
         fireAction(event.Signal);
     });
 
@@ -122,6 +122,16 @@ function fireAction(widgetId) {
 
 
 function sendNotification(message) {
+    // If no email has been specified, push an alert message
+    if (!gstate.email) {
+        xapi.command('UserInterface Message TextLine Display', {
+            Text: `Please enter an email address for the recipient`,
+            Duration: 20, // in seconds
+        });
+        return;
+    }
+
+    // Show popup message
     xapi.command('UserInterface Message TextLine Display', {
         Text: `Message for ${gstate.email}: ${message}`,
         Duration: 20, // in seconds
@@ -177,9 +187,18 @@ function readEmailFromUI(state) {
             let found = false;
             widgets.forEach(elem => {
                 if (elem.WidgetId == "recipient_email") {
-                    console.log("found recipient email");
+                    console.log("found recipient email widget");
                     found = true;
-                    gstate.email = elem.Value;
+
+                    // No address
+                    if (elem.Value === "") {
+                        console.log("no email address set yet");
+                        gstate.email = null;
+                    }
+                    else {
+                        console.log("initializing email from the deployed control");
+                        gstate.email = elem.Value;
+                    }
                 }
             });
 

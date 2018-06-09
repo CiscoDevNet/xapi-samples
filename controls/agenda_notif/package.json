@@ -1,7 +1,7 @@
 {
-  "name": "smart_agenda",
+  "name": "agenda_notif",
   "version": "0.1.0",
-  "description": "Agenda pushing info to Webex Teams spaces",
+  "description": "In-Room Controls Agenda pushing sessions details to a Webex Teams spaces via an Incoming Webhook",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
