@@ -16,8 +16,8 @@ const jsxapi = require('jsxapi');
 
 // Check args
 if (!process.env.JSXAPI_DEVICE_URL || !process.env.JSXAPI_USERNAME) {
-    console.log("Please specify info to connect to your device as JSXAPI_DEVICE_URL, JSXAPI_USERNAME, JSXAPI_PASSWORD env variables");
-    console.log("Bash example: JSXAPI_DEVICE_URL='ssh://192.168.1.34' JSXAPI_USERNAME='integrator' JSXAPI_PASSWORD='integrator' node example.js");
+    console.error("Please specify info to connect to your device as JSXAPI_DEVICE_URL, JSXAPI_USERNAME, JSXAPI_PASSWORD env variables");
+    console.error("Bash example: JSXAPI_DEVICE_URL='ssh://192.168.1.34' JSXAPI_USERNAME='integrator' JSXAPI_PASSWORD='integrator' node example.js");
     process.exit(1);
 }
 
@@ -33,19 +33,19 @@ const xapi = jsxapi.connect(process.env.JSXAPI_DEVICE_URL, {
 xapi.on('error', (err) => {
     switch (err) {
         case "client-socket":
-            console.error("Could not connect: invalid URL.");
+            console.error("could not connect: invalid URL.");
             break;
 
         case "client-authentication":
-            console.error("Could not connect: invalid credentials.");
+            console.error("could not connect: invalid credentials.");
             break;
 
         case "client-timeout":
-            console.error("Could not connect: timeout.");
+            console.error("could not connect: timeout.");
             break;
 
         default:
-            console.error(`Encountered error: ${err}.`);
+            console.error(`encountered error: ${err}.`);
             break;
     }
 
@@ -62,9 +62,9 @@ xapi.on('ready', () => {
     console.log("connexion successful");
 
     // Listen to custom In-Room Controls events
-    console.log("Added feedback listener to: UserInterface Extensions Event Clicked");
+    console.log("added feedback event listener: UserInterface Extensions Event Clicked");
     xapi.event.on('UserInterface Extensions Event Clicked', (event) => {
-        console.log(`New event from: ${event.Signal}`);
+        console.log(`new event from: ${event.Signal}`);
 
         // Identify session associated to button
         let sessionId = extractSession(event.Signal);
@@ -73,16 +73,22 @@ xapi.on('ready', () => {
             return;
         }
 
+        // Fetch session details
+        const getSessionDetails = require('./sessions')
+        let session = getSessionDetails(sessionId);
+        if (!session) {
+            console.log("could not find details for session, ignoring...");
+            return;
+        }
+
         // Push info about the session
-        const sessions = require('./sessions')
-        let session = getInfo(sessionId);
         let href = "https://www.ciscolive.com/us/learn/sessions/session-catalog/?search=" + sessionId;
-        push(`${session.day}, ${session.time}: **${session.title}** - [${session.id}](${href}) _at ${session.location}_`);
+        push(`${session.day}, ${session.time}: **${session.title}** - [${session.id}](${href}) at ${session.location}<br/>_${session.description}_`);
     });
 });
 
 function extractSession(component) {
-    let parsed = component.match(/^push_(DEVNET-\d{4})$/);
+    let parsed = component.match(/^push_(DEVNET-\d{4}[A:B]?)$/);
 
     if (!parsed) {
         console.log("format error, please comply with 'push_DEVNET-DDDD'");
@@ -92,12 +98,12 @@ function extractSession(component) {
     return parsed[1];
 }
 
-// Post message to the 'Survey Responses space'
+// Post message to a Webex Teams space via an Incoming Webhook
 function push(msg, cb) {
     var request = require("request");
 
     // Incoming webhook id
-    let webhook_id = process.env.SURVEY_RESULTS_SPACE || "Y2lzY29zcGFyazovL3VzL1dFQkhPT0svOGQ3MDU5YTgtNTJjZi00MzdjLWI5OTUtOWE4N2Y3ZGFiMDk5";
+    let webhook_id = process.env.INCOMING_WEBHOOK_ID || "Y2lzY29zcGFyazovL3VzL1dFQkhPT0svOGQ3MDU5YTgtNTJjZi00MzdjLWI5OTUtOWE4N2Y3ZGFiMDk5";
     let options = {
         method: 'POST',
         url: 'https://api.ciscospark.com/v1/webhooks/incoming/' + webhook_id,
@@ -113,6 +119,7 @@ function push(msg, cb) {
         }
 
         if (response.statusCode == 204) {
+            console.log("message pushed to Webex Teams'");
             if (cb) cb(null);
             return;
         }

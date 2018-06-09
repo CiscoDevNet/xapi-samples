@@ -1,0 +1,173 @@
+﻿<Extensions>
+  <Version>1.5</Version>
+  <Panel>
+    <PanelId>panel_2</PanelId>
+    <Type>Statusbar</Type>
+    <Icon>Helpdesk</Icon>
+    <Order>2</Order>
+    <Color>#FF7033</Color>
+    <Name>CLUS StevNetZone</Name>
+    <Page>
+      <Name>Monday</Name>
+      <Row>
+        <Name>11:30AM | Classroom 2</Name>
+        <Widget>
+          <WidgetId>widget_2</WidgetId>
+          <Name>ChatBots 101: design, code, deploy [DEVNET-2896]</Name>
+          <Type>Text</Type>
+          <Options>size=3;fontSize=normal;align=left</Options>
+        </Widget>
+        <Widget>
+          <WidgetId>push_DEVNET-2896</WidgetId>
+          <Name>push</Name>
+          <Type>Button</Type>
+          <Options>size=1</Options>
+        </Widget>
+      </Row>
+      <Row>
+        <Name>12:30PM | Classroom 2</Name>
+        <Widget>
+          <WidgetId>widget_2</WidgetId>
+          <Name>Golang 101 for ITPros [DEVNET-1808]</Name>
+          <Type>Text</Type>
+          <Options>size=3;fontSize=normal;align=left</Options>
+        </Widget>
+        <Widget>
+          <WidgetId>push_DEVNET-1808</WidgetId>
+          <Name>push</Name>
+          <Type>Button</Type>
+          <Options>size=1</Options>
+        </Widget>
+      </Row>
+      <Row>
+        <Name>03:30PM | Workshop 5</Name>
+        <Widget>
+          <WidgetId>widget_2</WidgetId>
+          <Name>Enhancing Meeting Rooms UX with xAPIs [DEVNET-2074]</Name>
+          <Type>Text</Type>
+          <Options>size=3;fontSize=normal;align=left</Options>
+        </Widget>
+        <Widget>
+          <WidgetId>push_DEVNET-2074A</WidgetId>
+          <Name>push</Name>
+          <Type>Button</Type>
+          <Options>size=1</Options>
+        </Widget>
+      </Row>
+      <Options/>
+    </Page>
+    <Page>
+      <Name>Tuesday</Name>
+      <Row>
+        <Name>10:30AM | Classroom 2</Name>
+        <Widget>
+          <WidgetId>widget_2</WidgetId>
+          <Name>Integrated Room Systems with xAPIs &amp; Macros [DEVNET-2071]</Name>
+          <Type>Text</Type>
+          <Options>size=3;fontSize=normal;align=left</Options>
+        </Widget>
+        <Widget>
+          <WidgetId>push_DEVNET-2071</WidgetId>
+          <Name>push</Name>
+          <Type>Button</Type>
+          <Options>size=1</Options>
+        </Widget>
+      </Row>
+      <Row>
+        <Name>02:30PM | Classroom 2</Name>
+        <Widget>
+          <WidgetId>widget_2</WidgetId>
+          <Name>Microservices principles applied [DEVNET-1871]</Name>
+          <Type>Text</Type>
+          <Options>size=3;fontSize=normal;align=left</Options>
+        </Widget>
+        <Widget>
+          <WidgetId>push_DEVNET-1871</WidgetId>
+          <Name>push</Name>
+          <Type>Button</Type>
+          <Options>size=1</Options>
+        </Widget>
+      </Row>
+      <Row>
+        <Name>03:30PM | Workshop 8</Name>
+        <Widget>
+          <WidgetId>widget_2</WidgetId>
+          <Name>Creating conversational chatbots with Botkit [DEVNET-3071]</Name>
+          <Type>Text</Type>
+          <Options>size=3;fontSize=normal;align=left</Options>
+        </Widget>
+        <Widget>
+          <WidgetId>push_DEVNET-3071A</WidgetId>
+          <Name>push</Name>
+          <Type>Button</Type>
+          <Options>size=1</Options>
+        </Widget>
+      </Row>
+      <Options/>
+    </Page>
+    <Page>
+      <Name>Wednesday</Name>
+      <Row>
+        <Name>10:30AM | Workshop 5</Name>
+        <Widget>
+          <WidgetId>widget_2</WidgetId>
+          <Name>Enhancing Meeting Rooms UX with xAPIs [DEVNET-2074]</Name>
+          <Type>Text</Type>
+          <Options>size=3;fontSize=normal;align=left</Options>
+        </Widget>
+        <Widget>
+          <WidgetId>push_DEVNET-2074B</WidgetId>
+          <Name>push</Name>
+          <Type>Button</Type>
+          <Options>size=1</Options>
+        </Widget>
+      </Row>
+      <Row>
+        <Name>12:30PM | Classroom 2</Name>
+        <Widget>
+          <WidgetId>widget_2</WidgetId>
+          <Name>Webex Teams APIs for Admins [DEVNET-3610]</Name>
+          <Type>Text</Type>
+          <Options>size=3;fontSize=normal;align=left</Options>
+        </Widget>
+        <Widget>
+          <WidgetId>push_DEVNET-3610</WidgetId>
+          <Name>push</Name>
+          <Type>Button</Type>
+          <Options>size=1</Options>
+        </Widget>
+      </Row>
+      <Row>
+        <Name>02:30PM | Workshop 8</Name>
+        <Widget>
+          <WidgetId>widget_2</WidgetId>
+          <Name>Creating conversational chatbots with Botkit [DEVNET-3071]</Name>
+          <Type>Text</Type>
+          <Options>size=3;fontSize=normal;align=left</Options>
+        </Widget>
+        <Widget>
+          <WidgetId>push_DEVNET-3071B</WidgetId>
+          <Name>push</Name>
+          <Type>Button</Type>
+          <Options>size=1</Options>
+        </Widget>
+      </Row>
+      <Row>
+        <Name>03:30PM | Classroom 2</Name>
+        <Widget>
+          <WidgetId>widget_2</WidgetId>
+          <Name>Webex Teams Widgets Technical Drill Down [DEVNET-3891]</Name>
+          <Type>Text</Type>
+          <Options>size=3;fontSize=normal;align=left</Options>
+        </Widget>
+        <Widget>
+          <WidgetId>push_DEVNET-3891</WidgetId>
+          <Name>push</Name>
+          <Type>Button</Type>
+          <Options>size=1</Options>
+        </Widget>
+      </Row>
+      <Options/>
+    </Page>
+  </Panel>
+</Extensions>
