@@ -5,8 +5,21 @@
 
 /**
  * Listen to UserInterfaace realtime events via xAPI's feedback function
- * Pushes events to an incoming Webhook
+ * Pushes events to a Webex Teams space via an incoming Webhook
+ * Use the INCOMING_WEBHOOK_ID env variable to override default space
  */
+
+// Incoming webhook id
+var webhook_id = process.env.INCOMING_WEBHOOK_ID;
+if (!webhook_id) {
+    console.log("WARNING: no incoming webhook id specified on the command line, using defaults.");
+    console.log("open https://eurl.io/#H1Cb0XKgQ to join the default Webex Teams space.")
+    webhook_id = "Y2lzY29zcGFyazovL3VzL1dFQkhPT0svMTI5YzA4ZGQtODJlYy00ZTg2LThkODAtZWFiMjNjYWVmOTRm";
+}
+
+if (!process.env.INCOMING_WEBHOOK_ID) {
+    console.log("WARNING: no INCOMING_WEBHOOK_ID env variable detected. Using default.");
+}
 
 //
 // Connect to the device
@@ -17,7 +30,7 @@ const jsxapi = require('jsxapi');
 // Check args
 if (!process.env.JSXAPI_DEVICE_URL || !process.env.JSXAPI_USERNAME) {
     console.error("Please specify info to connect to your device as JSXAPI_DEVICE_URL, JSXAPI_USERNAME, JSXAPI_PASSWORD env variables");
-    console.error("Bash example: JSXAPI_DEVICE_URL='ssh://192.168.1.34' JSXAPI_USERNAME='integrator' JSXAPI_PASSWORD='integrator' node example.js");
+    console.error("Bash example: JSXAPI_DEVICE_URL='ssh://192.168.1.34' JSXAPI_USERNAME='integrator' JSXAPI_PASSWORD='integrator' node agenda.js");
     process.exit(1);
 }
 
@@ -102,8 +115,7 @@ function extractSession(component) {
 function push(msg, cb) {
     var request = require("request");
 
-    // Incoming webhook id
-    let webhook_id = process.env.INCOMING_WEBHOOK_ID || "Y2lzY29zcGFyazovL3VzL1dFQkhPT0svOGQ3MDU5YTgtNTJjZi00MzdjLWI5OTUtOWE4N2Y3ZGFiMDk5";
+    // Post message
     let options = {
         method: 'POST',
         url: 'https://api.ciscospark.com/v1/webhooks/incoming/' + webhook_id,
