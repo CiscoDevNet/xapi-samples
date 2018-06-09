@@ -11,4 +11,4 @@ Simply move the slider around.
 ![](./ultrasound.png)
 
 
-_Note that a custom message is added to your device's Touch10/DX interface if pairing is disabled._
+_Note that a custom message is pushed to your device's Touch10/DX interface as Webex Teams pairing is enabled / disabled._

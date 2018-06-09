@@ -1,41 +1,28 @@
-﻿<Extensions>
-  <Version>1.4</Version>
+<Extensions>
+  <Version>1.5</Version>
   <Panel>
-    <Icon>Microphone</Icon>
-    <Type>Statusbar</Type>
+    <Type>Home</Type>
+    <Icon>Proximity</Icon>
+    <Order>1</Order>
+    <Color>#FFB400</Color>
+    <Name>Ultrasound</Name>
     <Page>
-      <Name>UltraSound Configuration</Name>
+      <Name>Ultrasound</Name>
       <Row>
-        <Name>Proximity</Name>
+        <Name>Volume</Name>
         <Widget>
-          <WidgetId>proximity_switch</WidgetId>
-          <Type>ToggleButton</Type>
-          <Options>size=1</Options>
-        </Widget>
-        <Widget>
-          <WidgetId>unused</WidgetId>
-          <Name> </Name>
-          <Type>Text</Type>
-          <Options>size=3</Options>
-        </Widget>
-      </Row>
-      <Row>
-        <Name>MaxVolume</Name>
-        <Widget>
-          <WidgetId>ultrasound_maxvolume</WidgetId>
-          <Name> </Name>
+          <WidgetId>volume_text</WidgetId>
+          <Name>?</Name>
           <Type>Text</Type>
           <Options>size=1;fontSize=normal;align=center</Options>
         </Widget>
         <Widget>
-          <WidgetId>unused</WidgetId>
-          <Name>(0 to 90)</Name>
-          <Type>Text</Type>
-          <Options>size=3;align=left;fontSize=normal</Options>
+          <WidgetId>volume_slider</WidgetId>
+          <Type>Slider</Type>
+          <Options>size=3</Options>
         </Widget>
       </Row>
       <Options/>
     </Page>
-    <Name>Configuration</Name>
   </Panel>
 </Extensions>
