@@ -3,22 +3,62 @@
 // Licensed under the MIT License
 //
 
-const jsxapi = require('jsxapi')
-const xapi = jsxapi.connect("ssh://192.168.1.32", {
-    username: 'integrator',
-    password: 'integrator'
-})
-xapi.on('error', (err) => {
-    console.error(`connexion failed: ${err}, exiting`)
-    process.exit(1)
-})
-
 // CE maximum volume for Ultrasound
 const MAX = 90 // for a DX80
 //const MAX = 70 // for a RoomKit
 
+//
+// Connect to the device
+//
+
+const jsxapi = require('jsxapi');
+
+// Check args
+if (!process.env.JSXAPI_DEVICE_URL || !process.env.JSXAPI_USERNAME) {
+    console.error("Please specify info to connect to your device as JSXAPI_DEVICE_URL, JSXAPI_USERNAME, JSXAPI_PASSWORD env variables");
+    console.error("Bash example: JSXAPI_DEVICE_URL='ssh://192.168.1.34' JSXAPI_USERNAME='integrator' JSXAPI_PASSWORD='integrator' node agenda.js");
+    process.exit(1);
+}
+
+// Empty passwords are supported
+const password = process.env.JSXAPI_PASSWORD ? process.env.JSXAPI_PASSWORD : "";
+
+// Connect to the device
+console.log("connecting to your device...");
+const xapi = jsxapi.connect(process.env.JSXAPI_DEVICE_URL, {
+    username: process.env.JSXAPI_USERNAME,
+    password: password
+});
+xapi.on('error', (err) => {
+    switch (err) {
+        case "client-socket":
+            console.error("could not connect: invalid URL.");
+            break;
+
+        case "client-authentication":
+            console.error("could not connect: invalid credentials.");
+            break;
+
+        case "client-timeout":
+            console.error("could not connect: timeout.");
+            break;
+
+        default:
+            console.error(`encountered error: ${err}.`);
+            break;
+    }
+
+    console.log("exiting...");
+    process.exit(1);
+});
+
+
+//
+// Code logic
+//
+
 xapi.on('ready', () => {
-    console.log("connexion successful")
+    console.log("connexion successful");
 
     // Initialize the widgets
     xapi.config.get('Audio Ultrasound MaxVolume')
