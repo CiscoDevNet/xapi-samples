@@ -24,7 +24,7 @@ var gstate = {
 // Check args
 if (!process.env.JSXAPI_DEVICE_URL || !process.env.JSXAPI_USERNAME) {
     console.log("Please specify info to connect to your device as JSXAPI_DEVICE_URL, JSXAPI_USERNAME, JSXAPI_PASSWORD env variables");
-    console.log("Bash example: JSXAPI_DEVICE_URL='ssh://192.168.1.34' JSXAPI_USERNAME='integrator' JSXAPI_PASSWORD='integrator' node example.js");
+    console.log("Bash example: JSXAPI_DEVICE_URL='ssh://192.168.1.34' JSXAPI_USERNAME='integrator' JSXAPI_PASSWORD='integrator' node notifier.js");
     process.exit(1);
 }
 // Updating state
@@ -124,17 +124,21 @@ function fireAction(widgetId) {
 function sendNotification(message) {
     // If no email has been specified, push an alert message
     if (!gstate.email) {
-        xapi.command('UserInterface Message TextLine Display', {
+        gstate.xapi.command('UserInterface Message TextLine Display', {
             Text: `Please enter an email address for the recipient`,
             Duration: 20, // in seconds
+        }).catch((err) => {
+            console.log(`error displaying notification: ${err.msg}`);
         });
         return;
     }
 
     // Show popup message
-    xapi.command('UserInterface Message TextLine Display', {
+    gstate.xapi.command('UserInterface Message TextLine Display', {
         Text: `Message for ${gstate.email}: ${message}`,
         Duration: 20, // in seconds
+    }).catch((err) => {
+        console.log(`error displaying popup message: ${err.msg}`);
     });
 }
 
@@ -145,6 +149,8 @@ function updateEmail() {
         FeedbackId: 'email',
         Title: "Webex Teams handle",
         Text: 'please enter an email',
+    }).catch((err) => {
+        console.log(`error displaying message: ${err.msg}`);
     });
 
     // Prompt callback
@@ -174,6 +180,8 @@ function updateUI() {
     gstate.xapi.command('UserInterface Extensions Widget SetValue', {
         WidgetId: 'recipient_email',
         Value: gstate.email
+    }).catch((err) => {
+        console.log(`error updating email widget: ${err.msg}`);
     });
 }
 
@@ -181,7 +189,7 @@ function updateUI() {
 function readEmailFromUI(state) {
 
     // Look for the recipient's email widget
-    state.xapi.status.get("UserInterface Extensions Widget")
+    gstate.xapi.status.get("UserInterface Extensions Widget")
         .then((widgets) => {
             //console.log(`found ${widgets.length} widgets`);
             let found = false;
@@ -213,6 +221,11 @@ function readEmailFromUI(state) {
                 });
             }
         })
+        .catch((err) => {
+            console.log(`error reading email widget: ${err.msg}`);
+            console.log("WARNING: cannot list widgets. Please check the In-Room control is deployed");
+            return;
+        });
 }
 
 

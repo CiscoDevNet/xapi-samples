@@ -22,7 +22,7 @@ var gstate = {
 if (!gstate.accessToken) {
     console.log("Warning: no token detected.");
     console.log("Please use the ACCESS_TOKEN env variable as in:");
-    console.log("Bash example: ACCESS_TOKEN=XXXXXX JSXAPI_DEVICE_URL='ssh://192.168.1.34' JSXAPI_USERNAME='integrator' JSXAPI_PASSWORD='integrator' node example.js");
+    console.log("Bash example: ACCESS_TOKEN=XXXXXX JSXAPI_DEVICE_URL='ssh://192.168.1.34' JSXAPI_USERNAME='integrator' JSXAPI_PASSWORD='integrator' node to_webex_teams.js");
     console.log("Continuing... but won't push messages to Webex Teams");
 }
 
