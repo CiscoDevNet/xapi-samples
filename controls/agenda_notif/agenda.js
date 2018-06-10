@@ -13,12 +13,8 @@
 var webhook_id = process.env.INCOMING_WEBHOOK_ID;
 if (!webhook_id) {
     console.log("WARNING: no incoming webhook id specified on the command line, using defaults.");
-    console.log("open https://eurl.io/#H1Cb0XKgQ to join the default Webex Teams space.")
+    console.log("to join the default Webex Teams space, open https://eurl.io/#H1Cb0XKgQ")
     webhook_id = "Y2lzY29zcGFyazovL3VzL1dFQkhPT0svMTI5YzA4ZGQtODJlYy00ZTg2LThkODAtZWFiMjNjYWVmOTRm";
-}
-
-if (!process.env.INCOMING_WEBHOOK_ID) {
-    console.log("WARNING: no INCOMING_WEBHOOK_ID env variable detected. Using default.");
 }
 
 //
@@ -87,7 +83,7 @@ xapi.on('ready', () => {
         }
 
         // Fetch session details
-        const getSessionDetails = require('./sessions')
+        const getSessionDetails = require('./util/sessions.js')
         let session = getSessionDetails(sessionId);
         if (!session) {
             console.log("could not find details for session, ignoring...");
@@ -131,7 +127,7 @@ function push(msg, cb) {
         }
 
         if (response.statusCode == 204) {
-            console.log("message pushed to Webex Teams'");
+            console.log("message pushed to Webex Teams");
             if (cb) cb(null);
             return;
         }
