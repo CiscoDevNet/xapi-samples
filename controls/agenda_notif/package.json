@@ -1,0 +1,14 @@
+{
+  "name": "agenda_notif",
+  "version": "0.1.0",
+  "description": "In-Room Control to display an list of session, and push to a Webex teams.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Stève Sfartz <stsfartz@cisco.com>",
+  "license": "MIT",
+  "dependencies": {
+    "jsxapi": "^4.1.3",
+    "request": "^2.87.0"
+  }
+}
