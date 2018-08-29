@@ -1,0 +1,15 @@
+{
+  "name": "ultrasound",
+  "version": "0.1.0",
+  "description": "Backend code for the Ultrasound control",
+  "main": "ultrasound-jsxapi.js",
+  "scripts": {
+    "start": "node ultrasound-jsxapi.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Stève Sfartz <stsfartz@cisco.com>",
+  "license": "MIT",
+  "dependencies": {
+    "jsxapi": "^4.1.3"
+  }
+}
