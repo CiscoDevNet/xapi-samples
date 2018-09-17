@@ -93,7 +93,7 @@ xapi.on('ready', () => {
     });
 
     // Initialize the widgets also as the controls are deployed
-    xapi.event.on('UserInterface Extensions Widget LayoutUpdated', (event) => {
+    gstate.xapi.event.on('UserInterface Extensions Widget LayoutUpdated', (event) => {
         console.log(`layout updated, let's refresh the widgets`);
         updateUI();
     });
@@ -227,7 +227,7 @@ function updateUI() {
 function readEmailFromUI(state) {
 
     // Look for the recipient's email widget
-    state.xapi.status.get("UserInterface Extensions Widget")
+    gstate.xapi.status.get("UserInterface Extensions Widget")
         .then((widgets) => {
             //console.log(`found ${widgets.length} widgets`);
             let found = false;
@@ -252,7 +252,7 @@ function readEmailFromUI(state) {
                 console.log("ERROR: the Notifier control is not deployed");
 
                 // Display alter on Touch10 interface or screen
-                xapi.command('UserInterface Message Alert Display', {
+                gstate.xapi.command('UserInterface Message Alert Display', {
                     Title: 'Notifier Control',
                     Text: 'The In-Room Control is not deployed on the device',
                     Duration: 30 // in seconds
