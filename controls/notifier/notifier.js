@@ -86,7 +86,7 @@ xapi.on('ready', () => {
     // Initialize the widgets also as the controls are deployed
     gstate.xapi.event.on('UserInterface Extensions Widget LayoutUpdated', (event) => {
         console.log(`layout updated, let's refresh the widgets`);
-        updateUI();
+        refreshUI();
     });
 });
 
@@ -119,7 +119,6 @@ function fireAction(widgetId) {
             return;
     }
 }
-
 
 function sendNotification(message) {
     // If no email has been specified, push an alert message
@@ -165,17 +164,17 @@ function updateEmail() {
             // Showing only the domain for privacy reasons
             console.log(`Changing email to ...@${parts[1]}`)
             gstate.email = event.Text;
-            updateUI();
+            refreshUI();
         }
     });
 }
 
 function resetEmail() {
     gstate.email = "";
-    updateUI();
+    refreshUI();
 }
 
-function updateUI() {
+function refreshUI() {
     // Update email textfield
     gstate.xapi.command('UserInterface Extensions Widget SetValue', {
         WidgetId: 'recipient_email',
@@ -184,7 +183,6 @@ function updateUI() {
         console.log(`error updating email widget: ${err.msg}`);
     });
 }
-
 
 function readEmailFromUI(state) {
 
