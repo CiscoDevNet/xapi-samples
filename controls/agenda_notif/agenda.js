@@ -92,12 +92,13 @@ xapi.on('ready', () => {
 
         // Push info about the session
         let href = "https://www.ciscolive.com/us/learn/sessions/session-catalog/?search=" + sessionId;
-        push(`${session.day}, ${session.time}: **${session.title}** - [${session.id}](${href}) at ${session.location}<br/>_${session.description}_`);
+        push(`${session.day}, ${session.time}: **${session.title}** in ${session.location}<br/>_${session.description}_`);
     });
 });
 
 function extractSession(component) {
-    let parsed = component.match(/^push_(DEVNET-\d{4}[A:B]?)$/);
+    //let parsed = component.match(/^push_(DEVNET-\d{4}[A:B]?)$/);
+    let parsed = component.match(/^push_(.*)$/);
 
     if (!parsed) {
         console.log("format error, please comply with 'push_DEVNET-DDDD'");

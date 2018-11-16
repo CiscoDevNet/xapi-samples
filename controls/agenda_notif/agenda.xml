@@ -4,51 +4,81 @@
     <PanelId>panel_2</PanelId>
     <Type>Statusbar</Type>
     <Icon>Helpdesk</Icon>
-    <Order>2</Order>
+    <Order>1</Order>
     <Color>#FF7033</Color>
-    <Name>CLUS StevNetZone</Name>
+    <Name>CodeMotion Milan</Name>
     <Page>
-      <Name>Monday</Name>
+      <Name>Thursday</Name>
       <Row>
-        <Name>11:30AM | Classroom 2</Name>
+        <Name>09:30AM | Room 1</Name>
         <Widget>
           <WidgetId>widget_2</WidgetId>
-          <Name>ChatBots 101: design, code, deploy [DEVNET-2896]</Name>
+          <Name>KeyNote - When apps meet infrastructure [Stève Sfartz]</Name>
           <Type>Text</Type>
           <Options>size=3;fontSize=normal;align=left</Options>
         </Widget>
         <Widget>
-          <WidgetId>push_DEVNET-2896</WidgetId>
+          <WidgetId>push_steve</WidgetId>
           <Name>push</Name>
           <Type>Button</Type>
           <Options>size=1</Options>
         </Widget>
       </Row>
       <Row>
-        <Name>12:30PM | Classroom 2</Name>
+        <Name>11:30AM | Room 6</Name>
         <Widget>
           <WidgetId>widget_2</WidgetId>
-          <Name>Golang 101 for ITPros [DEVNET-1808]</Name>
+          <Name>My developer journey towards true hybrid cloud with Kubernetes [Matt Johnson]</Name>
           <Type>Text</Type>
           <Options>size=3;fontSize=normal;align=left</Options>
         </Widget>
         <Widget>
-          <WidgetId>push_DEVNET-1808</WidgetId>
+          <WidgetId>push_matt</WidgetId>
           <Name>push</Name>
           <Type>Button</Type>
           <Options>size=1</Options>
         </Widget>
       </Row>
       <Row>
-        <Name>03:30PM | Workshop 5</Name>
+        <Name>12:30PM | Room 6</Name>
         <Widget>
           <WidgetId>widget_2</WidgetId>
-          <Name>Enhancing Meeting Rooms UX with xAPIs [DEVNET-2074]</Name>
+          <Name>Making Enterprise Virtual Reality a Practical Reality [Roget Dickinson]</Name>
           <Type>Text</Type>
           <Options>size=3;fontSize=normal;align=left</Options>
         </Widget>
         <Widget>
-          <WidgetId>push_DEVNET-2074A</WidgetId>
+          <WidgetId>push_roger</WidgetId>
+          <Name>push</Name>
+          <Type>Button</Type>
+          <Options>size=1</Options>
+        </Widget>
+      </Row>
+      <Row>
+        <Name>2:10PM | Room 6</Name>
+        <Widget>
+          <WidgetId>widget_2</WidgetId>
+          <Name>API Magic and Applications on the Network [Cory Guynn]</Name>
+          <Type>Text</Type>
+          <Options>size=3;fontSize=normal;align=left</Options>
+        </Widget>
+        <Widget>
+          <WidgetId>push_cory</WidgetId>
+          <Name>push</Name>
+          <Type>Button</Type>
+          <Options>size=1</Options>
+        </Widget>
+      </Row>
+      <Row>
+        <Name>Till 4:00PM | Cisco Booth</Name>
+        <Widget>
+          <WidgetId>widget_2</WidgetId>
+          <Name>Grab the Bag Challenge &amp; Demos</Name>
+          <Type>Text</Type>
+          <Options>size=3;fontSize=normal;align=left</Options>
+        </Widget>
+        <Widget>
+          <WidgetId>push_challenge</WidgetId>
           <Name>push</Name>
           <Type>Button</Type>
           <Options>size=1</Options>
@@ -57,47 +87,47 @@
       <Options/>
     </Page>
     <Page>
-      <Name>Tuesday</Name>
+      <Name>Friday</Name>
       <Row>
-        <Name>10:30AM | Classroom 2</Name>
+        <Name>From 11:30 | Hands-On Labs</Name>
         <Widget>
           <WidgetId>widget_2</WidgetId>
-          <Name>Integrated Room Systems with xAPIs &amp; Macros [DEVNET-2071]</Name>
+          <Name>Discover Kubernetes, Meraki and Webex Devices</Name>
           <Type>Text</Type>
           <Options>size=3;fontSize=normal;align=left</Options>
         </Widget>
         <Widget>
-          <WidgetId>push_DEVNET-2071</WidgetId>
+          <WidgetId>push_labs</WidgetId>
           <Name>push</Name>
           <Type>Button</Type>
           <Options>size=1</Options>
         </Widget>
       </Row>
       <Row>
-        <Name>02:30PM | Classroom 2</Name>
+        <Name>Till 4:00PM | Cisco Booth</Name>
         <Widget>
           <WidgetId>widget_2</WidgetId>
-          <Name>Microservices principles applied [DEVNET-1871]</Name>
+          <Name>Grab the Bag Challenge</Name>
           <Type>Text</Type>
           <Options>size=3;fontSize=normal;align=left</Options>
         </Widget>
         <Widget>
-          <WidgetId>push_DEVNET-1871</WidgetId>
+          <WidgetId>push_challenge</WidgetId>
           <Name>push</Name>
           <Type>Button</Type>
           <Options>size=1</Options>
         </Widget>
       </Row>
       <Row>
-        <Name>03:30PM | Workshop 8</Name>
+        <Name>Till 6:00PM | Cisco Booth</Name>
         <Widget>
           <WidgetId>widget_2</WidgetId>
-          <Name>Creating conversational chatbots with Botkit [DEVNET-3071]</Name>
+          <Name>Meet Cisco DevNet: Meraki &amp; Webex Devices Demos</Name>
           <Type>Text</Type>
           <Options>size=3;fontSize=normal;align=left</Options>
         </Widget>
         <Widget>
-          <WidgetId>push_DEVNET-3071A</WidgetId>
+          <WidgetId>push_demos</WidgetId>
           <Name>push</Name>
           <Type>Button</Type>
           <Options>size=1</Options>
@@ -106,65 +136,32 @@
       <Options/>
     </Page>
     <Page>
-      <Name>Wednesday</Name>
+      <Name>About</Name>
       <Row>
-        <Name>10:30AM | Workshop 5</Name>
+        <Name>Check the code</Name>
         <Widget>
-          <WidgetId>widget_2</WidgetId>
-          <Name>Enhancing Meeting Rooms UX with xAPIs [DEVNET-2074]</Name>
+          <WidgetId>widget_3</WidgetId>
+          <Name>https://github.com/ObjectIsAdvantag/xapi-samples</Name>
           <Type>Text</Type>
-          <Options>size=3;fontSize=normal;align=left</Options>
-        </Widget>
-        <Widget>
-          <WidgetId>push_DEVNET-2074B</WidgetId>
-          <Name>push</Name>
-          <Type>Button</Type>
-          <Options>size=1</Options>
+          <Options>size=4;fontSize=small;align=left</Options>
         </Widget>
       </Row>
       <Row>
-        <Name>12:30PM | Classroom 2</Name>
+        <Name>Author</Name>
         <Widget>
-          <WidgetId>widget_2</WidgetId>
-          <Name>Webex Teams APIs for Admins [DEVNET-3610]</Name>
+          <WidgetId>widget_4</WidgetId>
+          <Name>Stève Sfartz &lt;stsfartz@cisco.com&gt;</Name>
           <Type>Text</Type>
-          <Options>size=3;fontSize=normal;align=left</Options>
-        </Widget>
-        <Widget>
-          <WidgetId>push_DEVNET-3610</WidgetId>
-          <Name>push</Name>
-          <Type>Button</Type>
-          <Options>size=1</Options>
+          <Options>size=4;fontSize=small;align=left</Options>
         </Widget>
       </Row>
       <Row>
-        <Name>02:30PM | Workshop 8</Name>
+        <Name>About</Name>
         <Widget>
-          <WidgetId>widget_2</WidgetId>
-          <Name>Creating conversational chatbots with Botkit [DEVNET-3071]</Name>
+          <WidgetId>widget_5</WidgetId>
+          <Name>Join DevNet: https://developer.cisco.com/codemotion, discover Cisco's learning labs, and Code Exchange!</Name>
           <Type>Text</Type>
-          <Options>size=3;fontSize=normal;align=left</Options>
-        </Widget>
-        <Widget>
-          <WidgetId>push_DEVNET-3071B</WidgetId>
-          <Name>push</Name>
-          <Type>Button</Type>
-          <Options>size=1</Options>
-        </Widget>
-      </Row>
-      <Row>
-        <Name>03:30PM | Classroom 2</Name>
-        <Widget>
-          <WidgetId>widget_2</WidgetId>
-          <Name>Webex Teams Widgets Technical Drill Down [DEVNET-3891]</Name>
-          <Type>Text</Type>
-          <Options>size=3;fontSize=normal;align=left</Options>
-        </Widget>
-        <Widget>
-          <WidgetId>push_DEVNET-3891</WidgetId>
-          <Name>push</Name>
-          <Type>Button</Type>
-          <Options>size=1</Options>
+          <Options>size=4;fontSize=small;align=left</Options>
         </Widget>
       </Row>
       <Options/>
