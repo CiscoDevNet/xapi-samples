@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../../">
+  <title data-ice="title">src/xapi/index.js | jsxapi</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+<meta name="description" content="JavaScript bindings for XAPI"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="jsxapi"><meta property="twitter:description" content="JavaScript bindings for XAPI"></head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./">Home</a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+</header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/json-parser.js~JSONParser.html">JSONParser</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-connect">connect</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-parseJSON">parseJSON</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-external">E</span><span data-ice="name"><span><a href="https://nodejs.org/api/stream.html#stream_class_stream_transform">Transform</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#backend">backend</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/backend/tsh.js~TSHBackend.html">TSHBackend</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/backend/ws.js~WSBackend.html">WSBackend</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-interface">I</span><span data-ice="name"><span><a href="class/src/backend/index.js~Backend.html">Backend</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-external">E</span><span data-ice="name"><span><a href="https://nodejs.org/api/events.html#events_class_eventemitter">EventEmitter</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-external">E</span><span data-ice="name"><span><a href="https://nodejs.org/api/stream.html#stream_class_stream_duplex">Duplex</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-external">E</span><span data-ice="name"><span><a href="https://developer.mozilla.org/en-US/docs/Web/API/WebSocket">WebSocket</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#transport">transport</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/transport/stream.js~StreamTransport.html">StreamTransport</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-connectSSH">connectSSH</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-spawnTSH">spawnTSH</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#xapi">xapi</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/xapi/components.js~Config.html">Config</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/xapi/components.js~Event.html">Event</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/xapi/components.js~Status.html">Status</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/xapi/exc.js~IllegalValueError.html">IllegalValueError</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/xapi/exc.js~InvalidPathError.html">InvalidPathError</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/xapi/exc.js~ParameterError.html">ParameterError</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/xapi/exc.js~XAPIError.html">XAPIError</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/xapi/feedback.js~Feedback.html">Feedback</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/xapi/feedback.js~FeedbackGroup.html">FeedbackGroup</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/xapi/index.js~XAPI.html">XAPI</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-interface">I</span><span data-ice="name"><span><a href="class/src/xapi/components.js~Component.html">Component</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-interface">I</span><span data-ice="name"><span><a href="class/src/xapi/mixins.js~Gettable.html">Gettable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-interface">I</span><span data-ice="name"><span><a href="class/src/xapi/mixins.js~Listenable.html">Listenable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-interface">I</span><span data-ice="name"><span><a href="class/src/xapi/mixins.js~Settable.html">Settable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-mix">mix</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-normalizePath">normalizePath</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-collapse">collapse</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-createCommandResponse">createCommandResponse</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-createErrorResponse">createErrorResponse</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-createGetResponse">createGetResponse</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-createRequest">createRequest</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-createResponse">createResponse</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-createSetResponse">createSetResponse</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-parseFeedbackResponse">parseFeedbackResponse</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-COMMAND_ERROR">COMMAND_ERROR</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-ILLEGAL_VALUE">ILLEGAL_VALUE</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-INVALID_PATH">INVALID_PATH</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-INVALID_RESPONSE">INVALID_RESPONSE</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-INVALID_STATUS">INVALID_STATUS</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-METHOD_NOT_FOUND">METHOD_NOT_FOUND</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-PARAMETER_ERROR">PARAMETER_ERROR</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-UNKNOWN_ERROR">UNKNOWN_ERROR</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">src/xapi/index.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">import { EventEmitter } from &apos;events&apos;;
+
+import log from &apos;../log&apos;;
+import * as rpc from &apos;./rpc&apos;;
+import normalizePath from &apos;./normalizePath&apos;;
+
+import Feedback from &apos;./feedback&apos;;
+import { Config, Event, Status } from &apos;./components&apos;;
+
+
+/**
+ * User-facing API towards the XAPI. Requires a backend for communicating
+ * with an XAPI instance. It should be possible to write backends for all kinds
+ * of transports (TSH over SSH, Websockets, HTTP, plain sockets, etc.)
+ *
+ * @example &lt;caption&gt;Initialization&lt;/caption&gt;
+ * const xapi = new XAPI(backend);
+ *
+ * @example &lt;caption&gt;Invoke commands&lt;/caption&gt;
+ * xapi
+ *   .command(&apos;Dial&apos;, { Number: &apos;johndoe@example.com&apos; })
+ *   .then(onSuccess, onFailure);
+ *
+ * @example &lt;caption&gt;Fetch a status&lt;/caption&gt;
+ * xapi
+ *   .status.get(&apos;Audio Volume&apos;)
+ *   .then((value) =&gt; { console.log(value); });
+ *
+ * @example &lt;caption&gt;Set a configuration&lt;/caption&gt;
+ * xapi
+ *   .config.set(&apos;Audio DefaultVolume&apos;, 100);
+ *
+ * @example &lt;caption&gt;Listen to an event&lt;/caption&gt;
+ * xapi.event.on(&apos;Some Event Name&apos;, (data) =&gt; {
+ *   console.log(`Received feedback data: ${data}`);
+ * });
+ */
+export default class XAPI extends EventEmitter {
+  /**
+   * @param {Backend} backend - Backend connected to an XAPI instance.
+   * @param {object} options - XAPI object options.
+   * @param {function} options.feedbackInterceptor - Feedback interceptor.
+   */
+  constructor(backend, options = {}) {
+    super();
+
+    /** @type {Backend} */
+    this.backend = backend;
+
+    /** @ignore */
+    this.requestId = 1;
+
+    /** @ignore */
+    this.requests = {};
+
+    /**
+     * Interface to XAPI feedback registration.
+     * @type {Feedback}
+     */
+    this.feedback = new Feedback(this, options.feedbackInterceptor);
+
+    /**
+     * Interface to XAPI configurations.
+     * @type {Config}
+     */
+    this.config = new Config(this);
+
+    /**
+     * Interface to XAPI events.
+     * @type {Event}
+     */
+    this.event = new Event(this);
+
+    /**
+     * Interface to XAPI statuses.
+     * @type {Status}
+     */
+    this.status = new Status(this);
+
+    // Restrict object mutation
+    Object.defineProperties(this, {
+      config: { writable: false },
+      event: { writable: false },
+      feedback: { writable: false },
+      status: { writable: false },
+    });
+    Object.seal(this);
+
+    backend
+      .on(&apos;close&apos;, () =&gt; { this.emit(&apos;close&apos;); })
+      .on(&apos;error&apos;, (error) =&gt; { this.emit(&apos;error&apos;, error); })
+      .on(&apos;ready&apos;, () =&gt; { this.emit(&apos;ready&apos;); })
+      .on(&apos;data&apos;, this.handleResponse.bind(this));
+  }
+
+  /**
+   * Close the XAPI connection.
+   *
+   * @return {XAPI} - XAPI instance..
+   */
+  close() {
+    this.backend.close();
+    return this;
+  }
+
+  /**
+   * Executes the command specified by the given path.
+   *
+   * @example
+   * // Space delimited
+   * xapi.command(&apos;Presentation Start&apos;);
+   *
+   * // Slash delimited
+   * xapi.command(&apos;Presentation/Start&apos;);
+   *
+   * // Array path
+   * xapi.command([&apos;Presentation&apos;, &apos;Start&apos;]);
+   *
+   * // With parameters
+   * xapi.command(&apos;Presentation Start&apos;, { PresentationSource: 1 });
+   *
+   * // Multi-line
+   * xapi.command(&apos;UserInterface Extensions Set&apos;, { ConfigId: &apos;example&apos; }, `
+   *  &lt;Extensions&gt;
+   *    &lt;Version&gt;1.1&lt;/Version&gt;
+   *    &lt;Panel item=&quot;1&quot; maxOccurrence=&quot;n&quot;&gt;
+   *      &lt;Icon&gt;Lightbulb&lt;/Icon&gt;
+   *      &lt;Type&gt;Statusbar&lt;/Type&gt;
+   *      &lt;Page item=&quot;1&quot; maxOccurrence=&quot;n&quot;&gt;
+   *        &lt;Name&gt;Foo&lt;/Name&gt;
+   *        &lt;Row item=&quot;1&quot; maxOccurrence=&quot;n&quot;&gt;
+   *          &lt;Name&gt;Bar&lt;/Name&gt;
+   *          &lt;Widget item=&quot;1&quot; maxOccurrence=&quot;n&quot;&gt;
+   *            &lt;WidgetId&gt;widget_3&lt;/WidgetId&gt;
+   *            &lt;Type&gt;ToggleButton&lt;/Type&gt;
+   *          &lt;/Widget&gt;
+   *        &lt;/Row&gt;
+   *      &lt;/Page&gt;
+   *    &lt;/Panel&gt;
+   *  &lt;/Extensions&gt;
+   * `);
+   *
+   * @param {Array|string} path - Path to command node.
+   * @param {Object} [params] - Object containing named command arguments.
+   * @param {string} [body] - Multi-line body for commands requiring it.
+   * @return {Promise} - Resolved with the command response when ready.
+   */
+  command(path, params, body) {
+    const apiPath = normalizePath(path).join(&apos;/&apos;);
+    const method = `xCommand/${apiPath}`;
+    const executeParams = body === undefined ? params : Object.assign({ body }, params);
+    return this.execute(method, executeParams);
+  }
+
+  /** @private */
+  handleResponse(response) {
+    const { id, method } = response;
+    if (method === &apos;xFeedback/Event&apos;) {
+      log.debug(&apos;feedback:&apos;, response);
+      this.feedback.dispatch(response.params);
+    } else {
+      if ({}.hasOwnProperty.call(response, &apos;result&apos;)) {
+        log.debug(&apos;result:&apos;, response);
+        const { resolve } = this.requests[id];
+        resolve(response.result);
+      } else {
+        log.debug(&apos;error:&apos;, response);
+        const { reject } = this.requests[id];
+        reject(response.error);
+      }
+      delete this.requests[id];
+    }
+  }
+
+  /** @private */
+  nextRequestId() {
+    const requestId = this.requestId;
+    this.requestId += 1;
+    return requestId.toString();
+  }
+
+  /**
+   * Execute the given JSON-RPC request on the backend.
+   *
+   * @example
+   * xapi.execute(&apos;xFeedback/Subscribe&apos;, {
+   *   Query: [&apos;Status&apos;, &apos;Audio&apos;],
+   * });
+   *
+   * @param {String} method - Name of RPC method to invoke.
+   * @param {Object} [params] - Parameters to add to the request.
+   * @return {Promise} - Resolved with the command response.
+   */
+  execute(method, params) {
+    return new Promise((resolve, reject) =&gt; {
+      const id = this.nextRequestId();
+      const request = rpc.createRequest(id, method, params);
+      this.backend.execute(request);
+      this.requests[id] = { resolve, reject };
+    });
+  }
+}
+</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.1.0)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

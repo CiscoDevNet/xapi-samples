@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../../">
+  <title data-ice="title">src/xapi/mixins.js | jsxapi</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+<meta name="description" content="JavaScript bindings for XAPI"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="jsxapi"><meta property="twitter:description" content="JavaScript bindings for XAPI"></head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./">Home</a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+</header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/json-parser.js~JSONParser.html">JSONParser</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-connect">connect</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-parseJSON">parseJSON</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-external">E</span><span data-ice="name"><span><a href="https://nodejs.org/api/stream.html#stream_class_stream_transform">Transform</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#backend">backend</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/backend/tsh.js~TSHBackend.html">TSHBackend</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/backend/ws.js~WSBackend.html">WSBackend</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-interface">I</span><span data-ice="name"><span><a href="class/src/backend/index.js~Backend.html">Backend</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-external">E</span><span data-ice="name"><span><a href="https://nodejs.org/api/events.html#events_class_eventemitter">EventEmitter</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-external">E</span><span data-ice="name"><span><a href="https://nodejs.org/api/stream.html#stream_class_stream_duplex">Duplex</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-external">E</span><span data-ice="name"><span><a href="https://developer.mozilla.org/en-US/docs/Web/API/WebSocket">WebSocket</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#transport">transport</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/transport/stream.js~StreamTransport.html">StreamTransport</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-connectSSH">connectSSH</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-spawnTSH">spawnTSH</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#xapi">xapi</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/xapi/components.js~Config.html">Config</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/xapi/components.js~Event.html">Event</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/xapi/components.js~Status.html">Status</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/xapi/exc.js~IllegalValueError.html">IllegalValueError</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/xapi/exc.js~InvalidPathError.html">InvalidPathError</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/xapi/exc.js~ParameterError.html">ParameterError</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/xapi/exc.js~XAPIError.html">XAPIError</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/xapi/feedback.js~Feedback.html">Feedback</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/xapi/feedback.js~FeedbackGroup.html">FeedbackGroup</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/xapi/index.js~XAPI.html">XAPI</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-interface">I</span><span data-ice="name"><span><a href="class/src/xapi/components.js~Component.html">Component</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-interface">I</span><span data-ice="name"><span><a href="class/src/xapi/mixins.js~Gettable.html">Gettable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-interface">I</span><span data-ice="name"><span><a href="class/src/xapi/mixins.js~Listenable.html">Listenable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-interface">I</span><span data-ice="name"><span><a href="class/src/xapi/mixins.js~Settable.html">Settable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-mix">mix</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-normalizePath">normalizePath</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-collapse">collapse</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-createCommandResponse">createCommandResponse</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-createErrorResponse">createErrorResponse</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-createGetResponse">createGetResponse</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-createRequest">createRequest</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-createResponse">createResponse</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-createSetResponse">createSetResponse</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-parseFeedbackResponse">parseFeedbackResponse</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-COMMAND_ERROR">COMMAND_ERROR</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-ILLEGAL_VALUE">ILLEGAL_VALUE</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-INVALID_PATH">INVALID_PATH</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-INVALID_RESPONSE">INVALID_RESPONSE</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-INVALID_STATUS">INVALID_STATUS</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-METHOD_NOT_FOUND">METHOD_NOT_FOUND</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-PARAMETER_ERROR">PARAMETER_ERROR</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-UNKNOWN_ERROR">UNKNOWN_ERROR</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">src/xapi/mixins.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">/**
+ * Mixin for XAPI sections that can trigger feedback.
+ *
+ * @interface
+ */
+export class Listenable {
+  /**
+   * Register a new listener on the given path.
+   *
+   * @param {string} path - Path to XAPI entry.
+   * @param {function(data: Object): null} listener - Callback handler called on changes.
+   * @return {function()} - Handler to deregister the feedback registration.
+   */
+  on(path, listener) {
+    return this.xapi.feedback.on(this.normalizePath(path), listener);
+  }
+
+  /**
+   * Register a new listener on the given path, de-register
+   * after the first change happened.
+   *
+   * @param {string} path - Path to XAPI entry.
+   * @param {function(data: Object): null} listener - Callback handler called on changes.
+   * @return {Object} - Handler to deregister the feedback registration.
+   */
+  once(path, listener) {
+    return this.xapi.feedback.once(this.normalizePath(path), listener);
+  }
+
+
+  /**
+   * De-register the given listener on the given path.
+   *
+   * @deprecated use deactivation handler from `.on()` and `.once()` instead.
+   */
+  off() {
+    this.xapi.feedback.off();
+  }
+}
+
+
+/**
+ * Mixin for XAPI sections that can hold a value that may be fetched.
+ *
+ * @interface
+ */
+export class Gettable {
+  /**
+   * Gets the value of the given path.
+   *
+   * @example
+   * xapi.status
+   *   .get(&apos;Audio Volume&apos;)
+   *   .then((volume) =&gt; { console.log(volume); });
+   *
+   * @example
+   * xapi.config
+   *   .get(&apos;Audio DefaultVolume&apos;)
+   *   .then((volume) =&gt; { console.log(volume); });
+   *
+   * @param {string} path - Path to configuration node.
+   * @return {Promise} - Resolved to the configuration value when ready.
+   */
+  get(path) {
+    return this.xapi.execute(&apos;xGet&apos;, {
+      Path: this.normalizePath(path),
+    });
+  }
+}
+
+
+/**
+ * Mixin for XAPI sections that can hold a value that may be fetched.
+ *
+ * @interface
+ */
+export class Settable {
+  /**
+   * Sets the path to the given value.
+   *
+   * @example
+   * xapi
+   *   .config.set(&apos;SystemUnit Name&apos;, &apos;My System&apos;);
+   *
+   * @param {string} path - Path to status node.
+   * @param {number|string} value - Configuration value.
+   * @return {Promise} - Resolved to the status value when ready.
+   */
+  set(path, value) {
+    return this.xapi.execute(&apos;xSet&apos;, {
+      Path: this.normalizePath(path),
+      Value: value,
+    });
+  }
+}
+
+
+/**
+ * Extend {Base} class and apply {Mixins}.
+ *
+ * @param {Object} Base - Base class to extend.
+ * @param {Array} Mixins - Mixins to apply.
+ * @return Object - New ad-hoc base class with mixins applied.
+ */
+export function mix(Base, ...Mixins) {
+  class Class extends Base {}
+
+  Mixins.forEach((mixin) =&gt; {
+    Object
+      .getOwnPropertyNames(mixin.prototype)
+      .map(key =&gt; [key, mixin.prototype[key]])
+      .filter(([, v]) =&gt; typeof v === &apos;function&apos; &amp;&amp; v !== &apos;constructor&apos;)
+      .forEach(([name, method]) =&gt; {
+        Class.prototype[name] = method;
+      });
+  });
+
+  return Class;
+}
+
+</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.1.0)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

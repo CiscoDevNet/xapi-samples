@@ -1,0 +1,175 @@
+{
+  "coverage": "49%",
+  "expectCount": 151,
+  "actualCount": 74,
+  "files": {
+    "src/backend/index.js": {
+      "expectCount": 11,
+      "actualCount": 9,
+      "undocumentLines": [
+        46,
+        48
+      ]
+    },
+    "src/backend/tsh.js": {
+      "expectCount": 23,
+      "actualCount": 9,
+      "undocumentLines": [
+        26,
+        46,
+        47,
+        48,
+        49,
+        50,
+        52,
+        67,
+        81,
+        89,
+        90,
+        100,
+        110,
+        153
+      ]
+    },
+    "src/backend/ws.js": {
+      "expectCount": 9,
+      "actualCount": 4,
+      "undocumentLines": [
+        45,
+        49,
+        57,
+        61,
+        66
+      ]
+    },
+    "src/cli.js": {
+      "expectCount": 2,
+      "actualCount": 0,
+      "undocumentLines": [
+        13,
+        19
+      ]
+    },
+    "src/index.js": {
+      "expectCount": 1,
+      "actualCount": 1,
+      "undocumentLines": []
+    },
+    "src/json-parser.js": {
+      "expectCount": 10,
+      "actualCount": 2,
+      "undocumentLines": [
+        15,
+        17,
+        21,
+        22,
+        27,
+        32,
+        38,
+        45
+      ]
+    },
+    "src/transport/ssh.js": {
+      "expectCount": 1,
+      "actualCount": 1,
+      "undocumentLines": []
+    },
+    "src/transport/stream.js": {
+      "expectCount": 10,
+      "actualCount": 4,
+      "undocumentLines": [
+        17,
+        18,
+        19,
+        39,
+        46,
+        51
+      ]
+    },
+    "src/transport/tsh.js": {
+      "expectCount": 2,
+      "actualCount": 1,
+      "undocumentLines": [
+        6
+      ]
+    },
+    "src/xapi/components.js": {
+      "expectCount": 11,
+      "actualCount": 8,
+      "undocumentLines": [
+        51,
+        62,
+        74
+      ]
+    },
+    "src/xapi/exc.js": {
+      "expectCount": 19,
+      "actualCount": 0,
+      "undocumentLines": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        11,
+        12,
+        22,
+        24,
+        30,
+        31,
+        37,
+        38,
+        40,
+        45,
+        46
+      ]
+    },
+    "src/xapi/feedback.js": {
+      "expectCount": 15,
+      "actualCount": 11,
+      "undocumentLines": [
+        11,
+        12,
+        51,
+        55
+      ]
+    },
+    "src/xapi/index.js": {
+      "expectCount": 14,
+      "actualCount": 14,
+      "undocumentLines": []
+    },
+    "src/xapi/mixins.js": {
+      "expectCount": 9,
+      "actualCount": 9,
+      "undocumentLines": []
+    },
+    "src/xapi/normalizePath.js": {
+      "expectCount": 1,
+      "actualCount": 1,
+      "undocumentLines": []
+    },
+    "src/xapi/rpc.js": {
+      "expectCount": 13,
+      "actualCount": 0,
+      "undocumentLines": [
+        11,
+        12,
+        15,
+        21,
+        40,
+        65,
+        70,
+        93,
+        98,
+        132,
+        139,
+        158,
+        167
+      ]
+    }
+  }
+}

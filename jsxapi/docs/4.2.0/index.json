@@ -1,0 +1,4707 @@
+[
+  {
+    "__docId__": 1,
+    "kind": "external",
+    "name": "Infinity",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Infinity",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Infinity",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 2,
+    "kind": "external",
+    "name": "NaN",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~NaN",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 3,
+    "kind": "external",
+    "name": "undefined",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~undefined",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 4,
+    "kind": "external",
+    "name": "null",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~null",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 5,
+    "kind": "external",
+    "name": "Object",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Object",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 6,
+    "kind": "external",
+    "name": "object",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~object",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 7,
+    "kind": "external",
+    "name": "Function",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Function",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 8,
+    "kind": "external",
+    "name": "function",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~function",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 9,
+    "kind": "external",
+    "name": "Boolean",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Boolean",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 10,
+    "kind": "external",
+    "name": "boolean",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~boolean",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 11,
+    "kind": "external",
+    "name": "Symbol",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Symbol",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 12,
+    "kind": "external",
+    "name": "Error",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Error",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 13,
+    "kind": "external",
+    "name": "EvalError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/EvalError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~EvalError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 14,
+    "kind": "external",
+    "name": "InternalError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/InternalError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~InternalError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 15,
+    "kind": "external",
+    "name": "RangeError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RangeError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~RangeError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 16,
+    "kind": "external",
+    "name": "ReferenceError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ReferenceError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~ReferenceError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 17,
+    "kind": "external",
+    "name": "SyntaxError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SyntaxError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~SyntaxError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 18,
+    "kind": "external",
+    "name": "TypeError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypeError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~TypeError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 19,
+    "kind": "external",
+    "name": "URIError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/URIError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~URIError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 20,
+    "kind": "external",
+    "name": "Number",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Number",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 21,
+    "kind": "external",
+    "name": "number",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~number",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 22,
+    "kind": "external",
+    "name": "Date",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Date",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 23,
+    "kind": "external",
+    "name": "String",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~String",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 24,
+    "kind": "external",
+    "name": "string",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~string",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 25,
+    "kind": "external",
+    "name": "RegExp",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~RegExp",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 26,
+    "kind": "external",
+    "name": "Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 27,
+    "kind": "external",
+    "name": "Int8Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int8Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Int8Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 28,
+    "kind": "external",
+    "name": "Uint8Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint8Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 29,
+    "kind": "external",
+    "name": "Uint8ClampedArray",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8ClampedArray",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint8ClampedArray",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 30,
+    "kind": "external",
+    "name": "Int16Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int16Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Int16Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 31,
+    "kind": "external",
+    "name": "Uint16Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint16Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint16Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 32,
+    "kind": "external",
+    "name": "Int32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int32Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Int32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 33,
+    "kind": "external",
+    "name": "Uint32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint32Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 34,
+    "kind": "external",
+    "name": "Float32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float32Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Float32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 35,
+    "kind": "external",
+    "name": "Float64Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float64Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Float64Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 36,
+    "kind": "external",
+    "name": "Map",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Map",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 37,
+    "kind": "external",
+    "name": "Set",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Set",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 38,
+    "kind": "external",
+    "name": "WeakMap",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~WeakMap",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 39,
+    "kind": "external",
+    "name": "WeakSet",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakSet",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~WeakSet",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 40,
+    "kind": "external",
+    "name": "ArrayBuffer",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~ArrayBuffer",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 41,
+    "kind": "external",
+    "name": "DataView",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~DataView",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 42,
+    "kind": "external",
+    "name": "JSON",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~JSON",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 43,
+    "kind": "external",
+    "name": "Promise",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Promise",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 44,
+    "kind": "external",
+    "name": "Generator",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Generator",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Generator",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 45,
+    "kind": "external",
+    "name": "GeneratorFunction",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/GeneratorFunction",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~GeneratorFunction",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 46,
+    "kind": "external",
+    "name": "Reflect",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Reflect",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Reflect",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 47,
+    "kind": "external",
+    "name": "Proxy",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Proxy",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 48,
+    "kind": "file",
+    "name": "src/backend/index.js",
+    "content": "import { EventEmitter } from 'events';\n\nimport log from '../log';\nimport * as rpc from '../xapi/rpc';\n\n\n/**\n * @external {EventEmitter} https://nodejs.org/api/events.html#events_class_eventemitter\n */\n\n\n/**\n * Backend abstract class.\n *\n * @extends {EventEmitter}\n * @interface\n *\n * @example <caption>Custom backend implementation</caption>\n * class MyBackend extends Backend {\n *   constructor(transport) {\n *     this._transport = transport.on('data', this._recvMsg.bind(this));\n *   }\n *\n *   _recvMsg(message) {\n *     const id = ... // determine request id\n *     const result = ... // process message\n *     this.onResult(id, result);\n *   }\n *\n *   // `command` is passed by the method handler, e.g. `xCommand()`.\n *   send(id, command) {\n *     const message = ... // use id and command to construct message\n *     this._transport.send(message);\n *   }\n *\n *   // this is dispatched by .execute()\n *   'xCommand()'(request, send) {\n *     const command = ... // do stuff with request\n *     return send(command).then(result => {\n *       // process result\n *     });\n *   }\n * }\n */\nexport default class Backend extends EventEmitter {\n  constructor() {\n    super();\n    this.requests = {};\n  }\n\n  /**\n   * Close the backend connection and free up resources. The backend should not\n   * be used after it is closed and a new instance is required in order\n   * re-initialize.\n   */\n  close() { // eslint-disable-line class-methods-use-this\n  }\n\n  /**\n   * Promise that is resolved once the backend is ready to receive commands.\n   *\n   * @return {Promise} - Promised resolved when the backend is ready.\n   */\n  get isReady() { // eslint-disable-line class-methods-use-this\n    return Promise.resolve(true);\n  }\n\n  /**\n   * Default method handler. Called if there isn't a handler specified for the\n   * method type. The default handler dies unless it is overridden in a sub-class.\n   *\n   * @param {Object} request - JSON-RPC request\n   * @param {Function} send - Function for dispatching the request to the backend service.\n   */\n  defaultHandler({ method }, send) { // eslint-disable-line class-methods-use-this, no-unused-vars\n    return Promise.reject(new Error(`Invalid request method: ${method}`));\n  }\n\n  /**\n   * Determine the type of the JSON-RPC request. The type is used for\n   * dispatching the request to the different rpc handlers. Sub-classes may\n   * override this for custom routing behavior.\n   *\n   * @param {Object} request - JSON-RPC request\n   * @return {string} - Request method type.\n   */\n  getRequestType({ method }) { // eslint-disable-line class-methods-use-this\n    if (method.startsWith('xCommand')) {\n      return 'xCommand';\n    }\n    return method;\n  }\n\n  /**\n   * Transmit the given JSON-RPC payload to the backend service. The request\n   * type is determined using {@link getRequestType} and the request is\n   * delegated to method handlers, if they are defined for the given type. The\n   * default handler ({@link defaultHandler}) is used if there is no handler\n   * for the request type.\n   *\n   * Method handlers are defined on the sub-class, using the naming convention of\n   * `<requestType>()` (notice the '()' suffix). Method handlers are passed the\n   * request object and a `send` function to invoke for the request.\n   *\n   * @param {Object} request - JSON-RPC request to execute agains the backend service.\n   * @return {Promise} - Promise resolved when response is received.\n   */\n  execute(request) {\n    const { id } = request;\n    const type = this.getRequestType(request);\n    const handlerName = `${type}()`;\n    const handler = typeof this[handlerName] === 'function'\n      ? this[handlerName]\n      : this.defaultHandler;\n\n    return this.isReady\n      .then(() => {\n        const promise = new Promise((resolve) => {\n          this.requests[id] = resolve;\n        });\n        const sender = (cmd, body) => {\n          this.send(id, cmd, body);\n          return promise;\n        };\n        log.debug('[backend] (request):', request);\n        const result = handler.call(this, request, sender);\n        return Promise.resolve(result);\n      })\n      .then((result) => {\n        log.debug('[backend] (success):', result);\n        this.emit('data', rpc.createResponse(id, result));\n      })\n      .catch((error) => {\n        log.debug('[backend] (failure):', error);\n        this.emit('data', rpc.createErrorResponse(id, error));\n      });\n  }\n\n  /**\n   * Called when receiving feedback from the backend service.\n   *\n   * @param {Object} result - JSON-RPC params data for the feedback event.\n   */\n  onFeedback(result) {\n    this.emit('data', rpc.createRequest(null, 'xFeedback/Event', result));\n  }\n\n  /**\n   * Called when the backend is done processing the response and ready to hand\n   * it over to the XAPI frontend. The response should be a valid JSON-RPC\n   * response.\n   *\n   * @param {string} id - Request id of the JSON-RPC request.\n   * @param {Object} result - Result from the backend service.\n   */\n  onResult(id, result) {\n    if (id) {\n      const resolve = this.requests[id];\n      delete this.requests[id];\n      resolve(result);\n    }\n  }\n\n  /**\n   * Used to send the actual command to the backend service. The command\n   * should be generated by the method handler and .\n   *\n   * @param {string} id - The request id.\n   * @param {Array|Object|number|string} command - Command from method handler.\n   * @abstract\n   */\n  send(id, command) { // eslint-disable-line class-methods-use-this, no-unused-vars\n    throw new Error('Backend class must override .send()');\n  }\n}\n",
+    "static": true,
+    "longname": "C:/Local/tmp/node_modules/jsxapi/src/backend/index.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 49,
+    "kind": "external",
+    "name": "EventEmitter",
+    "externalLink": "https://nodejs.org/api/events.html#events_class_eventemitter",
+    "memberof": "src/backend/index.js",
+    "static": true,
+    "longname": "src/backend/index.js~EventEmitter",
+    "access": "public",
+    "description": ""
+  },
+  {
+    "__docId__": 50,
+    "kind": "class",
+    "name": "Backend",
+    "memberof": "src/backend/index.js",
+    "static": true,
+    "longname": "src/backend/index.js~Backend",
+    "access": "public",
+    "export": true,
+    "importPath": "jsxapi/lib/backend/index.js",
+    "importStyle": "Backend",
+    "description": "Backend abstract class.",
+    "examples": [
+      "<caption>Custom backend implementation</caption>\nclass MyBackend extends Backend {\n  constructor(transport) {\n    this._transport = transport.on('data', this._recvMsg.bind(this));\n  }\n\n  _recvMsg(message) {\n    const id = ... // determine request id\n    const result = ... // process message\n    this.onResult(id, result);\n  }\n\n  // `command` is passed by the method handler, e.g. `xCommand()`.\n  send(id, command) {\n    const message = ... // use id and command to construct message\n    this._transport.send(message);\n  }\n\n  // this is dispatched by .execute()\n  'xCommand()'(request, send) {\n    const command = ... // do stuff with request\n    return send(command).then(result => {\n      // process result\n    });\n  }\n}"
+    ],
+    "lineNumber": 45,
+    "interface": true,
+    "extends": [
+      "EventEmitter"
+    ]
+  },
+  {
+    "__docId__": 51,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "src/backend/index.js~Backend",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/backend/index.js~Backend#constructor",
+    "access": "public",
+    "description": null,
+    "lineNumber": 46,
+    "undocument": true
+  },
+  {
+    "__docId__": 52,
+    "kind": "member",
+    "name": "requests",
+    "memberof": "src/backend/index.js~Backend",
+    "static": false,
+    "longname": "src/backend/index.js~Backend#requests",
+    "access": "public",
+    "description": null,
+    "lineNumber": 48,
+    "undocument": true,
+    "type": {
+      "types": [
+        "{}"
+      ]
+    }
+  },
+  {
+    "__docId__": 53,
+    "kind": "method",
+    "name": "close",
+    "memberof": "src/backend/index.js~Backend",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/backend/index.js~Backend#close",
+    "access": "public",
+    "description": "Close the backend connection and free up resources. The backend should not\nbe used after it is closed and a new instance is required in order\nre-initialize.",
+    "lineNumber": 56,
+    "params": [],
+    "return": null
+  },
+  {
+    "__docId__": 54,
+    "kind": "get",
+    "name": "isReady",
+    "memberof": "src/backend/index.js~Backend",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/backend/index.js~Backend#isReady",
+    "access": "public",
+    "description": "Promise that is resolved once the backend is ready to receive commands.",
+    "lineNumber": 64,
+    "return": {
+      "nullable": null,
+      "types": [
+        "Promise"
+      ],
+      "spread": false,
+      "description": "Promised resolved when the backend is ready."
+    },
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 55,
+    "kind": "method",
+    "name": "defaultHandler",
+    "memberof": "src/backend/index.js~Backend",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/backend/index.js~Backend#defaultHandler",
+    "access": "public",
+    "description": "Default method handler. Called if there isn't a handler specified for the\nmethod type. The default handler dies unless it is overridden in a sub-class.",
+    "lineNumber": 75,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "request",
+        "description": "JSON-RPC request"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Function"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "send",
+        "description": "Function for dispatching the request to the backend service."
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 56,
+    "kind": "method",
+    "name": "getRequestType",
+    "memberof": "src/backend/index.js~Backend",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/backend/index.js~Backend#getRequestType",
+    "access": "public",
+    "description": "Determine the type of the JSON-RPC request. The type is used for\ndispatching the request to the different rpc handlers. Sub-classes may\noverride this for custom routing behavior.",
+    "lineNumber": 87,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "request",
+        "description": "JSON-RPC request"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "string"
+      ],
+      "spread": false,
+      "description": "Request method type."
+    }
+  },
+  {
+    "__docId__": 57,
+    "kind": "method",
+    "name": "execute",
+    "memberof": "src/backend/index.js~Backend",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/backend/index.js~Backend#execute",
+    "access": "public",
+    "description": "Transmit the given JSON-RPC payload to the backend service. The request\ntype is determined using {@link getRequestType} and the request is\ndelegated to method handlers, if they are defined for the given type. The\ndefault handler ({@link defaultHandler}) is used if there is no handler\nfor the request type.\n\nMethod handlers are defined on the sub-class, using the naming convention of\n`<requestType>()` (notice the '()' suffix). Method handlers are passed the\nrequest object and a `send` function to invoke for the request.",
+    "lineNumber": 108,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "request",
+        "description": "JSON-RPC request to execute agains the backend service."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Promise"
+      ],
+      "spread": false,
+      "description": "Promise resolved when response is received."
+    }
+  },
+  {
+    "__docId__": 58,
+    "kind": "method",
+    "name": "onFeedback",
+    "memberof": "src/backend/index.js~Backend",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/backend/index.js~Backend#onFeedback",
+    "access": "public",
+    "description": "Called when receiving feedback from the backend service.",
+    "lineNumber": 144,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "result",
+        "description": "JSON-RPC params data for the feedback event."
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 59,
+    "kind": "method",
+    "name": "onResult",
+    "memberof": "src/backend/index.js~Backend",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/backend/index.js~Backend#onResult",
+    "access": "public",
+    "description": "Called when the backend is done processing the response and ready to hand\nit over to the XAPI frontend. The response should be a valid JSON-RPC\nresponse.",
+    "lineNumber": 156,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "id",
+        "description": "Request id of the JSON-RPC request."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "result",
+        "description": "Result from the backend service."
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 60,
+    "kind": "method",
+    "name": "send",
+    "memberof": "src/backend/index.js~Backend",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/backend/index.js~Backend#send",
+    "access": "public",
+    "description": "Used to send the actual command to the backend service. The command\nshould be generated by the method handler and .",
+    "lineNumber": 172,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "id",
+        "description": "The request id."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Array",
+          "Object",
+          "number",
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "command",
+        "description": "Command from method handler."
+      }
+    ],
+    "abstract": true,
+    "return": null
+  },
+  {
+    "__docId__": 61,
+    "kind": "file",
+    "name": "src/backend/tsh.js",
+    "content": "import log from '../log';\nimport { JSONParser } from '../json-parser';\nimport * as rpc from '../xapi/rpc';\n\nimport Backend from './';\n\n\n/**\n * @external {Duplex} https://nodejs.org/api/stream.html#stream_class_stream_duplex\n */\n\n\nfunction formatValue(value) {\n  switch (typeof value) {\n    case 'boolean':\n      return value ? 'True' : 'False';\n    case 'number':\n    case 'string':\n      return JSON.stringify(value);\n    default:\n      throw new TypeError(`Invalid value ${JSON.stringify(value)}`);\n  }\n}\n\n\nfunction paramString(key, value) {\n  const values = Array.isArray(value) ? value : [value];\n  return values\n    .map(v => `${key}: ${formatValue(v)}`)\n    .join(' ');\n}\n\n\n/**\n * Backend to communicate with a {@link Duplex} stream talking tshell (tsh).\n *\n * @extends {Backend}\n */\nexport default class TSHBackend extends Backend {\n  /**\n   * @param {Duplex} transport - Stream to interact with TSH.\n   */\n  constructor(transport) {\n    super();\n\n    this.feedbackQueries = {};\n    this.nextFeedbackId = 0;\n    this.parser = new JSONParser();\n    this.requests = {};\n    this.transport = transport;\n    this.setState('idle');\n    this.buffer = '';\n\n    this.parser.on('data', this.onParserData.bind(this));\n    this.parser.on('error', error => this.emit('error', error));\n\n    Object.defineProperty(this, 'isReady', {\n      configurable: false,\n      enumerable: true,\n      writable: false,\n      value: new Promise((resolve, reject) => {\n        if (this.state !== 'idle') {\n          reject(new Error('TSHBackend is not in an idle state'));\n          return;\n        }\n\n        this.connectResolve = resolve;\n        this.setState('connecting');\n      }),\n    });\n\n    this.transport\n      .on('data', data => this.onTransportData(data))\n      .on('error', error => this.emit('error', error))\n      .on('close', () => {\n        this.setState('closed');\n        this.emit('close');\n      });\n  }\n\n  bufferHasOK(buffer) {\n    const lines = (this.buffer + buffer.toString()).split('\\n');\n    if (lines.length) {\n      this.buffer = lines[lines.length - 1];\n    }\n    return lines.some(line => line === 'OK');\n  }\n\n  setState(newState) {\n    this.state = newState;\n  }\n\n  /**\n   * @override\n   */\n  close() {\n    this.transport.close();\n  }\n\n  onParserData(data) {\n    if (!{}.hasOwnProperty.call(data, 'ResultId')) {\n      log.debug('[tsh] (feedback):', JSON.stringify(data));\n      this.onFeedback(rpc.parseFeedbackResponse(data));\n    } else {\n      log.debug('[tsh] (result):', JSON.stringify(data));\n      this.onResult(data.ResultId, data);\n    }\n  }\n\n  onTransportData(data) {\n    switch (this.state) {\n      case 'connecting':\n        if (this.bufferHasOK(data)) {\n          log.debug('[transport] (connecting)', data.toString());\n          this.setState('initializing');\n          this.write('echo off\\n');\n          this.emit('initializing');\n        }\n        break;\n      case 'initializing':\n        if (this.bufferHasOK(data)) {\n          log.debug('[transport] (initializing)', data.toString());\n          this.buffer = '';\n          this.write('xpreferences outputmode json\\n');\n          this.setState('ready');\n          this.connectResolve(true);\n          this.emit('ready');\n        }\n        break;\n      case 'ready':\n        log.debug(`to parser: \"${data.toString()}\"`);\n        this.parser.write(data);\n        break;\n      default:\n        this.emit('error', new Error('TSHBackend is in an invalid state for input'));\n    }\n  }\n\n  /**\n   * @override\n   */\n  send(id, command, body) {\n    let cmd = `${command} | resultId=\"${id}\"\\n`;\n    if (body !== undefined) {\n      cmd += `${body}\\n`;\n      const length = cmd.length;\n      cmd = `{${length}} \\n${cmd}`;\n    }\n\n    this.write(cmd);\n  }\n\n  write(data) {\n    log.debug(`write: ${JSON.stringify(data)}`);\n    this.transport.write(data);\n  }\n\n  // XAPI json-rpc method handlers\n\n  /**\n   * @ignore\n   */\n  ['xCommand()']({ method, params }, send) { // eslint-disable-line class-methods-use-this\n    const paramsCopy = Object.assign({}, params);\n    const body = paramsCopy.body;\n    delete paramsCopy.body;\n\n    const tshParams = paramsCopy\n      ? Object\n        .keys(paramsCopy)\n        .sort()\n        .map(k => paramString(k, paramsCopy[k]))\n      : [];\n\n    const cmd = method\n      .split('/')\n      .concat(tshParams)\n      .join(' ');\n\n    return send(cmd, body)\n      .then(rpc.createCommandResponse);\n  }\n\n  /**\n   * @ignore\n   */\n  ['xFeedback/Subscribe()']({ params }, send) {\n    const query = params.Query\n      .map(part => (typeof part === 'number' ? `[${part}]` : `/${part}`))\n      .join('');\n    return send(`xfeedback register ${query}`)\n      .then(() => {\n        const id = this.nextFeedbackId;\n        this.nextFeedbackId += 1;\n        this.feedbackQueries[id] = query;\n        return { Id: id };\n      });\n  }\n\n  /**\n   * @ignore\n   */\n  ['xFeedback/Unsubscribe()']({ params }, send) {\n    const id = params.Id;\n\n    if (!{}.hasOwnProperty.call(this.feedbackQueries, id)) {\n      throw new Error(`Invalid feedback id: ${id}`);\n    }\n\n    const path = this.feedbackQueries[id];\n\n    return send(`xfeedback deregister ${path}`)\n      .then(() => {\n        delete this.feedbackQueries[id];\n        return true;\n      });\n  }\n\n  /**\n   * @ignore\n   */\n  ['xGet()'](request, send) { // eslint-disable-line class-methods-use-this\n    const path = request.params.Path.join(' ');\n    return send(`x${path}`)\n      .then(response => rpc.createGetResponse(request, response));\n  }\n\n  /**\n   * @ignore\n   */\n  ['xSet()'](request, send) { // eslint-disable-line class-methods-use-this\n    const { params } = request;\n    const path = params.Path.join(' ');\n    const value = formatValue(params.Value);\n    return send(`x${path}: ${value}`)\n      .then(response => rpc.createSetResponse(request, response));\n  }\n}\n",
+    "static": true,
+    "longname": "C:/Local/tmp/node_modules/jsxapi/src/backend/tsh.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 62,
+    "kind": "external",
+    "name": "Duplex",
+    "externalLink": "https://nodejs.org/api/stream.html#stream_class_stream_duplex",
+    "memberof": "src/backend/tsh.js",
+    "static": true,
+    "longname": "src/backend/tsh.js~Duplex",
+    "access": "public",
+    "description": "",
+    "lineNumber": 13
+  },
+  {
+    "__docId__": 63,
+    "kind": "function",
+    "name": "paramString",
+    "memberof": "src/backend/tsh.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/backend/tsh.js~paramString",
+    "access": "public",
+    "export": false,
+    "importPath": "jsxapi/lib/backend/tsh.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 26,
+    "undocument": true,
+    "params": [
+      {
+        "name": "key",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "value",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 64,
+    "kind": "class",
+    "name": "TSHBackend",
+    "memberof": "src/backend/tsh.js",
+    "static": true,
+    "longname": "src/backend/tsh.js~TSHBackend",
+    "access": "public",
+    "export": true,
+    "importPath": "jsxapi/lib/backend/tsh.js",
+    "importStyle": "TSHBackend",
+    "description": "Backend to communicate with a {@link Duplex} stream talking tshell (tsh).",
+    "lineNumber": 39,
+    "interface": false,
+    "extends": [
+      "Backend"
+    ]
+  },
+  {
+    "__docId__": 65,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "src/backend/tsh.js~TSHBackend",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/backend/tsh.js~TSHBackend#constructor",
+    "access": "public",
+    "description": "",
+    "lineNumber": 43,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Duplex"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "transport",
+        "description": "Stream to interact with TSH."
+      }
+    ]
+  },
+  {
+    "__docId__": 66,
+    "kind": "member",
+    "name": "feedbackQueries",
+    "memberof": "src/backend/tsh.js~TSHBackend",
+    "static": false,
+    "longname": "src/backend/tsh.js~TSHBackend#feedbackQueries",
+    "access": "public",
+    "description": null,
+    "lineNumber": 46,
+    "undocument": true,
+    "type": {
+      "types": [
+        "{}"
+      ]
+    }
+  },
+  {
+    "__docId__": 67,
+    "kind": "member",
+    "name": "nextFeedbackId",
+    "memberof": "src/backend/tsh.js~TSHBackend",
+    "static": false,
+    "longname": "src/backend/tsh.js~TSHBackend#nextFeedbackId",
+    "access": "public",
+    "description": null,
+    "lineNumber": 47,
+    "undocument": true,
+    "type": {
+      "types": [
+        "number"
+      ]
+    }
+  },
+  {
+    "__docId__": 68,
+    "kind": "member",
+    "name": "parser",
+    "memberof": "src/backend/tsh.js~TSHBackend",
+    "static": false,
+    "longname": "src/backend/tsh.js~TSHBackend#parser",
+    "access": "public",
+    "description": null,
+    "lineNumber": 48,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 69,
+    "kind": "member",
+    "name": "requests",
+    "memberof": "src/backend/tsh.js~TSHBackend",
+    "static": false,
+    "longname": "src/backend/tsh.js~TSHBackend#requests",
+    "access": "public",
+    "description": null,
+    "lineNumber": 49,
+    "undocument": true,
+    "type": {
+      "types": [
+        "{}"
+      ]
+    }
+  },
+  {
+    "__docId__": 70,
+    "kind": "member",
+    "name": "transport",
+    "memberof": "src/backend/tsh.js~TSHBackend",
+    "static": false,
+    "longname": "src/backend/tsh.js~TSHBackend#transport",
+    "access": "public",
+    "description": null,
+    "lineNumber": 50,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 71,
+    "kind": "member",
+    "name": "buffer",
+    "memberof": "src/backend/tsh.js~TSHBackend",
+    "static": false,
+    "longname": "src/backend/tsh.js~TSHBackend#buffer",
+    "access": "public",
+    "description": null,
+    "lineNumber": 52,
+    "undocument": true,
+    "type": {
+      "types": [
+        "string"
+      ]
+    }
+  },
+  {
+    "__docId__": 72,
+    "kind": "member",
+    "name": "connectResolve",
+    "memberof": "src/backend/tsh.js~TSHBackend",
+    "static": false,
+    "longname": "src/backend/tsh.js~TSHBackend#connectResolve",
+    "access": "public",
+    "description": null,
+    "lineNumber": 67,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 73,
+    "kind": "method",
+    "name": "bufferHasOK",
+    "memberof": "src/backend/tsh.js~TSHBackend",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/backend/tsh.js~TSHBackend#bufferHasOK",
+    "access": "public",
+    "description": null,
+    "lineNumber": 81,
+    "undocument": true,
+    "params": [
+      {
+        "name": "buffer",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 75,
+    "kind": "method",
+    "name": "setState",
+    "memberof": "src/backend/tsh.js~TSHBackend",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/backend/tsh.js~TSHBackend#setState",
+    "access": "public",
+    "description": null,
+    "lineNumber": 89,
+    "undocument": true,
+    "params": [
+      {
+        "name": "newState",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 76,
+    "kind": "member",
+    "name": "state",
+    "memberof": "src/backend/tsh.js~TSHBackend",
+    "static": false,
+    "longname": "src/backend/tsh.js~TSHBackend#state",
+    "access": "public",
+    "description": null,
+    "lineNumber": 90,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 77,
+    "kind": "method",
+    "name": "close",
+    "memberof": "src/backend/tsh.js~TSHBackend",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/backend/tsh.js~TSHBackend#close",
+    "access": "public",
+    "description": "",
+    "lineNumber": 96,
+    "override": true,
+    "params": [],
+    "return": null
+  },
+  {
+    "__docId__": 78,
+    "kind": "method",
+    "name": "onParserData",
+    "memberof": "src/backend/tsh.js~TSHBackend",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/backend/tsh.js~TSHBackend#onParserData",
+    "access": "public",
+    "description": null,
+    "lineNumber": 100,
+    "undocument": true,
+    "params": [
+      {
+        "name": "data",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 79,
+    "kind": "method",
+    "name": "onTransportData",
+    "memberof": "src/backend/tsh.js~TSHBackend",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/backend/tsh.js~TSHBackend#onTransportData",
+    "access": "public",
+    "description": null,
+    "lineNumber": 110,
+    "undocument": true,
+    "params": [
+      {
+        "name": "data",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 81,
+    "kind": "method",
+    "name": "send",
+    "memberof": "src/backend/tsh.js~TSHBackend",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/backend/tsh.js~TSHBackend#send",
+    "access": "public",
+    "description": "",
+    "lineNumber": 142,
+    "override": true,
+    "params": [
+      {
+        "name": "id",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "command",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "body",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 82,
+    "kind": "method",
+    "name": "write",
+    "memberof": "src/backend/tsh.js~TSHBackend",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/backend/tsh.js~TSHBackend#write",
+    "access": "public",
+    "description": null,
+    "lineNumber": 153,
+    "undocument": true,
+    "params": [
+      {
+        "name": "data",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 83,
+    "kind": "method",
+    "name": "['xCommand()']",
+    "memberof": "src/backend/tsh.js~TSHBackend",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/backend/tsh.js~TSHBackend#['xCommand()']",
+    "access": "public",
+    "description": "",
+    "lineNumber": 163,
+    "ignore": true,
+    "params": [
+      {
+        "name": "objectPattern",
+        "types": [
+          "{\"method\": *, \"params\": *}"
+        ],
+        "defaultRaw": {
+          "method": null,
+          "params": null
+        },
+        "defaultValue": "{\"method\":null,\"params\":null}"
+      },
+      {
+        "name": "send",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 84,
+    "kind": "method",
+    "name": "['xFeedback/Subscribe()']",
+    "memberof": "src/backend/tsh.js~TSHBackend",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/backend/tsh.js~TSHBackend#['xFeedback/Subscribe()']",
+    "access": "public",
+    "description": "",
+    "lineNumber": 187,
+    "ignore": true,
+    "params": [
+      {
+        "name": "objectPattern",
+        "types": [
+          "{\"params\": *}"
+        ],
+        "defaultRaw": {
+          "params": null
+        },
+        "defaultValue": "{\"params\":null}"
+      },
+      {
+        "name": "send",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 86,
+    "kind": "method",
+    "name": "['xFeedback/Unsubscribe()']",
+    "memberof": "src/backend/tsh.js~TSHBackend",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/backend/tsh.js~TSHBackend#['xFeedback/Unsubscribe()']",
+    "access": "public",
+    "description": "",
+    "lineNumber": 203,
+    "ignore": true,
+    "params": [
+      {
+        "name": "objectPattern",
+        "types": [
+          "{\"params\": *}"
+        ],
+        "defaultRaw": {
+          "params": null
+        },
+        "defaultValue": "{\"params\":null}"
+      },
+      {
+        "name": "send",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 87,
+    "kind": "method",
+    "name": "['xGet()']",
+    "memberof": "src/backend/tsh.js~TSHBackend",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/backend/tsh.js~TSHBackend#['xGet()']",
+    "access": "public",
+    "description": "",
+    "lineNumber": 222,
+    "ignore": true,
+    "params": [
+      {
+        "name": "request",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "send",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 88,
+    "kind": "method",
+    "name": "['xSet()']",
+    "memberof": "src/backend/tsh.js~TSHBackend",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/backend/tsh.js~TSHBackend#['xSet()']",
+    "access": "public",
+    "description": "",
+    "lineNumber": 231,
+    "ignore": true,
+    "params": [
+      {
+        "name": "request",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "send",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 89,
+    "kind": "file",
+    "name": "src/backend/ws.js",
+    "content": "import { EventEmitter } from 'events';\n\n\n/**\n * @external {WebSocket} https://developer.mozilla.org/en-US/docs/Web/API/WebSocket\n */\n\n\n/**\n * Backend to communicate with a WebSocket server.\n *\n * This backend expects to talk directly to a JSON-RPC WebSocket backend.\n * Authentication has to be handled by the transport layer, there is no\n * support for that on the socket itself.\n *\n * Once the socket is open, it is expected to be in the ready state.\n *\n * @implements {Backend}\n */\nexport default class WSBackend extends EventEmitter {\n  /**\n   * @param {Object|string} urlOrWS - WebSocket object or URL of the server.\n   */\n  constructor(urlOrWS) {\n    super();\n    /**\n     * @type {WebSocket}\n     */\n    this.ws = typeof urlOrWS !== 'string' ? urlOrWS : new global.WebSocket(urlOrWS);\n    this.ws.onclose = this.handleClose.bind(this);\n    this.ws.onerror = this.handleError.bind(this);\n    this.ws.onmessage = this.handleMessage.bind(this);\n\n    let resolveReady;\n    /**\n     * @type {Promise}\n     */\n    this.isReady = new Promise((r) => { resolveReady = r; });\n    this.ws.onopen = () => {\n      this.emit('ready');\n      resolveReady();\n    };\n  }\n\n  close() {\n    this.ws.close();\n  }\n\n  handleClose(event) {\n    if (event.code !== 1000) {\n      this.emit('error', 'WebSocket closed unexpectedly');\n    } else {\n      this.emit('close');\n    }\n  }\n\n  handleError() {\n    this.emit('error', 'WebSocket error');\n  }\n\n  handleMessage(message) {\n    const data = JSON.parse(message.data);\n    this.emit('data', data);\n  }\n\n  execute(command) {\n    this.isReady.then(() => {\n      this.ws.send(JSON.stringify(command));\n    });\n  }\n}\n",
+    "static": true,
+    "longname": "C:/Local/tmp/node_modules/jsxapi/src/backend/ws.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 90,
+    "kind": "external",
+    "name": "WebSocket",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/API/WebSocket",
+    "memberof": "src/backend/ws.js",
+    "static": true,
+    "longname": "src/backend/ws.js~WebSocket",
+    "access": "public",
+    "description": ""
+  },
+  {
+    "__docId__": 91,
+    "kind": "class",
+    "name": "WSBackend",
+    "memberof": "src/backend/ws.js",
+    "static": true,
+    "longname": "src/backend/ws.js~WSBackend",
+    "access": "public",
+    "export": true,
+    "importPath": "jsxapi/lib/backend/ws.js",
+    "importStyle": "WSBackend",
+    "description": "Backend to communicate with a WebSocket server.\n\nThis backend expects to talk directly to a JSON-RPC WebSocket backend.\nAuthentication has to be handled by the transport layer, there is no\nsupport for that on the socket itself.\n\nOnce the socket is open, it is expected to be in the ready state.",
+    "lineNumber": 20,
+    "interface": false,
+    "extends": [
+      "events~EventEmitter"
+    ],
+    "implements": [
+      "Backend"
+    ]
+  },
+  {
+    "__docId__": 92,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "src/backend/ws.js~WSBackend",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/backend/ws.js~WSBackend#constructor",
+    "access": "public",
+    "description": "",
+    "lineNumber": 24,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Object",
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "urlOrWS",
+        "description": "WebSocket object or URL of the server."
+      }
+    ]
+  },
+  {
+    "__docId__": 93,
+    "kind": "member",
+    "name": "ws",
+    "memberof": "src/backend/ws.js~WSBackend",
+    "static": false,
+    "longname": "src/backend/ws.js~WSBackend#ws",
+    "access": "public",
+    "description": "",
+    "lineNumber": 29,
+    "type": {
+      "nullable": null,
+      "types": [
+        "WebSocket"
+      ],
+      "spread": false,
+      "description": null
+    }
+  },
+  {
+    "__docId__": 94,
+    "kind": "member",
+    "name": "isReady",
+    "memberof": "src/backend/ws.js~WSBackend",
+    "static": false,
+    "longname": "src/backend/ws.js~WSBackend#isReady",
+    "access": "public",
+    "description": "",
+    "lineNumber": 38,
+    "type": {
+      "nullable": null,
+      "types": [
+        "Promise"
+      ],
+      "spread": false,
+      "description": null
+    }
+  },
+  {
+    "__docId__": 95,
+    "kind": "method",
+    "name": "close",
+    "memberof": "src/backend/ws.js~WSBackend",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/backend/ws.js~WSBackend#close",
+    "access": "public",
+    "description": null,
+    "lineNumber": 45,
+    "undocument": true,
+    "params": [],
+    "return": null
+  },
+  {
+    "__docId__": 96,
+    "kind": "method",
+    "name": "handleClose",
+    "memberof": "src/backend/ws.js~WSBackend",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/backend/ws.js~WSBackend#handleClose",
+    "access": "public",
+    "description": null,
+    "lineNumber": 49,
+    "undocument": true,
+    "params": [
+      {
+        "name": "event",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 97,
+    "kind": "method",
+    "name": "handleError",
+    "memberof": "src/backend/ws.js~WSBackend",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/backend/ws.js~WSBackend#handleError",
+    "access": "public",
+    "description": null,
+    "lineNumber": 57,
+    "undocument": true,
+    "params": [],
+    "return": null
+  },
+  {
+    "__docId__": 98,
+    "kind": "method",
+    "name": "handleMessage",
+    "memberof": "src/backend/ws.js~WSBackend",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/backend/ws.js~WSBackend#handleMessage",
+    "access": "public",
+    "description": null,
+    "lineNumber": 61,
+    "undocument": true,
+    "params": [
+      {
+        "name": "message",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 99,
+    "kind": "method",
+    "name": "execute",
+    "memberof": "src/backend/ws.js~WSBackend",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/backend/ws.js~WSBackend#execute",
+    "access": "public",
+    "description": null,
+    "lineNumber": 66,
+    "undocument": true,
+    "params": [
+      {
+        "name": "command",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 100,
+    "kind": "file",
+    "name": "src/cli.js",
+    "content": "#!/usr/bin/env node\n\nimport commander from 'commander';\n\nimport fs from 'fs';\nimport REPL from 'repl';\n\nimport pkg from '../package.json';\nimport log from './log';\nimport { connect } from './';\n\n\nfunction evalFile(source, xapi) {\n  const context = new Function('xapi', source); // eslint-disable-line no-new-func\n  context(xapi);\n}\n\n\nfunction startRepl(xapi) {\n  const repl = REPL.start({});\n  repl.on('exit', () => xapi.close());\n  repl.context.xapi = xapi;\n}\n\n\ncommander\n  .version(pkg.version)\n  .arguments('<host> [file]')\n  .description('connect to a codec and launch a repl')\n  .option('-p, --port <port>', 'port to connect to', 22)\n  .option('-U, --username <user>', 'username to authenticate with', 'admin')\n  .option('-P, --password <password>', 'password to authenticate with', '')\n  .option('-C, --command <command>', 'command to execute on remote host', '')\n  .option(\n    '-l, --loglevel <level>',\n    'set application log level (trace|debug|info|warn|error|silent)',\n    /^(trace|debug|info|warn|error|silent)$/i,\n    'warn')\n  .action((host, file, options) => {\n    if (!host) {\n      log.error('Please specify a host to connect to');\n      commander.help();\n    }\n\n    const source = file && fs.readFileSync(file);\n    const xapi = connect(host, options)\n      .on('error', (error) => { log.error('xapi error:', error); })\n      .on('ready', () => {\n        if (source) {\n          evalFile(source, xapi);\n        } else {\n          startRepl(xapi);\n        }\n      });\n  })\n  .parse(process.argv);\n",
+    "static": true,
+    "longname": "C:/Local/tmp/node_modules/jsxapi/src/cli.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 101,
+    "kind": "function",
+    "name": "evalFile",
+    "memberof": "src/cli.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/cli.js~evalFile",
+    "access": "public",
+    "export": false,
+    "importPath": "jsxapi/lib/cli.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 13,
+    "undocument": true,
+    "params": [
+      {
+        "name": "source",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "xapi",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 102,
+    "kind": "function",
+    "name": "startRepl",
+    "memberof": "src/cli.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/cli.js~startRepl",
+    "access": "public",
+    "export": false,
+    "importPath": "jsxapi/lib/cli.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 19,
+    "undocument": true,
+    "params": [
+      {
+        "name": "xapi",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 103,
+    "kind": "file",
+    "name": "src/index.js",
+    "content": "import parseUrl from 'url-parse';\nimport WebSocket from 'ws';\n\nimport log from './log';\nimport connectSSH from './transport/ssh';\nimport XAPI from './xapi';\nimport TSHBackend from './backend/tsh';\nimport WSBackend from './backend/ws';\nimport spawnTSH from './transport/tsh';\n\n\n/**\n * Connect to an XAPI endpoint.\n *\n * @example\n * const xapi = connect('ssh://host.example.com:22');\n *\n * @param {string} url - Connection specification.\n * @param {Object} [options] - Connect options.\n * @param {string} [options.host] -\n *     Hostname to connect to.\n * @param {string} [options.username] -\n *     Username to authenticate with if protocol requires authentication.\n * @param {string} [options.password] -\n *     Password to authenticate with if protocol requires authentication.\n * @param {string} [options.loglevel] -\n *     Set the internal log level.\n * @return {XAPI} - XAPI interface connected to the given URI.\n */\nexport function connect(url, options) { // eslint-disable-line import/prefer-default-export\n  if (arguments.length === 1 && typeof url === 'object') {\n    /* eslint-disable no-param-reassign */\n    options = url;\n    url = '';\n    /* eslint-enable */\n  }\n\n  const parsedUrl = parseUrl(url.match(/^\\w+:\\/\\//) ? url : `ssh://${url}`);\n\n  const opts = Object.assign({\n    host: '',\n    password: '',\n    protocol: 'ssh:',\n    username: 'admin',\n    loglevel: 'warn',\n  }, parsedUrl, options);\n\n  const { hostname: host, port } = opts;\n  delete opts.hostname;\n  opts.host = host;\n\n  log.setLevel(opts.loglevel);\n  log.info('connecting to', url);\n\n  let backend;\n  switch (opts.protocol) {\n    case '':\n    case 'ssh:': {\n      const transport = connectSSH(opts);\n      backend = new TSHBackend(transport);\n      break;\n    }\n    case 'tsh:': {\n      const transport = spawnTSH(host, port);\n      backend = new TSHBackend(transport);\n      break;\n    }\n    case 'ws:':\n    case 'wss:': {\n      const transport = new WebSocket(url);\n      backend = new WSBackend(transport);\n      break;\n    }\n    default:\n      throw new Error(`Invalid protocol: ${opts.protocol}`);\n  }\n\n  return new XAPI(backend);\n}\n",
+    "static": true,
+    "longname": "C:/Local/tmp/node_modules/jsxapi/src/index.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 104,
+    "kind": "function",
+    "name": "connect",
+    "memberof": "src/index.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/index.js~connect",
+    "access": "public",
+    "export": true,
+    "importPath": "jsxapi",
+    "importStyle": "{connect}",
+    "description": "Connect to an XAPI endpoint.",
+    "examples": [
+      "const xapi = connect('ssh://host.example.com:22');"
+    ],
+    "lineNumber": 30,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "url",
+        "description": "Connection specification."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": true,
+        "name": "options",
+        "description": "Connect options."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": true,
+        "name": "options.host",
+        "description": "Hostname to connect to."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": true,
+        "name": "options.username",
+        "description": "Username to authenticate with if protocol requires authentication."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": true,
+        "name": "options.password",
+        "description": "Password to authenticate with if protocol requires authentication."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": true,
+        "name": "options.loglevel",
+        "description": "Set the internal log level."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "XAPI"
+      ],
+      "spread": false,
+      "description": "XAPI interface connected to the given URI."
+    }
+  },
+  {
+    "__docId__": 105,
+    "kind": "file",
+    "name": "src/json-parser.js",
+    "content": "import { Transform } from 'stream';\n\nimport Parser from 'jsonparse';\n\n\n/**\n * @external {Transform} https://nodejs.org/api/stream.html#stream_class_stream_transform\n */\n\n\n/**\n * Streaming JSON parser. Implements the Node.js {@link Duplex} stream API.\n */\nexport class JSONParser extends Transform {\n  constructor() {\n    super({ objectMode: true });\n    this.enc = 'utf8';  // Default encoding\n    this.reset();\n  }\n\n  reset() {\n    this.parser = new Parser();\n    this.parser.onError = this.onError.bind(this);\n    this.parser.onValue = this.onValue.bind(this);\n  }\n\n  onError(e) {\n    this.emit('error', e);\n    this.reset();\n  }\n\n  onValue(value) {\n    if (!this.parser.stack.length) {\n      this.push(value);\n    }\n  }\n\n  _flush(callback) {\n    if (this.parser.stack.length) {\n      this.onError(new Error('Unexpected end of input'));\n    }\n    callback();\n  }\n\n  _transform(chunk, encoding, callback) {\n    const data = chunk.toString(this.enc);\n    data.split(/\\n/).forEach((line) => {\n      try {\n        this.parser.write(line);\n      } catch (error) {\n        this.onError(error);\n      }\n    });\n    callback();\n  }\n}\n\n\n/**\n * Synchronous frontend to {@link JSONparser}.\n *\n * @param {string} json - JSON string input.\n * @return {Object} - Parsed JSON object.\n */\nexport function parseJSON(json) {\n  let obj;\n  const parser = new JSONParser();\n\n  parser.on('data', (_obj) => { obj = _obj; });\n  parser.end(json);\n\n  return obj;\n}\n",
+    "static": true,
+    "longname": "C:/Local/tmp/node_modules/jsxapi/src/json-parser.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 106,
+    "kind": "external",
+    "name": "Transform",
+    "externalLink": "https://nodejs.org/api/stream.html#stream_class_stream_transform",
+    "memberof": "src/json-parser.js",
+    "static": true,
+    "longname": "src/json-parser.js~Transform",
+    "access": "public",
+    "description": ""
+  },
+  {
+    "__docId__": 107,
+    "kind": "class",
+    "name": "JSONParser",
+    "memberof": "src/json-parser.js",
+    "static": true,
+    "longname": "src/json-parser.js~JSONParser",
+    "access": "public",
+    "export": true,
+    "importPath": "jsxapi/lib/json-parser.js",
+    "importStyle": "{JSONParser}",
+    "description": "Streaming JSON parser. Implements the Node.js {@link Duplex} stream API.",
+    "lineNumber": 14,
+    "interface": false,
+    "extends": [
+      "stream~Transform"
+    ]
+  },
+  {
+    "__docId__": 108,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "src/json-parser.js~JSONParser",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/json-parser.js~JSONParser#constructor",
+    "access": "public",
+    "description": null,
+    "lineNumber": 15,
+    "undocument": true
+  },
+  {
+    "__docId__": 109,
+    "kind": "member",
+    "name": "enc",
+    "memberof": "src/json-parser.js~JSONParser",
+    "static": false,
+    "longname": "src/json-parser.js~JSONParser#enc",
+    "access": "public",
+    "description": null,
+    "lineNumber": 17,
+    "undocument": true,
+    "type": {
+      "types": [
+        "string"
+      ]
+    }
+  },
+  {
+    "__docId__": 110,
+    "kind": "method",
+    "name": "reset",
+    "memberof": "src/json-parser.js~JSONParser",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/json-parser.js~JSONParser#reset",
+    "access": "public",
+    "description": null,
+    "lineNumber": 21,
+    "undocument": true,
+    "params": [],
+    "return": null
+  },
+  {
+    "__docId__": 111,
+    "kind": "member",
+    "name": "parser",
+    "memberof": "src/json-parser.js~JSONParser",
+    "static": false,
+    "longname": "src/json-parser.js~JSONParser#parser",
+    "access": "public",
+    "description": null,
+    "lineNumber": 22,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 112,
+    "kind": "method",
+    "name": "onError",
+    "memberof": "src/json-parser.js~JSONParser",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/json-parser.js~JSONParser#onError",
+    "access": "public",
+    "description": null,
+    "lineNumber": 27,
+    "undocument": true,
+    "params": [
+      {
+        "name": "e",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 113,
+    "kind": "method",
+    "name": "onValue",
+    "memberof": "src/json-parser.js~JSONParser",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/json-parser.js~JSONParser#onValue",
+    "access": "public",
+    "description": null,
+    "lineNumber": 32,
+    "undocument": true,
+    "params": [
+      {
+        "name": "value",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 114,
+    "kind": "method",
+    "name": "_flush",
+    "memberof": "src/json-parser.js~JSONParser",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/json-parser.js~JSONParser#_flush",
+    "access": "private",
+    "description": null,
+    "lineNumber": 38,
+    "undocument": true,
+    "params": [
+      {
+        "name": "callback",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 115,
+    "kind": "method",
+    "name": "_transform",
+    "memberof": "src/json-parser.js~JSONParser",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/json-parser.js~JSONParser#_transform",
+    "access": "private",
+    "description": null,
+    "lineNumber": 45,
+    "undocument": true,
+    "params": [
+      {
+        "name": "chunk",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "encoding",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "callback",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 116,
+    "kind": "function",
+    "name": "parseJSON",
+    "memberof": "src/json-parser.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/json-parser.js~parseJSON",
+    "access": "public",
+    "export": true,
+    "importPath": "jsxapi/lib/json-parser.js",
+    "importStyle": "{parseJSON}",
+    "description": "Synchronous frontend to {@link JSONparser}.",
+    "lineNumber": 65,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "json",
+        "description": "JSON string input."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Object"
+      ],
+      "spread": false,
+      "description": "Parsed JSON object."
+    }
+  },
+  {
+    "__docId__": 117,
+    "kind": "file",
+    "name": "src/log.js",
+    "content": "/*\n * This module basically patches the `loglevel` library with some niceities for\n * named loggers. Named loggers prefix the log output with their log name and\n * their level can be set independently.\n */\n\nimport loglevel from 'loglevel';\n\n\nif (!loglevel.isPatched) {\n  const origMethodFactory = loglevel.methodFactory;\n  const loggers = new Set();\n\n\n  /*\n   * Bless the `log` object with custom plugins\n   */\n  Object.assign(loglevel, {\n    isPatched: true,\n\n    methodFactory(methodName, logLevel, loggerName) {\n      if (loggerName) {\n        loggers.add(loggerName);\n      }\n      const rawMethod = origMethodFactory(methodName, logLevel, loggerName);\n      return (...args) => {\n        rawMethod(`[${loggerName || 'root'}]`, ...args);\n      };\n    },\n\n    /*\n     * Returns a list of logger names, excluding the root logger.\n     */\n    getLoggers() {\n      return [...loggers];\n    },\n\n    setGlobalLevel(level) {\n      const allLoggers = [loglevel].concat(\n        loglevel.getLoggers().map(name => loglevel.getLogger(name)));\n\n      allLoggers.forEach((logger) => { logger.setLevel(level); });\n    },\n\n    setLevelTrace() { loglevel.setGlobalLevel('trace'); },\n    setLevelDebug() { loglevel.setGlobalLevel('debug'); },\n    setLevelInfo() { loglevel.setGlobalLevel('info'); },\n    setLevelWarn() { loglevel.setGlobalLevel('warn'); },\n    setLevelError() { loglevel.setGlobalLevel('error'); },\n  });\n\n\n  // Required to apply the plugin to log\n  loglevel.setLevel(loglevel.getLevel());\n}\n\n\nexport default loglevel.getLogger('jsxapi');\n",
+    "static": true,
+    "longname": "C:/Local/tmp/node_modules/jsxapi/src/log.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 118,
+    "kind": "file",
+    "name": "src/transport/ssh.js",
+    "content": "import DuplexPassThrough from 'duplex-passthrough';\nimport { Client } from 'ssh2';\n\nimport log from '../log';\n\n\n/*\n * Patch DuplexPassThrough.prototype.on to always return \"this\".\n * For some event types it delegates and return the return value of\n * the contained reader/writer instances.\n */\nif (!DuplexPassThrough.prototype.on.isPatched) {\n  const origOn = DuplexPassThrough.prototype.on;\n  const patchedFunc = function on(...args) {\n    origOn.call(this, ...args);\n    return this;\n  };\n  patchedFunc.isPatched = true;\n  DuplexPassThrough.prototype.on = patchedFunc;\n  DuplexPassThrough.prototype.addListener = patchedFunc;\n}\n\n\n/**\n * Creates a {@link Duplex} SSH stream.\n *\n * @param {object} options\n * @param {string} options.host - Hostname or IP address.\n * @param {number} options.port - Port to connect to.\n * @param {string} options.username - Username used in authentication.\n * @param {string} options.password - Password used in authentication.\n * @param {string} options.command\n * - If command is specified, it is executed on the remote host instead of a login shell.\n * @return {Duplex} - SSH stream.\n */\nexport default function connectSSH(options) {\n  let closing = false;\n\n  const mergedOpts = Object.assign({\n    client: new Client(),\n    transport: new DuplexPassThrough(),\n  }, options);\n\n  const { client, password, transport } = mergedOpts;\n  delete mergedOpts.password;\n\n  function onKeyboardInteractive(n, i, il, p, finish) {\n    finish([password]);\n  }\n\n  function onReady() {\n    log.debug('[SSH] connection ready');\n    client.shell(false, (err, sshStream) => {\n      if (err) {\n        log.error('[SSH] shell error:', err);\n        transport.emit('error', err);\n        return;\n      }\n\n      log.debug('[SSH] shell ready');\n      sshStream\n        .on('error', (error) => { transport.emit('error', error); })\n        .on('end', () => {\n          if (!closing) {\n            transport.emit('error', 'Connection terminated remotely');\n          }\n        })\n        .on('close', () => { transport.emit('close'); });\n\n      if (options.command) {\n        client.exec(options.command, (binaryErr, binaryStream) => {\n          if (binaryErr) {\n            log.error('[SSH] exec error:', err);\n            transport.emit('error', binaryErr);\n            return;\n          }\n          binaryStream.on('error', (error) => {\n            log.error('[SSH] stream error:', error);\n            transport.emit('error', error);\n          });\n          log.debug('[SSH] exec ready');\n          transport.wrapStream(binaryStream);\n        });\n        return;\n      }\n\n      transport.wrapStream(sshStream);\n    });\n  }\n\n  client\n    .on('keyboard-interactive', onKeyboardInteractive)\n    .on('ready', onReady)\n    .on('error', (error) => { transport.emit('error', error.level); })\n    .on('close', () => { transport.emit('close'); })\n    .connect(Object.assign({ tryKeyboard: true }, mergedOpts));\n\n  transport.close = () => {\n    closing = true;\n    client.end();\n  };\n\n  return transport;\n}\n",
+    "static": true,
+    "longname": "C:/Local/tmp/node_modules/jsxapi/src/transport/ssh.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 119,
+    "kind": "function",
+    "name": "connectSSH",
+    "memberof": "src/transport/ssh.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/transport/ssh.js~connectSSH",
+    "access": "public",
+    "export": true,
+    "importPath": "jsxapi/lib/transport/ssh.js",
+    "importStyle": "connectSSH",
+    "description": "Creates a {@link Duplex} SSH stream.",
+    "lineNumber": 36,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "options",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "options.host",
+        "description": "Hostname or IP address."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "options.port",
+        "description": "Port to connect to."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "options.username",
+        "description": "Username used in authentication."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "options.password",
+        "description": "Password used in authentication."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "options.command",
+        "description": "If command is specified, it is executed on the remote host instead of a login shell."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Duplex"
+      ],
+      "spread": false,
+      "description": "SSH stream."
+    }
+  },
+  {
+    "__docId__": 120,
+    "kind": "file",
+    "name": "src/transport/stream.js",
+    "content": "import { Duplex } from 'stream';\n\n\n/**\n * Duplex stream transport for integrations where JSXAPI does not have direct\n * access to the network or local ipc. E.g. for sandboxing or test stubs.\n */\nexport default class StreamTransport extends Duplex {\n  /**\n   * Creates a {@link Duplex} stream.\n   *\n   * @param {function(data: string)} send - Callback for outbound data\n   * @return {Duplex} - Duplex stream.\n   */\n  constructor(send, options) {\n    super(options);\n    this.buffer = [];\n    this.canPush = false;\n    this.send = send;\n    this.on('finish', () => { this.emit('close'); });\n  }\n\n  /**\n   * Closes the stream transport\n   */\n  close() {\n    this.end();\n  }\n\n  /**\n   * @param {string} data - Push inbound data from the XAPI service to JSXAPI.\n   * @return {boolean} - Boolean signaling if the stream can receive more data.\n   */\n  push(data) {\n    this.buffer.push(data);\n    return this.attemptFlush();\n  }\n\n  attemptFlush() {\n    while (this.canPush && this.buffer.length) {\n      this.canPush = super.push(this.buffer.shift());\n    }\n    return this.canPush;\n  }\n\n  _read() {\n    this.canPush = true;\n    this.attemptFlush();\n  }\n\n  _write(chunk, encoding, callback) {\n    this.send(chunk, encoding, callback);\n  }\n}\n",
+    "static": true,
+    "longname": "C:/Local/tmp/node_modules/jsxapi/src/transport/stream.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 121,
+    "kind": "class",
+    "name": "StreamTransport",
+    "memberof": "src/transport/stream.js",
+    "static": true,
+    "longname": "src/transport/stream.js~StreamTransport",
+    "access": "public",
+    "export": true,
+    "importPath": "jsxapi/lib/transport/stream.js",
+    "importStyle": "StreamTransport",
+    "description": "Duplex stream transport for integrations where JSXAPI does not have direct\naccess to the network or local ipc. E.g. for sandboxing or test stubs.",
+    "lineNumber": 8,
+    "interface": false,
+    "extends": [
+      "stream~Duplex"
+    ]
+  },
+  {
+    "__docId__": 122,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "src/transport/stream.js~StreamTransport",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/transport/stream.js~StreamTransport#constructor",
+    "access": "public",
+    "description": "Creates a {@link Duplex} stream.",
+    "lineNumber": 15,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "function(data: string)"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "send",
+        "description": "Callback for outbound data"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Duplex"
+      ],
+      "spread": false,
+      "description": "Duplex stream."
+    }
+  },
+  {
+    "__docId__": 123,
+    "kind": "member",
+    "name": "buffer",
+    "memberof": "src/transport/stream.js~StreamTransport",
+    "static": false,
+    "longname": "src/transport/stream.js~StreamTransport#buffer",
+    "access": "public",
+    "description": null,
+    "lineNumber": 17,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*[]"
+      ]
+    }
+  },
+  {
+    "__docId__": 124,
+    "kind": "member",
+    "name": "canPush",
+    "memberof": "src/transport/stream.js~StreamTransport",
+    "static": false,
+    "longname": "src/transport/stream.js~StreamTransport#canPush",
+    "access": "public",
+    "description": null,
+    "lineNumber": 18,
+    "undocument": true,
+    "type": {
+      "types": [
+        "boolean"
+      ]
+    }
+  },
+  {
+    "__docId__": 125,
+    "kind": "member",
+    "name": "send",
+    "memberof": "src/transport/stream.js~StreamTransport",
+    "static": false,
+    "longname": "src/transport/stream.js~StreamTransport#send",
+    "access": "public",
+    "description": null,
+    "lineNumber": 19,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 126,
+    "kind": "method",
+    "name": "close",
+    "memberof": "src/transport/stream.js~StreamTransport",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/transport/stream.js~StreamTransport#close",
+    "access": "public",
+    "description": "Closes the stream transport",
+    "lineNumber": 26,
+    "params": [],
+    "return": null
+  },
+  {
+    "__docId__": 127,
+    "kind": "method",
+    "name": "push",
+    "memberof": "src/transport/stream.js~StreamTransport",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/transport/stream.js~StreamTransport#push",
+    "access": "public",
+    "description": "",
+    "lineNumber": 34,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "data",
+        "description": "Push inbound data from the XAPI service to JSXAPI."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "boolean"
+      ],
+      "spread": false,
+      "description": "Boolean signaling if the stream can receive more data."
+    }
+  },
+  {
+    "__docId__": 128,
+    "kind": "method",
+    "name": "attemptFlush",
+    "memberof": "src/transport/stream.js~StreamTransport",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/transport/stream.js~StreamTransport#attemptFlush",
+    "access": "public",
+    "description": null,
+    "lineNumber": 39,
+    "undocument": true,
+    "params": [],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 130,
+    "kind": "method",
+    "name": "_read",
+    "memberof": "src/transport/stream.js~StreamTransport",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/transport/stream.js~StreamTransport#_read",
+    "access": "private",
+    "description": null,
+    "lineNumber": 46,
+    "undocument": true,
+    "params": [],
+    "return": null
+  },
+  {
+    "__docId__": 132,
+    "kind": "method",
+    "name": "_write",
+    "memberof": "src/transport/stream.js~StreamTransport",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/transport/stream.js~StreamTransport#_write",
+    "access": "private",
+    "description": null,
+    "lineNumber": 51,
+    "undocument": true,
+    "params": [
+      {
+        "name": "chunk",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "encoding",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "callback",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 133,
+    "kind": "file",
+    "name": "src/transport/tsh.js",
+    "content": "import { spawn } from 'child_process';\n\nimport duplex from 'duplexer';\n\n\nconst TSH_BIN = 'tsh';\n\n\n/**\n * Use the TSH binary to connect to a TSH server.\n *\n * @param {string} host - Host to connect to.\n * @param {number} port - Port to connect to.\n * @return {Promise<Duplex>} - TSH {@link Duplex} stream.\n */\nexport default function spawnTSH(host, port) {\n  const child = spawn(TSH_BIN, ['--port', port]);\n  const stream = duplex(child.stdin, child.stdout);\n  stream.close = () => child.kill();\n  return stream;\n}\n",
+    "static": true,
+    "longname": "C:/Local/tmp/node_modules/jsxapi/src/transport/tsh.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 134,
+    "kind": "variable",
+    "name": "TSH_BIN",
+    "memberof": "src/transport/tsh.js",
+    "static": true,
+    "longname": "src/transport/tsh.js~TSH_BIN",
+    "access": "public",
+    "export": false,
+    "importPath": "jsxapi/lib/transport/tsh.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 6,
+    "undocument": true,
+    "type": {
+      "types": [
+        "string"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 135,
+    "kind": "function",
+    "name": "spawnTSH",
+    "memberof": "src/transport/tsh.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/transport/tsh.js~spawnTSH",
+    "access": "public",
+    "export": true,
+    "importPath": "jsxapi/lib/transport/tsh.js",
+    "importStyle": "spawnTSH",
+    "description": "Use the TSH binary to connect to a TSH server.",
+    "lineNumber": 16,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "host",
+        "description": "Host to connect to."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "port",
+        "description": "Port to connect to."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Promise<Duplex>"
+      ],
+      "spread": false,
+      "description": "TSH {@link Duplex} stream."
+    }
+  },
+  {
+    "__docId__": 136,
+    "kind": "file",
+    "name": "src/xapi/components.js",
+    "content": "import normalizePath from './normalizePath';\nimport { Listenable, Gettable, Settable, mix } from './mixins';\n\n\n/**\n * Common base class for XAPI section types (commands, configs, events, statuses).\n *\n * @interface\n */\nclass Component {\n  /**\n   * Prefix to add to all paths for the component.\n   *\n   * @type {string}\n   */\n  prefix = ''\n\n  /**\n   * @param {XAPI} xapi - XAPI instance.\n   */\n  constructor(xapi) {\n    /**\n     * @type {XAPI}\n     */\n    this.xapi = xapi;\n  }\n\n  /**\n   * Normalizes a path including the component prefix.\n   *\n   * @param {Array|string} path - Normalize an XAPI path.\n   * @return {Array} - Normalized path.\n   */\n  normalizePath(path) {\n    const normalized = normalizePath(path);\n    const { prefix } = this;\n    return !prefix ? normalized : [prefix].concat(normalized);\n  }\n}\n\n\n/**\n * Interface to XAPI configurations.\n *\n * @extends {Component}\n * @extends {Listenable}\n * @extends {Gettable}\n * @extends {Settable}\n */\nexport class Config extends mix(Component, Listenable, Gettable, Settable) {\n  prefix = 'Configuration'\n}\n\n\n/**\n * Interface to XAPI events.\n *\n * @extends {Component}\n * @extends {Listenable}\n */\nexport class Event extends mix(Component, Listenable) {\n  prefix = 'Event'\n}\n\n\n/**\n * Interface to XAPI statuses.\n *\n * @extends {Component}\n * @extends {Listenable}\n * @extends {Gettable}\n */\nexport class Status extends mix(Component, Listenable, Gettable) {\n  prefix = 'Status'\n}\n",
+    "static": true,
+    "longname": "C:/Local/tmp/node_modules/jsxapi/src/xapi/components.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 137,
+    "kind": "class",
+    "name": "Component",
+    "memberof": "src/xapi/components.js",
+    "static": true,
+    "longname": "src/xapi/components.js~Component",
+    "access": "public",
+    "export": false,
+    "importPath": "jsxapi/lib/xapi/components.js",
+    "importStyle": null,
+    "description": "Common base class for XAPI section types (commands, configs, events, statuses).",
+    "lineNumber": 10,
+    "interface": true,
+    "ignore": true
+  },
+  {
+    "__docId__": 138,
+    "kind": "member",
+    "name": "prefix",
+    "memberof": "src/xapi/components.js~Component",
+    "static": false,
+    "longname": "src/xapi/components.js~Component#prefix",
+    "access": "public",
+    "description": "Prefix to add to all paths for the component.",
+    "lineNumber": 16,
+    "type": {
+      "nullable": null,
+      "types": [
+        "string"
+      ],
+      "spread": false,
+      "description": null
+    }
+  },
+  {
+    "__docId__": 139,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "src/xapi/components.js~Component",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/xapi/components.js~Component#constructor",
+    "access": "public",
+    "description": "",
+    "lineNumber": 21,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "XAPI"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "xapi",
+        "description": "XAPI instance."
+      }
+    ]
+  },
+  {
+    "__docId__": 140,
+    "kind": "member",
+    "name": "xapi",
+    "memberof": "src/xapi/components.js~Component",
+    "static": false,
+    "longname": "src/xapi/components.js~Component#xapi",
+    "access": "public",
+    "description": "",
+    "lineNumber": 25,
+    "type": {
+      "nullable": null,
+      "types": [
+        "XAPI"
+      ],
+      "spread": false,
+      "description": null
+    }
+  },
+  {
+    "__docId__": 141,
+    "kind": "method",
+    "name": "normalizePath",
+    "memberof": "src/xapi/components.js~Component",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/xapi/components.js~Component#normalizePath",
+    "access": "public",
+    "description": "Normalizes a path including the component prefix.",
+    "lineNumber": 34,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Array",
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "path",
+        "description": "Normalize an XAPI path."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Array"
+      ],
+      "spread": false,
+      "description": "Normalized path."
+    }
+  },
+  {
+    "__docId__": 142,
+    "kind": "class",
+    "name": "Config",
+    "memberof": "src/xapi/components.js",
+    "static": true,
+    "longname": "src/xapi/components.js~Config",
+    "access": "public",
+    "export": true,
+    "importPath": "jsxapi/lib/xapi/components.js",
+    "importStyle": "{Config}",
+    "description": "Interface to XAPI configurations.",
+    "lineNumber": 50,
+    "interface": false,
+    "extends": [
+      "Component",
+      "Listenable",
+      "Gettable",
+      "Settable"
+    ]
+  },
+  {
+    "__docId__": 143,
+    "kind": "member",
+    "name": "prefix",
+    "memberof": "src/xapi/components.js~Config",
+    "static": false,
+    "longname": "src/xapi/components.js~Config#prefix",
+    "access": "public",
+    "description": null,
+    "lineNumber": 51,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 144,
+    "kind": "class",
+    "name": "Event",
+    "memberof": "src/xapi/components.js",
+    "static": true,
+    "longname": "src/xapi/components.js~Event",
+    "access": "public",
+    "export": true,
+    "importPath": "jsxapi/lib/xapi/components.js",
+    "importStyle": "{Event}",
+    "description": "Interface to XAPI events.",
+    "lineNumber": 61,
+    "interface": false,
+    "extends": [
+      "Component",
+      "Listenable"
+    ]
+  },
+  {
+    "__docId__": 145,
+    "kind": "member",
+    "name": "prefix",
+    "memberof": "src/xapi/components.js~Event",
+    "static": false,
+    "longname": "src/xapi/components.js~Event#prefix",
+    "access": "public",
+    "description": null,
+    "lineNumber": 62,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 146,
+    "kind": "class",
+    "name": "Status",
+    "memberof": "src/xapi/components.js",
+    "static": true,
+    "longname": "src/xapi/components.js~Status",
+    "access": "public",
+    "export": true,
+    "importPath": "jsxapi/lib/xapi/components.js",
+    "importStyle": "{Status}",
+    "description": "Interface to XAPI statuses.",
+    "lineNumber": 73,
+    "interface": false,
+    "extends": [
+      "Component",
+      "Listenable",
+      "Gettable"
+    ]
+  },
+  {
+    "__docId__": 147,
+    "kind": "member",
+    "name": "prefix",
+    "memberof": "src/xapi/components.js~Status",
+    "static": false,
+    "longname": "src/xapi/components.js~Status#prefix",
+    "access": "public",
+    "description": null,
+    "lineNumber": 74,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 148,
+    "kind": "file",
+    "name": "src/xapi/exc.js",
+    "content": "export const UNKNOWN_ERROR = 0;\nexport const COMMAND_ERROR = 1;\nexport const ILLEGAL_VALUE = 2;\nexport const INVALID_PATH = 3;\nexport const PARAMETER_ERROR = 4;\nexport const INVALID_RESPONSE = 5;\nexport const INVALID_STATUS = 6;\nexport const METHOD_NOT_FOUND = -32601;\n\n\nexport class XAPIError extends Error {\n  constructor(code, reason, data) {\n    if (typeof reason !== 'string') {\n      throw new Error('Reason for XAPIError must be a string');\n    }\n\n    if (typeof code !== 'number') {\n      throw new Error('Error code for XAPIError must be a number');\n    }\n\n    super(reason);\n    this.code = code;\n    if (data !== undefined) {\n      this.data = data;\n    }\n  }\n}\n\n\nexport class IllegalValueError extends XAPIError {\n  constructor(reason) {\n    super(ILLEGAL_VALUE, reason);\n  }\n}\n\n\nexport class InvalidPathError extends XAPIError {\n  constructor(reason, xpath) {\n    super(INVALID_PATH, reason);\n    this.data = { xpath };\n  }\n}\n\n\nexport class ParameterError extends XAPIError {\n  constructor() {\n    super(PARAMETER_ERROR, 'Invalid or missing parameters');\n  }\n}\n",
+    "static": true,
+    "longname": "C:/Local/tmp/node_modules/jsxapi/src/xapi/exc.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 149,
+    "kind": "variable",
+    "name": "UNKNOWN_ERROR",
+    "memberof": "src/xapi/exc.js",
+    "static": true,
+    "longname": "src/xapi/exc.js~UNKNOWN_ERROR",
+    "access": "public",
+    "export": true,
+    "importPath": "jsxapi/lib/xapi/exc.js",
+    "importStyle": "{UNKNOWN_ERROR}",
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "type": {
+      "types": [
+        "number"
+      ]
+    }
+  },
+  {
+    "__docId__": 150,
+    "kind": "variable",
+    "name": "COMMAND_ERROR",
+    "memberof": "src/xapi/exc.js",
+    "static": true,
+    "longname": "src/xapi/exc.js~COMMAND_ERROR",
+    "access": "public",
+    "export": true,
+    "importPath": "jsxapi/lib/xapi/exc.js",
+    "importStyle": "{COMMAND_ERROR}",
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "type": {
+      "types": [
+        "number"
+      ]
+    }
+  },
+  {
+    "__docId__": 151,
+    "kind": "variable",
+    "name": "ILLEGAL_VALUE",
+    "memberof": "src/xapi/exc.js",
+    "static": true,
+    "longname": "src/xapi/exc.js~ILLEGAL_VALUE",
+    "access": "public",
+    "export": true,
+    "importPath": "jsxapi/lib/xapi/exc.js",
+    "importStyle": "{ILLEGAL_VALUE}",
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "type": {
+      "types": [
+        "number"
+      ]
+    }
+  },
+  {
+    "__docId__": 152,
+    "kind": "variable",
+    "name": "INVALID_PATH",
+    "memberof": "src/xapi/exc.js",
+    "static": true,
+    "longname": "src/xapi/exc.js~INVALID_PATH",
+    "access": "public",
+    "export": true,
+    "importPath": "jsxapi/lib/xapi/exc.js",
+    "importStyle": "{INVALID_PATH}",
+    "description": null,
+    "lineNumber": 4,
+    "undocument": true,
+    "type": {
+      "types": [
+        "number"
+      ]
+    }
+  },
+  {
+    "__docId__": 153,
+    "kind": "variable",
+    "name": "PARAMETER_ERROR",
+    "memberof": "src/xapi/exc.js",
+    "static": true,
+    "longname": "src/xapi/exc.js~PARAMETER_ERROR",
+    "access": "public",
+    "export": true,
+    "importPath": "jsxapi/lib/xapi/exc.js",
+    "importStyle": "{PARAMETER_ERROR}",
+    "description": null,
+    "lineNumber": 5,
+    "undocument": true,
+    "type": {
+      "types": [
+        "number"
+      ]
+    }
+  },
+  {
+    "__docId__": 154,
+    "kind": "variable",
+    "name": "INVALID_RESPONSE",
+    "memberof": "src/xapi/exc.js",
+    "static": true,
+    "longname": "src/xapi/exc.js~INVALID_RESPONSE",
+    "access": "public",
+    "export": true,
+    "importPath": "jsxapi/lib/xapi/exc.js",
+    "importStyle": "{INVALID_RESPONSE}",
+    "description": null,
+    "lineNumber": 6,
+    "undocument": true,
+    "type": {
+      "types": [
+        "number"
+      ]
+    }
+  },
+  {
+    "__docId__": 155,
+    "kind": "variable",
+    "name": "INVALID_STATUS",
+    "memberof": "src/xapi/exc.js",
+    "static": true,
+    "longname": "src/xapi/exc.js~INVALID_STATUS",
+    "access": "public",
+    "export": true,
+    "importPath": "jsxapi/lib/xapi/exc.js",
+    "importStyle": "{INVALID_STATUS}",
+    "description": null,
+    "lineNumber": 7,
+    "undocument": true,
+    "type": {
+      "types": [
+        "number"
+      ]
+    }
+  },
+  {
+    "__docId__": 156,
+    "kind": "variable",
+    "name": "METHOD_NOT_FOUND",
+    "memberof": "src/xapi/exc.js",
+    "static": true,
+    "longname": "src/xapi/exc.js~METHOD_NOT_FOUND",
+    "access": "public",
+    "export": true,
+    "importPath": "jsxapi/lib/xapi/exc.js",
+    "importStyle": "{METHOD_NOT_FOUND}",
+    "description": null,
+    "lineNumber": 8,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 157,
+    "kind": "class",
+    "name": "XAPIError",
+    "memberof": "src/xapi/exc.js",
+    "static": true,
+    "longname": "src/xapi/exc.js~XAPIError",
+    "access": "public",
+    "export": true,
+    "importPath": "jsxapi/lib/xapi/exc.js",
+    "importStyle": "{XAPIError}",
+    "description": null,
+    "lineNumber": 11,
+    "undocument": true,
+    "interface": false,
+    "extends": [
+      "Error"
+    ]
+  },
+  {
+    "__docId__": 158,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "src/xapi/exc.js~XAPIError",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/xapi/exc.js~XAPIError#constructor",
+    "access": "public",
+    "description": null,
+    "lineNumber": 12,
+    "undocument": true
+  },
+  {
+    "__docId__": 159,
+    "kind": "member",
+    "name": "code",
+    "memberof": "src/xapi/exc.js~XAPIError",
+    "static": false,
+    "longname": "src/xapi/exc.js~XAPIError#code",
+    "access": "public",
+    "description": null,
+    "lineNumber": 22,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 160,
+    "kind": "member",
+    "name": "data",
+    "memberof": "src/xapi/exc.js~XAPIError",
+    "static": false,
+    "longname": "src/xapi/exc.js~XAPIError#data",
+    "access": "public",
+    "description": null,
+    "lineNumber": 24,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 161,
+    "kind": "class",
+    "name": "IllegalValueError",
+    "memberof": "src/xapi/exc.js",
+    "static": true,
+    "longname": "src/xapi/exc.js~IllegalValueError",
+    "access": "public",
+    "export": true,
+    "importPath": "jsxapi/lib/xapi/exc.js",
+    "importStyle": "{IllegalValueError}",
+    "description": null,
+    "lineNumber": 30,
+    "undocument": true,
+    "interface": false,
+    "extends": [
+      "XAPIError"
+    ]
+  },
+  {
+    "__docId__": 162,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "src/xapi/exc.js~IllegalValueError",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/xapi/exc.js~IllegalValueError#constructor",
+    "access": "public",
+    "description": null,
+    "lineNumber": 31,
+    "undocument": true
+  },
+  {
+    "__docId__": 163,
+    "kind": "class",
+    "name": "InvalidPathError",
+    "memberof": "src/xapi/exc.js",
+    "static": true,
+    "longname": "src/xapi/exc.js~InvalidPathError",
+    "access": "public",
+    "export": true,
+    "importPath": "jsxapi/lib/xapi/exc.js",
+    "importStyle": "{InvalidPathError}",
+    "description": null,
+    "lineNumber": 37,
+    "undocument": true,
+    "interface": false,
+    "extends": [
+      "XAPIError"
+    ]
+  },
+  {
+    "__docId__": 164,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "src/xapi/exc.js~InvalidPathError",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/xapi/exc.js~InvalidPathError#constructor",
+    "access": "public",
+    "description": null,
+    "lineNumber": 38,
+    "undocument": true
+  },
+  {
+    "__docId__": 165,
+    "kind": "member",
+    "name": "data",
+    "memberof": "src/xapi/exc.js~InvalidPathError",
+    "static": false,
+    "longname": "src/xapi/exc.js~InvalidPathError#data",
+    "access": "public",
+    "description": null,
+    "lineNumber": 40,
+    "undocument": true,
+    "type": {
+      "types": [
+        "{\"xpath\": *}"
+      ]
+    }
+  },
+  {
+    "__docId__": 166,
+    "kind": "class",
+    "name": "ParameterError",
+    "memberof": "src/xapi/exc.js",
+    "static": true,
+    "longname": "src/xapi/exc.js~ParameterError",
+    "access": "public",
+    "export": true,
+    "importPath": "jsxapi/lib/xapi/exc.js",
+    "importStyle": "{ParameterError}",
+    "description": null,
+    "lineNumber": 45,
+    "undocument": true,
+    "interface": false,
+    "extends": [
+      "XAPIError"
+    ]
+  },
+  {
+    "__docId__": 167,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "src/xapi/exc.js~ParameterError",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/xapi/exc.js~ParameterError#constructor",
+    "access": "public",
+    "description": null,
+    "lineNumber": 46,
+    "undocument": true
+  },
+  {
+    "__docId__": 168,
+    "kind": "file",
+    "name": "src/xapi/feedback.js",
+    "content": "import { EventEmitter } from 'events';\n\nimport log from '../log';\n\nimport normalizePath from './normalizePath';\n\n/**\n * Group feedback deregister handlers for bookkeeping.\n */\nexport class FeedbackGroup {\n  constructor(handlers) {\n    this.handlers = handlers;\n  }\n\n  /**\n   * Add a deregister handler function to the feedback group.\n   *\n   * @param {function()} handler - Handler to add to the group.\n   * @return {FeedbackGroup} - this for chaining.\n   */\n  add(handler) {\n    this.handlers.push(handler);\n    return this;\n  }\n\n  /**\n   * Remove a deregister handler function from the feedback group.\n   *\n   * @param {function()} handler - Handler to remove from the group.\n   * @return {FeedbackGroup} - this for chaining.\n   */\n  remove(handler) {\n    this.handlers = this.handlers.filter(h => h !== handler);\n    return this;\n  }\n\n  /**\n   * Call the deregister handler functions associated with this group.\n   *\n   * @return {FeedbackGroup} - this for chaining.\n   */\n  off() {\n    this.handlers.forEach((handler) => {\n      handler();\n    });\n    this.handlers = [];\n    return this;\n  }\n}\n\nfunction defaultInterceptor(payload, emit) {\n  emit(payload);\n}\n\nfunction dispatch(feedback, data, root = data, path = []) {\n  if (Array.isArray(data)) {\n    data.forEach((child) => {\n      dispatch(feedback, child, root, path);\n      dispatch(feedback, child, root, path.concat(child.id));\n    });\n    return;\n  }\n\n  const emitPath = path.join('/').toLowerCase();\n  feedback.eventEmitter.emit(emitPath, data, root);\n\n  if (typeof data === 'object') {\n    Object.keys(data).forEach((key) => {\n      dispatch(feedback, data[key], root, path.concat(key));\n    });\n  }\n}\n\n/**\n * Feedback handler for the XAPI.\n *\n * @example <caption>Register a feedback listener</caption>\n * xapi.feedback.on('Status/Audio/Volume', data => {\n *   console.log(`Received feedback data: ${data}`);\n * });\n *\n * @example <caption>Get the feedback root payload</caption>\n * xapi.feedback.on('Status/Audio/Volume', (data, payload) => {\n *   console.log(`System volume changed to: ${data}`);\n *   JSON.stringify(payload) // => { Status: { Audio: { Volume: data } } }\n * });\n *\n * @example <caption>Listen to array elements</caption>\n * xapi.feedback.on('Status/Call[42]/Status', callStatus => {\n *   console.log(`Call status for call number 42 is: ${callStatus}`);\n * });\n *\n * @example <caption>Bundle feedback listeners for easy unsubscription</caption>\n * const feedbackGroup = xapi.feedback.group([\n *   xapi.status.on('Audio/Volume', volumeListener),\n *   xapi.status.on('Call', callListener),\n * ]);\n *\n * // Disable feedback listening for all listeners of the group.\n * feedbackGroup.off();\n *\n * @example <caption>Register listener with Array path</caption>\n * const off = xapi.feedback.on('Status/Audio/Volume', listener);\n * off(); // De-register feedback\n */\nexport default class Feedback {\n  /**\n   * @param {XAPI} xapi - XAPI instance.\n   * @param {function} interceptor - Feedback interceptor.\n   */\n  constructor(xapi, interceptor = defaultInterceptor) {\n    Object.defineProperties(this, {\n      eventEmitter: { value: new EventEmitter() },\n      interceptor: { value: interceptor },\n      xapi: { value: xapi },\n      subscriptions: { value: [], writable: true },\n    });\n  }\n\n  /**\n   * Registers a feedback listener with the backend service which is invoked\n   * when there is feedback matching the subscription query.\n   *\n   * @param {Array|string} path - Path to subscribe to\n   * @param {function} listener - Listener invoked on feedback\n   */\n  on(path, listener) {\n    log.info(`new feedback listener on: ${path}`);\n    const eventPath = normalizePath(path)\n      .join('/')\n      .toLowerCase();\n\n    this.eventEmitter.on(eventPath, listener);\n\n    const registration = this.xapi.execute('xFeedback/Subscribe', {\n      Query: normalizePath(path),\n    });\n\n    const off = () => {\n      registration.then(({ Id }) => {\n        this.xapi.execute('xFeedback/Unsubscribe', { Id });\n      });\n\n      this.eventEmitter.removeListener(eventPath, listener);\n    };\n\n    return off;\n  }\n\n  /**\n   * Registers a feedback listener similar to {@link on}, but the subscription\n   * is removed after the first invocation of the listener.\n   *\n   * @param {Array|string} path - Path to subscribe to\n   * @param {function} listener - Listener invoked on feedback\n   */\n  once(path, listener) {\n    let off;\n    const wrapped = (...args) => {\n      if (typeof off === 'function') off();\n      listener.call(this, ...args);\n    };\n    wrapped.listener = listener;\n    off = this.on(path, wrapped);\n    return off;\n  }\n\n  /**\n   * Remove feedback registration.\n   *\n   * @deprecated use deactivation handler from `.on()` and `.once()` instead.\n   */\n  // eslint-disable-next-line class-methods-use-this\n  off() {\n    throw new Error(\n      '.off() is deprecated. Use return value deactivate handler from .on() instead.',\n    );\n  }\n\n  /**\n   * Dispatches feedback data to the registered handlers.\n   *\n   * @param {Object} data - JSON data structure of feedback data.\n   * @return {FeedbackHandler} - Returns self for chaining.\n   */\n  dispatch(data) {\n    this.interceptor(data, (d = data) => dispatch(this, d));\n    return this;\n  }\n\n  /**\n   * Creates a grouper object which tracks which tracks the feedback paths and\n   * listeners being added to it.\n   *\n   * @return {FeedbackGroup} - Proxy object for xapi.feedback\n   *\n   * @example <caption>Bundle feedback listeners for easy unsubscription</caption>\n   * // Create a group\n   * const group = xapi.feedback.group([\n   *   xapi.status.on('Audio Volume', (volume) => {\n   *     // ...\n   *   }),\n   *   xapi.config.on('Audio DefaultVolume', (volume) => {\n   *     // ...\n   *   }),\n   * ]);\n   *\n   * const handler = xapi.status.on('Call', (call) => { ... });\n   *\n   * // Add handler to the group\n   * group.add(handler);\n   *\n   * // Remove handler from the group\n   * group.remove(handler);\n   *\n   * // Unregister from all feedback handlers\n   * group.off();\n   */\n  // eslint-disable-next-line class-methods-use-this\n  group(handlers) {\n    return new FeedbackGroup(handlers);\n  }\n}\n",
+    "static": true,
+    "longname": "C:/Local/tmp/node_modules/jsxapi/src/xapi/feedback.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 169,
+    "kind": "class",
+    "name": "FeedbackGroup",
+    "memberof": "src/xapi/feedback.js",
+    "static": true,
+    "longname": "src/xapi/feedback.js~FeedbackGroup",
+    "access": "public",
+    "export": true,
+    "importPath": "jsxapi/lib/xapi/feedback.js",
+    "importStyle": "{FeedbackGroup}",
+    "description": "Group feedback deregister handlers for bookkeeping.",
+    "lineNumber": 10,
+    "interface": false
+  },
+  {
+    "__docId__": 170,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "src/xapi/feedback.js~FeedbackGroup",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/xapi/feedback.js~FeedbackGroup#constructor",
+    "access": "public",
+    "description": null,
+    "lineNumber": 11,
+    "undocument": true
+  },
+  {
+    "__docId__": 171,
+    "kind": "member",
+    "name": "handlers",
+    "memberof": "src/xapi/feedback.js~FeedbackGroup",
+    "static": false,
+    "longname": "src/xapi/feedback.js~FeedbackGroup#handlers",
+    "access": "public",
+    "description": null,
+    "lineNumber": 12,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 172,
+    "kind": "method",
+    "name": "add",
+    "memberof": "src/xapi/feedback.js~FeedbackGroup",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/xapi/feedback.js~FeedbackGroup#add",
+    "access": "public",
+    "description": "Add a deregister handler function to the feedback group.",
+    "lineNumber": 21,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "function()"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "handler",
+        "description": "Handler to add to the group."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "FeedbackGroup"
+      ],
+      "spread": false,
+      "description": "this for chaining."
+    }
+  },
+  {
+    "__docId__": 173,
+    "kind": "method",
+    "name": "remove",
+    "memberof": "src/xapi/feedback.js~FeedbackGroup",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/xapi/feedback.js~FeedbackGroup#remove",
+    "access": "public",
+    "description": "Remove a deregister handler function from the feedback group.",
+    "lineNumber": 32,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "function()"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "handler",
+        "description": "Handler to remove from the group."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "FeedbackGroup"
+      ],
+      "spread": false,
+      "description": "this for chaining."
+    }
+  },
+  {
+    "__docId__": 175,
+    "kind": "method",
+    "name": "off",
+    "memberof": "src/xapi/feedback.js~FeedbackGroup",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/xapi/feedback.js~FeedbackGroup#off",
+    "access": "public",
+    "description": "Call the deregister handler functions associated with this group.",
+    "lineNumber": 42,
+    "return": {
+      "nullable": null,
+      "types": [
+        "FeedbackGroup"
+      ],
+      "spread": false,
+      "description": "this for chaining."
+    },
+    "params": []
+  },
+  {
+    "__docId__": 177,
+    "kind": "function",
+    "name": "defaultInterceptor",
+    "memberof": "src/xapi/feedback.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/xapi/feedback.js~defaultInterceptor",
+    "access": "public",
+    "export": false,
+    "importPath": "jsxapi/lib/xapi/feedback.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 51,
+    "undocument": true,
+    "params": [
+      {
+        "name": "payload",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "emit",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 178,
+    "kind": "function",
+    "name": "dispatch",
+    "memberof": "src/xapi/feedback.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/xapi/feedback.js~dispatch",
+    "access": "public",
+    "export": false,
+    "importPath": "jsxapi/lib/xapi/feedback.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 55,
+    "undocument": true,
+    "params": [
+      {
+        "name": "feedback",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "data",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "root",
+        "optional": true,
+        "types": [
+          "*"
+        ],
+        "defaultRaw": "data",
+        "defaultValue": "data"
+      },
+      {
+        "name": "path",
+        "optional": true,
+        "types": [
+          "*[]"
+        ],
+        "defaultRaw": [],
+        "defaultValue": "[]"
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 179,
+    "kind": "class",
+    "name": "Feedback",
+    "memberof": "src/xapi/feedback.js",
+    "static": true,
+    "longname": "src/xapi/feedback.js~Feedback",
+    "access": "public",
+    "export": true,
+    "importPath": "jsxapi/lib/xapi/feedback.js",
+    "importStyle": "Feedback",
+    "description": "Feedback handler for the XAPI.",
+    "examples": [
+      "<caption>Register a feedback listener</caption>\nxapi.feedback.on('Status/Audio/Volume', data => {\n  console.log(`Received feedback data: ${data}`);\n});",
+      "<caption>Get the feedback root payload</caption>\nxapi.feedback.on('Status/Audio/Volume', (data, payload) => {\n  console.log(`System volume changed to: ${data}`);\n  JSON.stringify(payload) // => { Status: { Audio: { Volume: data } } }\n});",
+      "<caption>Listen to array elements</caption>\nxapi.feedback.on('Status/Call[42]/Status', callStatus => {\n  console.log(`Call status for call number 42 is: ${callStatus}`);\n});",
+      "<caption>Bundle feedback listeners for easy unsubscription</caption>\nconst feedbackGroup = xapi.feedback.group([\n  xapi.status.on('Audio/Volume', volumeListener),\n  xapi.status.on('Call', callListener),\n]);\n\n// Disable feedback listening for all listeners of the group.\nfeedbackGroup.off();",
+      "<caption>Register listener with Array path</caption>\nconst off = xapi.feedback.on('Status/Audio/Volume', listener);\noff(); // De-register feedback"
+    ],
+    "lineNumber": 106,
+    "interface": false
+  },
+  {
+    "__docId__": 180,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "src/xapi/feedback.js~Feedback",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/xapi/feedback.js~Feedback#constructor",
+    "access": "public",
+    "description": "",
+    "lineNumber": 111,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "XAPI"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "xapi",
+        "description": "XAPI instance."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "function"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "interceptor",
+        "description": "Feedback interceptor."
+      }
+    ]
+  },
+  {
+    "__docId__": 181,
+    "kind": "method",
+    "name": "on",
+    "memberof": "src/xapi/feedback.js~Feedback",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/xapi/feedback.js~Feedback#on",
+    "access": "public",
+    "description": "Registers a feedback listener with the backend service which is invoked\nwhen there is feedback matching the subscription query.",
+    "lineNumber": 127,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Array",
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "path",
+        "description": "Path to subscribe to"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "function"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "listener",
+        "description": "Listener invoked on feedback"
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 182,
+    "kind": "method",
+    "name": "once",
+    "memberof": "src/xapi/feedback.js~Feedback",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/xapi/feedback.js~Feedback#once",
+    "access": "public",
+    "description": "Registers a feedback listener similar to {@link on}, but the subscription\nis removed after the first invocation of the listener.",
+    "lineNumber": 157,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Array",
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "path",
+        "description": "Path to subscribe to"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "function"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "listener",
+        "description": "Listener invoked on feedback"
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 183,
+    "kind": "method",
+    "name": "off",
+    "memberof": "src/xapi/feedback.js~Feedback",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/xapi/feedback.js~Feedback#off",
+    "access": "public",
+    "description": "Remove feedback registration.",
+    "lineNumber": 174,
+    "deprecated": "use deactivation handler from `.on()` and `.once()` instead.",
+    "params": [],
+    "return": null
+  },
+  {
+    "__docId__": 184,
+    "kind": "method",
+    "name": "dispatch",
+    "memberof": "src/xapi/feedback.js~Feedback",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/xapi/feedback.js~Feedback#dispatch",
+    "access": "public",
+    "description": "Dispatches feedback data to the registered handlers.",
+    "lineNumber": 186,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "data",
+        "description": "JSON data structure of feedback data."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "FeedbackHandler"
+      ],
+      "spread": false,
+      "description": "Returns self for chaining."
+    }
+  },
+  {
+    "__docId__": 185,
+    "kind": "method",
+    "name": "group",
+    "memberof": "src/xapi/feedback.js~Feedback",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/xapi/feedback.js~Feedback#group",
+    "access": "public",
+    "description": "Creates a grouper object which tracks which tracks the feedback paths and\nlisteners being added to it.",
+    "examples": [
+      "<caption>Bundle feedback listeners for easy unsubscription</caption>\n// Create a group\nconst group = xapi.feedback.group([\n  xapi.status.on('Audio Volume', (volume) => {\n    // ...\n  }),\n  xapi.config.on('Audio DefaultVolume', (volume) => {\n    // ...\n  }),\n]);\n\nconst handler = xapi.status.on('Call', (call) => { ... });\n\n// Add handler to the group\ngroup.add(handler);\n\n// Remove handler from the group\ngroup.remove(handler);\n\n// Unregister from all feedback handlers\ngroup.off();"
+    ],
+    "lineNumber": 220,
+    "return": {
+      "nullable": null,
+      "types": [
+        "FeedbackGroup"
+      ],
+      "spread": false,
+      "description": "Proxy object for xapi.feedback"
+    },
+    "params": [
+      {
+        "name": "handlers",
+        "types": [
+          "*"
+        ]
+      }
+    ]
+  },
+  {
+    "__docId__": 186,
+    "kind": "file",
+    "name": "src/xapi/index.js",
+    "content": "import { EventEmitter } from 'events';\n\nimport log from '../log';\nimport * as rpc from './rpc';\nimport normalizePath from './normalizePath';\n\nimport Feedback from './feedback';\nimport { Config, Event, Status } from './components';\n\n\n/**\n * User-facing API towards the XAPI. Requires a backend for communicating\n * with an XAPI instance. It should be possible to write backends for all kinds\n * of transports (TSH over SSH, Websockets, HTTP, plain sockets, etc.)\n *\n * @example <caption>Initialization</caption>\n * const xapi = new XAPI(backend);\n *\n * @example <caption>Invoke commands</caption>\n * xapi\n *   .command('Dial', { Number: 'johndoe@example.com' })\n *   .then(onSuccess, onFailure);\n *\n * @example <caption>Fetch a status</caption>\n * xapi\n *   .status.get('Audio Volume')\n *   .then((value) => { console.log(value); });\n *\n * @example <caption>Set a configuration</caption>\n * xapi\n *   .config.set('Audio DefaultVolume', 100);\n *\n * @example <caption>Listen to an event</caption>\n * xapi.event.on('Some Event Name', (data) => {\n *   console.log(`Received feedback data: ${data}`);\n * });\n */\nexport default class XAPI extends EventEmitter {\n  /**\n   * @param {Backend} backend - Backend connected to an XAPI instance.\n   * @param {object} options - XAPI object options.\n   * @param {function} options.feedbackInterceptor - Feedback interceptor.\n   */\n  constructor(backend, options = {}) {\n    super();\n\n    /** @type {Backend} */\n    this.backend = backend;\n\n    /** @ignore */\n    this.requestId = 1;\n\n    /** @ignore */\n    this.requests = {};\n\n    /**\n     * Interface to XAPI feedback registration.\n     * @type {Feedback}\n     */\n    this.feedback = new Feedback(this, options.feedbackInterceptor);\n\n    /**\n     * Interface to XAPI configurations.\n     * @type {Config}\n     */\n    this.config = new Config(this);\n\n    /**\n     * Interface to XAPI events.\n     * @type {Event}\n     */\n    this.event = new Event(this);\n\n    /**\n     * Interface to XAPI statuses.\n     * @type {Status}\n     */\n    this.status = new Status(this);\n\n    // Restrict object mutation\n    Object.defineProperties(this, {\n      config: { writable: false },\n      event: { writable: false },\n      feedback: { writable: false },\n      status: { writable: false },\n    });\n    Object.seal(this);\n\n    backend\n      .on('close', () => { this.emit('close'); })\n      .on('error', (error) => { this.emit('error', error); })\n      .on('ready', () => { this.emit('ready'); })\n      .on('data', this.handleResponse.bind(this));\n  }\n\n  /**\n   * Close the XAPI connection.\n   *\n   * @return {XAPI} - XAPI instance..\n   */\n  close() {\n    this.backend.close();\n    return this;\n  }\n\n  /**\n   * Executes the command specified by the given path.\n   *\n   * @example\n   * // Space delimited\n   * xapi.command('Presentation Start');\n   *\n   * // Slash delimited\n   * xapi.command('Presentation/Start');\n   *\n   * // Array path\n   * xapi.command(['Presentation', 'Start']);\n   *\n   * // With parameters\n   * xapi.command('Presentation Start', { PresentationSource: 1 });\n   *\n   * // Multi-line\n   * xapi.command('UserInterface Extensions Set', { ConfigId: 'example' }, `\n   *  <Extensions>\n   *    <Version>1.1</Version>\n   *    <Panel item=\"1\" maxOccurrence=\"n\">\n   *      <Icon>Lightbulb</Icon>\n   *      <Type>Statusbar</Type>\n   *      <Page item=\"1\" maxOccurrence=\"n\">\n   *        <Name>Foo</Name>\n   *        <Row item=\"1\" maxOccurrence=\"n\">\n   *          <Name>Bar</Name>\n   *          <Widget item=\"1\" maxOccurrence=\"n\">\n   *            <WidgetId>widget_3</WidgetId>\n   *            <Type>ToggleButton</Type>\n   *          </Widget>\n   *        </Row>\n   *      </Page>\n   *    </Panel>\n   *  </Extensions>\n   * `);\n   *\n   * @param {Array|string} path - Path to command node.\n   * @param {Object} [params] - Object containing named command arguments.\n   * @param {string} [body] - Multi-line body for commands requiring it.\n   * @return {Promise} - Resolved with the command response when ready.\n   */\n  command(path, params, body) {\n    const apiPath = normalizePath(path).join('/');\n    const method = `xCommand/${apiPath}`;\n    const executeParams = body === undefined ? params : Object.assign({ body }, params);\n    return this.execute(method, executeParams);\n  }\n\n  /** @private */\n  handleResponse(response) {\n    const { id, method } = response;\n    if (method === 'xFeedback/Event') {\n      log.debug('feedback:', response);\n      this.feedback.dispatch(response.params);\n    } else {\n      if ({}.hasOwnProperty.call(response, 'result')) {\n        log.debug('result:', response);\n        const { resolve } = this.requests[id];\n        resolve(response.result);\n      } else {\n        log.debug('error:', response);\n        const { reject } = this.requests[id];\n        reject(response.error);\n      }\n      delete this.requests[id];\n    }\n  }\n\n  /** @private */\n  nextRequestId() {\n    const requestId = this.requestId;\n    this.requestId += 1;\n    return requestId.toString();\n  }\n\n  /**\n   * Execute the given JSON-RPC request on the backend.\n   *\n   * @example\n   * xapi.execute('xFeedback/Subscribe', {\n   *   Query: ['Status', 'Audio'],\n   * });\n   *\n   * @param {String} method - Name of RPC method to invoke.\n   * @param {Object} [params] - Parameters to add to the request.\n   * @return {Promise} - Resolved with the command response.\n   */\n  execute(method, params) {\n    return new Promise((resolve, reject) => {\n      const id = this.nextRequestId();\n      const request = rpc.createRequest(id, method, params);\n      this.backend.execute(request);\n      this.requests[id] = { resolve, reject };\n    });\n  }\n}\n",
+    "static": true,
+    "longname": "C:/Local/tmp/node_modules/jsxapi/src/xapi/index.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 187,
+    "kind": "class",
+    "name": "XAPI",
+    "memberof": "src/xapi/index.js",
+    "static": true,
+    "longname": "src/xapi/index.js~XAPI",
+    "access": "public",
+    "export": true,
+    "importPath": "jsxapi/lib/xapi/index.js",
+    "importStyle": "XAPI",
+    "description": "User-facing API towards the XAPI. Requires a backend for communicating\nwith an XAPI instance. It should be possible to write backends for all kinds\nof transports (TSH over SSH, Websockets, HTTP, plain sockets, etc.)",
+    "examples": [
+      "<caption>Initialization</caption>\nconst xapi = new XAPI(backend);",
+      "<caption>Invoke commands</caption>\nxapi\n  .command('Dial', { Number: 'johndoe@example.com' })\n  .then(onSuccess, onFailure);",
+      "<caption>Fetch a status</caption>\nxapi\n  .status.get('Audio Volume')\n  .then((value) => { console.log(value); });",
+      "<caption>Set a configuration</caption>\nxapi\n  .config.set('Audio DefaultVolume', 100);",
+      "<caption>Listen to an event</caption>\nxapi.event.on('Some Event Name', (data) => {\n  console.log(`Received feedback data: ${data}`);\n});"
+    ],
+    "lineNumber": 38,
+    "interface": false,
+    "extends": [
+      "events~EventEmitter"
+    ]
+  },
+  {
+    "__docId__": 188,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "src/xapi/index.js~XAPI",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/xapi/index.js~XAPI#constructor",
+    "access": "public",
+    "description": "",
+    "lineNumber": 44,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Backend"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "backend",
+        "description": "Backend connected to an XAPI instance."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "options",
+        "description": "XAPI object options."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "function"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "options.feedbackInterceptor",
+        "description": "Feedback interceptor."
+      }
+    ]
+  },
+  {
+    "__docId__": 189,
+    "kind": "member",
+    "name": "backend",
+    "memberof": "src/xapi/index.js~XAPI",
+    "static": false,
+    "longname": "src/xapi/index.js~XAPI#backend",
+    "access": "public",
+    "description": null,
+    "lineNumber": 48,
+    "type": {
+      "nullable": null,
+      "types": [
+        "Backend"
+      ],
+      "spread": false,
+      "description": null
+    }
+  },
+  {
+    "__docId__": 190,
+    "kind": "member",
+    "name": "requestId",
+    "memberof": "src/xapi/index.js~XAPI",
+    "static": false,
+    "longname": "src/xapi/index.js~XAPI#requestId",
+    "access": "public",
+    "description": null,
+    "lineNumber": 51,
+    "ignore": true,
+    "type": {
+      "types": [
+        "number"
+      ]
+    }
+  },
+  {
+    "__docId__": 191,
+    "kind": "member",
+    "name": "requests",
+    "memberof": "src/xapi/index.js~XAPI",
+    "static": false,
+    "longname": "src/xapi/index.js~XAPI#requests",
+    "access": "public",
+    "description": null,
+    "lineNumber": 54,
+    "ignore": true,
+    "type": {
+      "types": [
+        "{}"
+      ]
+    }
+  },
+  {
+    "__docId__": 192,
+    "kind": "member",
+    "name": "feedback",
+    "memberof": "src/xapi/index.js~XAPI",
+    "static": false,
+    "longname": "src/xapi/index.js~XAPI#feedback",
+    "access": "public",
+    "description": "Interface to XAPI feedback registration.",
+    "lineNumber": 60,
+    "type": {
+      "nullable": null,
+      "types": [
+        "Feedback"
+      ],
+      "spread": false,
+      "description": null
+    }
+  },
+  {
+    "__docId__": 193,
+    "kind": "member",
+    "name": "config",
+    "memberof": "src/xapi/index.js~XAPI",
+    "static": false,
+    "longname": "src/xapi/index.js~XAPI#config",
+    "access": "public",
+    "description": "Interface to XAPI configurations.",
+    "lineNumber": 66,
+    "type": {
+      "nullable": null,
+      "types": [
+        "Config"
+      ],
+      "spread": false,
+      "description": null
+    }
+  },
+  {
+    "__docId__": 194,
+    "kind": "member",
+    "name": "event",
+    "memberof": "src/xapi/index.js~XAPI",
+    "static": false,
+    "longname": "src/xapi/index.js~XAPI#event",
+    "access": "public",
+    "description": "Interface to XAPI events.",
+    "lineNumber": 72,
+    "type": {
+      "nullable": null,
+      "types": [
+        "Event"
+      ],
+      "spread": false,
+      "description": null
+    }
+  },
+  {
+    "__docId__": 195,
+    "kind": "member",
+    "name": "status",
+    "memberof": "src/xapi/index.js~XAPI",
+    "static": false,
+    "longname": "src/xapi/index.js~XAPI#status",
+    "access": "public",
+    "description": "Interface to XAPI statuses.",
+    "lineNumber": 78,
+    "type": {
+      "nullable": null,
+      "types": [
+        "Status"
+      ],
+      "spread": false,
+      "description": null
+    }
+  },
+  {
+    "__docId__": 196,
+    "kind": "method",
+    "name": "close",
+    "memberof": "src/xapi/index.js~XAPI",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/xapi/index.js~XAPI#close",
+    "access": "public",
+    "description": "Close the XAPI connection.",
+    "lineNumber": 101,
+    "return": {
+      "nullable": null,
+      "types": [
+        "XAPI"
+      ],
+      "spread": false,
+      "description": "XAPI instance.."
+    },
+    "params": []
+  },
+  {
+    "__docId__": 197,
+    "kind": "method",
+    "name": "command",
+    "memberof": "src/xapi/index.js~XAPI",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/xapi/index.js~XAPI#command",
+    "access": "public",
+    "description": "Executes the command specified by the given path.",
+    "examples": [
+      "// Space delimited\nxapi.command('Presentation Start');\n\n// Slash delimited\nxapi.command('Presentation/Start');\n\n// Array path\nxapi.command(['Presentation', 'Start']);\n\n// With parameters\nxapi.command('Presentation Start', { PresentationSource: 1 });\n\n// Multi-line\nxapi.command('UserInterface Extensions Set', { ConfigId: 'example' }, `\n <Extensions>\n   <Version>1.1</Version>\n   <Panel item=\"1\" maxOccurrence=\"n\">\n     <Icon>Lightbulb</Icon>\n     <Type>Statusbar</Type>\n     <Page item=\"1\" maxOccurrence=\"n\">\n       <Name>Foo</Name>\n       <Row item=\"1\" maxOccurrence=\"n\">\n         <Name>Bar</Name>\n         <Widget item=\"1\" maxOccurrence=\"n\">\n           <WidgetId>widget_3</WidgetId>\n           <Type>ToggleButton</Type>\n         </Widget>\n       </Row>\n     </Page>\n   </Panel>\n </Extensions>\n`);"
+    ],
+    "lineNumber": 148,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Array",
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "path",
+        "description": "Path to command node."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": true,
+        "name": "params",
+        "description": "Object containing named command arguments."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": true,
+        "name": "body",
+        "description": "Multi-line body for commands requiring it."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Promise"
+      ],
+      "spread": false,
+      "description": "Resolved with the command response when ready."
+    }
+  },
+  {
+    "__docId__": 198,
+    "kind": "method",
+    "name": "handleResponse",
+    "memberof": "src/xapi/index.js~XAPI",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/xapi/index.js~XAPI#handleResponse",
+    "access": "private",
+    "description": null,
+    "lineNumber": 156,
+    "params": [
+      {
+        "name": "response",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 199,
+    "kind": "method",
+    "name": "nextRequestId",
+    "memberof": "src/xapi/index.js~XAPI",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/xapi/index.js~XAPI#nextRequestId",
+    "access": "private",
+    "description": null,
+    "lineNumber": 176,
+    "params": [],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 201,
+    "kind": "method",
+    "name": "execute",
+    "memberof": "src/xapi/index.js~XAPI",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/xapi/index.js~XAPI#execute",
+    "access": "public",
+    "description": "Execute the given JSON-RPC request on the backend.",
+    "examples": [
+      "xapi.execute('xFeedback/Subscribe', {\n  Query: ['Status', 'Audio'],\n});"
+    ],
+    "lineNumber": 194,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "String"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "method",
+        "description": "Name of RPC method to invoke."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": true,
+        "name": "params",
+        "description": "Parameters to add to the request."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Promise"
+      ],
+      "spread": false,
+      "description": "Resolved with the command response."
+    }
+  },
+  {
+    "__docId__": 202,
+    "kind": "file",
+    "name": "src/xapi/mixins.js",
+    "content": "/**\n * Mixin for XAPI sections that can trigger feedback.\n *\n * @interface\n */\nexport class Listenable {\n  /**\n   * Register a new listener on the given path.\n   *\n   * @param {string} path - Path to XAPI entry.\n   * @param {function(data: Object): null} listener - Callback handler called on changes.\n   * @return {function()} - Handler to deregister the feedback registration.\n   */\n  on(path, listener) {\n    return this.xapi.feedback.on(this.normalizePath(path), listener);\n  }\n\n  /**\n   * Register a new listener on the given path, de-register\n   * after the first change happened.\n   *\n   * @param {string} path - Path to XAPI entry.\n   * @param {function(data: Object): null} listener - Callback handler called on changes.\n   * @return {Object} - Handler to deregister the feedback registration.\n   */\n  once(path, listener) {\n    return this.xapi.feedback.once(this.normalizePath(path), listener);\n  }\n\n\n  /**\n   * De-register the given listener on the given path.\n   *\n   * @deprecated use deactivation handler from `.on()` and `.once()` instead.\n   */\n  off() {\n    this.xapi.feedback.off();\n  }\n}\n\n\n/**\n * Mixin for XAPI sections that can hold a value that may be fetched.\n *\n * @interface\n */\nexport class Gettable {\n  /**\n   * Gets the value of the given path.\n   *\n   * @example\n   * xapi.status\n   *   .get('Audio Volume')\n   *   .then((volume) => { console.log(volume); });\n   *\n   * @example\n   * xapi.config\n   *   .get('Audio DefaultVolume')\n   *   .then((volume) => { console.log(volume); });\n   *\n   * @param {string} path - Path to configuration node.\n   * @return {Promise} - Resolved to the configuration value when ready.\n   */\n  get(path) {\n    return this.xapi.execute('xGet', {\n      Path: this.normalizePath(path),\n    });\n  }\n}\n\n\n/**\n * Mixin for XAPI sections that can hold a value that may be fetched.\n *\n * @interface\n */\nexport class Settable {\n  /**\n   * Sets the path to the given value.\n   *\n   * @example\n   * xapi\n   *   .config.set('SystemUnit Name', 'My System');\n   *\n   * @param {string} path - Path to status node.\n   * @param {number|string} value - Configuration value.\n   * @return {Promise} - Resolved to the status value when ready.\n   */\n  set(path, value) {\n    return this.xapi.execute('xSet', {\n      Path: this.normalizePath(path),\n      Value: value,\n    });\n  }\n}\n\n\n/**\n * Extend {Base} class and apply {Mixins}.\n *\n * @param {Object} Base - Base class to extend.\n * @param {Array} Mixins - Mixins to apply.\n * @return Object - New ad-hoc base class with mixins applied.\n */\nexport function mix(Base, ...Mixins) {\n  class Class extends Base {}\n\n  Mixins.forEach((mixin) => {\n    Object\n      .getOwnPropertyNames(mixin.prototype)\n      .map(key => [key, mixin.prototype[key]])\n      .filter(([, v]) => typeof v === 'function' && v !== 'constructor')\n      .forEach(([name, method]) => {\n        Class.prototype[name] = method;\n      });\n  });\n\n  return Class;\n}\n\n",
+    "static": true,
+    "longname": "C:/Local/tmp/node_modules/jsxapi/src/xapi/mixins.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 203,
+    "kind": "class",
+    "name": "Listenable",
+    "memberof": "src/xapi/mixins.js",
+    "static": true,
+    "longname": "src/xapi/mixins.js~Listenable",
+    "access": "public",
+    "export": true,
+    "importPath": "jsxapi/lib/xapi/mixins.js",
+    "importStyle": "{Listenable}",
+    "description": "Mixin for XAPI sections that can trigger feedback.",
+    "lineNumber": 6,
+    "interface": true
+  },
+  {
+    "__docId__": 204,
+    "kind": "method",
+    "name": "on",
+    "memberof": "src/xapi/mixins.js~Listenable",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/xapi/mixins.js~Listenable#on",
+    "access": "public",
+    "description": "Register a new listener on the given path.",
+    "lineNumber": 14,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "path",
+        "description": "Path to XAPI entry."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "function(data: Object): null"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "listener",
+        "description": "Callback handler called on changes."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "function()"
+      ],
+      "spread": false,
+      "description": "Handler to deregister the feedback registration."
+    }
+  },
+  {
+    "__docId__": 205,
+    "kind": "method",
+    "name": "once",
+    "memberof": "src/xapi/mixins.js~Listenable",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/xapi/mixins.js~Listenable#once",
+    "access": "public",
+    "description": "Register a new listener on the given path, de-register\nafter the first change happened.",
+    "lineNumber": 26,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "path",
+        "description": "Path to XAPI entry."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "function(data: Object): null"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "listener",
+        "description": "Callback handler called on changes."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Object"
+      ],
+      "spread": false,
+      "description": "Handler to deregister the feedback registration."
+    }
+  },
+  {
+    "__docId__": 206,
+    "kind": "method",
+    "name": "off",
+    "memberof": "src/xapi/mixins.js~Listenable",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/xapi/mixins.js~Listenable#off",
+    "access": "public",
+    "description": "De-register the given listener on the given path.",
+    "lineNumber": 36,
+    "deprecated": "use deactivation handler from `.on()` and `.once()` instead.",
+    "params": [],
+    "return": null
+  },
+  {
+    "__docId__": 207,
+    "kind": "class",
+    "name": "Gettable",
+    "memberof": "src/xapi/mixins.js",
+    "static": true,
+    "longname": "src/xapi/mixins.js~Gettable",
+    "access": "public",
+    "export": true,
+    "importPath": "jsxapi/lib/xapi/mixins.js",
+    "importStyle": "{Gettable}",
+    "description": "Mixin for XAPI sections that can hold a value that may be fetched.",
+    "lineNumber": 47,
+    "interface": true
+  },
+  {
+    "__docId__": 208,
+    "kind": "method",
+    "name": "get",
+    "memberof": "src/xapi/mixins.js~Gettable",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/xapi/mixins.js~Gettable#get",
+    "access": "public",
+    "description": "Gets the value of the given path.",
+    "examples": [
+      "xapi.status\n  .get('Audio Volume')\n  .then((volume) => { console.log(volume); });",
+      "xapi.config\n  .get('Audio DefaultVolume')\n  .then((volume) => { console.log(volume); });"
+    ],
+    "lineNumber": 64,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "path",
+        "description": "Path to configuration node."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Promise"
+      ],
+      "spread": false,
+      "description": "Resolved to the configuration value when ready."
+    }
+  },
+  {
+    "__docId__": 209,
+    "kind": "class",
+    "name": "Settable",
+    "memberof": "src/xapi/mixins.js",
+    "static": true,
+    "longname": "src/xapi/mixins.js~Settable",
+    "access": "public",
+    "export": true,
+    "importPath": "jsxapi/lib/xapi/mixins.js",
+    "importStyle": "{Settable}",
+    "description": "Mixin for XAPI sections that can hold a value that may be fetched.",
+    "lineNumber": 77,
+    "interface": true
+  },
+  {
+    "__docId__": 210,
+    "kind": "method",
+    "name": "set",
+    "memberof": "src/xapi/mixins.js~Settable",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/xapi/mixins.js~Settable#set",
+    "access": "public",
+    "description": "Sets the path to the given value.",
+    "examples": [
+      "xapi\n  .config.set('SystemUnit Name', 'My System');"
+    ],
+    "lineNumber": 89,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "path",
+        "description": "Path to status node."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "number",
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "value",
+        "description": "Configuration value."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Promise"
+      ],
+      "spread": false,
+      "description": "Resolved to the status value when ready."
+    }
+  },
+  {
+    "__docId__": 211,
+    "kind": "function",
+    "name": "mix",
+    "memberof": "src/xapi/mixins.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/xapi/mixins.js~mix",
+    "access": "public",
+    "export": true,
+    "importPath": "jsxapi/lib/xapi/mixins.js",
+    "importStyle": "{mix}",
+    "description": "Extend {Base} class and apply {Mixins}.",
+    "lineNumber": 105,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "Base",
+        "description": "Base class to extend."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Array"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "Mixins",
+        "description": "Mixins to apply."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "*"
+      ],
+      "spread": false,
+      "description": "Object - New ad-hoc base class with mixins applied."
+    }
+  },
+  {
+    "__docId__": 212,
+    "kind": "file",
+    "name": "src/xapi/normalizePath.js",
+    "content": "/**\n * Normalizes a path by turning it into an Array of strings.\n * Removes empty parts of the path and ignores redundant whitespace or\n * slashes. Each path element is also capitalized.\n *\n * @param {Array|string} path - Array or string path to normalize.\n * @return {Array} - Array of path segments.\n */\nexport default function normalizePath(path) {\n  const split = Array.isArray(path) ? path : path.match(/(\\w+)/g);\n  return !split ? [] : split\n    .map((element) => {\n      if (/^\\d+$/.test(element)) {\n        return parseInt(element, 10);\n      }\n      return element.charAt(0).toUpperCase() + element.slice(1);\n    });\n}\n",
+    "static": true,
+    "longname": "C:/Local/tmp/node_modules/jsxapi/src/xapi/normalizePath.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 213,
+    "kind": "function",
+    "name": "normalizePath",
+    "memberof": "src/xapi/normalizePath.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/xapi/normalizePath.js~normalizePath",
+    "access": "public",
+    "export": true,
+    "importPath": "jsxapi/lib/xapi/normalizePath.js",
+    "importStyle": "normalizePath",
+    "description": "Normalizes a path by turning it into an Array of strings.\nRemoves empty parts of the path and ignores redundant whitespace or\nslashes. Each path element is also capitalized.",
+    "lineNumber": 9,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Array",
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "path",
+        "description": "Array or string path to normalize."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Array"
+      ],
+      "spread": false,
+      "description": "Array of path segments."
+    }
+  },
+  {
+    "__docId__": 214,
+    "kind": "file",
+    "name": "src/xapi/rpc.js",
+    "content": "import {\n  IllegalValueError,\n  InvalidPathError,\n  ParameterError,\n  XAPIError,\n  UNKNOWN_ERROR,\n  INVALID_RESPONSE,\n  INVALID_STATUS,\n} from './exc';\n\nconst scalars = ['number', 'string'];\nconst isScalar = value => scalars.indexOf(typeof value) >= 0;\n\n\nconst VERSION = '2.0';\n\n\n/*\n * Collapse \"Value\" into parent + skip lowercase props\n */\nexport function collapse(data) {\n  if (Array.isArray(data)) {\n    return data.map(collapse);\n  } else if (isScalar(data)) {\n    return data;\n  } else if ({}.hasOwnProperty.call(data, 'Value') && isScalar(data.Value)) {\n    return data.Value;\n  }\n\n  const result = {};\n\n  Object.keys(data).forEach((key) => {\n    result[key] = collapse(data[key]);\n  });\n\n  return result;\n}\n\n\nexport function createRequest(id, method, params) {\n  const request = { jsonrpc: VERSION, method };\n\n  if (id) {\n    request.id = id;\n  }\n\n  if (params) {\n    request.params = {};\n\n    Object.keys(params).forEach((key) => {\n      const value = params[key];\n\n      if (key !== 'body' && typeof value === 'string' && value.indexOf('\\n') !== -1) {\n        throw new Error('Parameters may not contain newline characters');\n      }\n\n      request.params[key] = params[key];\n    });\n  }\n\n  return request;\n}\n\n\nexport function createResponse(id, result) {\n  return { jsonrpc: VERSION, id, result };\n}\n\n\nexport function createErrorResponse(id, error) {\n  let payload;\n\n  if (error instanceof XAPIError) {\n    payload = {\n      code: error.code,\n      message: error.message,\n    };\n  } else {\n    payload = {\n      code: UNKNOWN_ERROR,\n      message: (error.message || error).toString(),\n    };\n  }\n\n  if ({}.hasOwnProperty.call(error, 'data')) {\n    payload.data = error.data;\n  }\n\n  return { jsonrpc: VERSION, id, error: payload };\n}\n\n\nexport function parseFeedbackResponse(response) {\n  return collapse(response);\n}\n\n\nfunction assertValidCommandResponse(response) {\n  if (!{}.hasOwnProperty.call(response, 'CommandResponse')) {\n    throw new XAPIError(\n      INVALID_RESPONSE, 'Invalid command response: Missing \"CommandResponse\" attribute');\n  }\n\n  const keys = Object.keys(response.CommandResponse);\n  if (keys.length !== 1) {\n    throw new XAPIError(\n      INVALID_RESPONSE, `Invalid command response: Wrong number of keys (${keys.length})`);\n  }\n\n  const root = response.CommandResponse[keys[0]];\n\n  switch (root.status) {\n    case 'Error': {\n      const body = collapse(root);\n      const { Error, Reason, XPath } = body;\n      if (XPath) {\n        throw new InvalidPathError(Reason, XPath);\n      }\n      const reason = Error || Reason || keys[0];\n      throw new XAPIError(UNKNOWN_ERROR, reason, body);\n    }\n    case 'ParameterError':\n      throw new ParameterError();\n    case 'OK':\n      return root;\n    default:\n      throw new XAPIError(INVALID_STATUS, `Invalid command status: ${root.status}`);\n  }\n}\n\n\nexport function createCommandResponse(response) {\n  const root = assertValidCommandResponse(response);\n  const collapsed = collapse(root);\n  return Object.keys(collapsed).length ? collapsed : null;\n}\n\n\nfunction digObj(path, obj) {\n  const parts = path.slice();\n  let value = obj;\n\n  while (parts.length) {\n    const part = parts.shift();\n    if (Array.isArray(value)) {\n      value = value.find(v => parseInt(v.id, 10) === part);\n    } else if (!{}.hasOwnProperty.call(value, part)) {\n      return undefined;\n    } else {\n      value = value[part];\n    }\n  }\n\n  return value;\n}\n\n\nexport function createGetResponse(request, response) {\n  if ({}.hasOwnProperty.call(response, 'CommandResponse')) {\n    assertValidCommandResponse(response);\n  }\n\n  return digObj(request.params.Path, collapse(response));\n}\n\n\nexport function createSetResponse(request, response) {\n  if (Object.keys(response).length > 1) {\n    const leaf = digObj(request.params.Path, response);\n    if (leaf.error === 'True') {\n      throw new IllegalValueError(leaf.Value);\n    }\n  }\n  return null;\n}\n",
+    "static": true,
+    "longname": "C:/Local/tmp/node_modules/jsxapi/src/xapi/rpc.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 215,
+    "kind": "variable",
+    "name": "scalars",
+    "memberof": "src/xapi/rpc.js",
+    "static": true,
+    "longname": "src/xapi/rpc.js~scalars",
+    "access": "public",
+    "export": false,
+    "importPath": "jsxapi/lib/xapi/rpc.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 11,
+    "undocument": true,
+    "type": {
+      "types": [
+        "string[]"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 216,
+    "kind": "function",
+    "name": "isScalar",
+    "memberof": "src/xapi/rpc.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/xapi/rpc.js~isScalar",
+    "access": "public",
+    "export": false,
+    "importPath": "jsxapi/lib/xapi/rpc.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 12,
+    "undocument": true,
+    "params": [
+      {
+        "name": "value",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 217,
+    "kind": "variable",
+    "name": "VERSION",
+    "memberof": "src/xapi/rpc.js",
+    "static": true,
+    "longname": "src/xapi/rpc.js~VERSION",
+    "access": "public",
+    "export": false,
+    "importPath": "jsxapi/lib/xapi/rpc.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 15,
+    "undocument": true,
+    "type": {
+      "types": [
+        "string"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 218,
+    "kind": "function",
+    "name": "collapse",
+    "memberof": "src/xapi/rpc.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/xapi/rpc.js~collapse",
+    "access": "public",
+    "export": true,
+    "importPath": "jsxapi/lib/xapi/rpc.js",
+    "importStyle": "{collapse}",
+    "description": null,
+    "lineNumber": 21,
+    "undocument": true,
+    "params": [
+      {
+        "name": "data",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 219,
+    "kind": "function",
+    "name": "createRequest",
+    "memberof": "src/xapi/rpc.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/xapi/rpc.js~createRequest",
+    "access": "public",
+    "export": true,
+    "importPath": "jsxapi/lib/xapi/rpc.js",
+    "importStyle": "{createRequest}",
+    "description": null,
+    "lineNumber": 40,
+    "undocument": true,
+    "params": [
+      {
+        "name": "id",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "method",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "params",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 220,
+    "kind": "function",
+    "name": "createResponse",
+    "memberof": "src/xapi/rpc.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/xapi/rpc.js~createResponse",
+    "access": "public",
+    "export": true,
+    "importPath": "jsxapi/lib/xapi/rpc.js",
+    "importStyle": "{createResponse}",
+    "description": null,
+    "lineNumber": 65,
+    "undocument": true,
+    "params": [
+      {
+        "name": "id",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "result",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "{\"jsonrpc\": *, \"id\": *, \"result\": *}"
+      ]
+    }
+  },
+  {
+    "__docId__": 221,
+    "kind": "function",
+    "name": "createErrorResponse",
+    "memberof": "src/xapi/rpc.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/xapi/rpc.js~createErrorResponse",
+    "access": "public",
+    "export": true,
+    "importPath": "jsxapi/lib/xapi/rpc.js",
+    "importStyle": "{createErrorResponse}",
+    "description": null,
+    "lineNumber": 70,
+    "undocument": true,
+    "params": [
+      {
+        "name": "id",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "error",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "{\"jsonrpc\": *, \"id\": *, \"error\": *}"
+      ]
+    }
+  },
+  {
+    "__docId__": 222,
+    "kind": "function",
+    "name": "parseFeedbackResponse",
+    "memberof": "src/xapi/rpc.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/xapi/rpc.js~parseFeedbackResponse",
+    "access": "public",
+    "export": true,
+    "importPath": "jsxapi/lib/xapi/rpc.js",
+    "importStyle": "{parseFeedbackResponse}",
+    "description": null,
+    "lineNumber": 93,
+    "undocument": true,
+    "params": [
+      {
+        "name": "response",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 223,
+    "kind": "function",
+    "name": "assertValidCommandResponse",
+    "memberof": "src/xapi/rpc.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/xapi/rpc.js~assertValidCommandResponse",
+    "access": "public",
+    "export": false,
+    "importPath": "jsxapi/lib/xapi/rpc.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 98,
+    "undocument": true,
+    "params": [
+      {
+        "name": "response",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 224,
+    "kind": "function",
+    "name": "createCommandResponse",
+    "memberof": "src/xapi/rpc.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/xapi/rpc.js~createCommandResponse",
+    "access": "public",
+    "export": true,
+    "importPath": "jsxapi/lib/xapi/rpc.js",
+    "importStyle": "{createCommandResponse}",
+    "description": null,
+    "lineNumber": 132,
+    "undocument": true,
+    "params": [
+      {
+        "name": "response",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 225,
+    "kind": "function",
+    "name": "digObj",
+    "memberof": "src/xapi/rpc.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/xapi/rpc.js~digObj",
+    "access": "public",
+    "export": false,
+    "importPath": "jsxapi/lib/xapi/rpc.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 139,
+    "undocument": true,
+    "params": [
+      {
+        "name": "path",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "obj",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 226,
+    "kind": "function",
+    "name": "createGetResponse",
+    "memberof": "src/xapi/rpc.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/xapi/rpc.js~createGetResponse",
+    "access": "public",
+    "export": true,
+    "importPath": "jsxapi/lib/xapi/rpc.js",
+    "importStyle": "{createGetResponse}",
+    "description": null,
+    "lineNumber": 158,
+    "undocument": true,
+    "params": [
+      {
+        "name": "request",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "response",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 227,
+    "kind": "function",
+    "name": "createSetResponse",
+    "memberof": "src/xapi/rpc.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/xapi/rpc.js~createSetResponse",
+    "access": "public",
+    "export": true,
+    "importPath": "jsxapi/lib/xapi/rpc.js",
+    "importStyle": "{createSetResponse}",
+    "description": null,
+    "lineNumber": 167,
+    "undocument": true,
+    "params": [
+      {
+        "name": "request",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "response",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "kind": "index",
+    "content": "# JSXAPI\n\n[![Build Status](https://travis-ci.org/cisco-ce/jsxapi.svg?branch=master)](https://travis-ci.org/cisco-ce/jsxapi)\n\nA set of tools to integrate with the Cisco Telepresence Endpoint APIs in\nJavaScript.\n\n## Quick start example, using SSH\n\n```javascript\nconst jsxapi = require('jsxapi');\n\n// Connect over ssh to a codec\nconst xapi = jsxapi.connect('ssh://host.example.com', {\n  username: 'admin',\n  password: 'password',\n});\n\n// Handle errors\nxapi.on('error', (err) => {\n  // !! Note of caution: This event might fire more than once !!\n  console.error(`xapi error: ${err}`);\n});\n\n// Set up a call\nxapi.command('Dial', { Number: 'user@example.com' });\n\n// Fetch volume and print it\nxapi.status\n  .get('Audio Volume')\n  .then((volume) => { console.log(volume); });\n\n// Set a configuration\nxapi.config.set('SystemUnit Name', 'My System');\n\n// Listen to feedback\nconst off = xapi.event.on('Standby', (event) => {\n  // ...\n});\n\n// De-register feedback\noff();\n```\n\n## Documentation\n\nThe full API documentation can be built by running `npm install` in a `jsxapi`\nmodule directory. Documentation will be located under `docs/` can then be opened\nin a browser.\n\nMore specifically:\n\n```\nmkdir tmp\ncd tmp\nnpm install jsxapi\ncd node_modules/jsxapi\nnpm install\n```\n\nThen open `./docs/index.html`.\n\n## Questions and support?\n\nQuestions about the xAPI, integrations and customizations? Join the xAPI Devs\nSpark Space community for realtime support [here](https://eurl.io/#rkp76XDrG).\n",
+    "longname": "C:\\Local\\tmp\\node_modules\\jsxapi\\README.md",
+    "name": "./README.md",
+    "static": true,
+    "access": "public"
+  },
+  {
+    "kind": "packageJSON",
+    "content": "{\n  \"_from\": \"jsxapi\",\n  \"_id\": \"jsxapi@4.2.0\",\n  \"_inBundle\": false,\n  \"_integrity\": \"sha512-q0cUzJR0C38FQt4REmyL6GVzYUJ+e+92+ERmZX1tHLpC7OaNK7VPthRoem7VKpSx4HEjSFKhTJtwx4dYJPS8Xw==\",\n  \"_location\": \"/jsxapi\",\n  \"_phantomChildren\": {},\n  \"_requested\": {\n    \"type\": \"tag\",\n    \"registry\": true,\n    \"raw\": \"jsxapi\",\n    \"name\": \"jsxapi\",\n    \"escapedName\": \"jsxapi\",\n    \"rawSpec\": \"\",\n    \"saveSpec\": null,\n    \"fetchSpec\": \"latest\"\n  },\n  \"_requiredBy\": [\n    \"#USER\",\n    \"/\"\n  ],\n  \"_resolved\": \"https://registry.npmjs.org/jsxapi/-/jsxapi-4.2.0.tgz\",\n  \"_shasum\": \"1e97323652c97944635486cd897c9c941d4c8000\",\n  \"_spec\": \"jsxapi\",\n  \"_where\": \"C:\\\\Local\\\\tmp\",\n  \"author\": {\n    \"name\": \"Martin Øinæs Myrseth\",\n    \"email\": \"mmyrseth@cisco.com\"\n  },\n  \"babel\": {\n    \"plugins\": [\n      \"transform-class-properties\",\n      [\n        \"transform-builtin-extend\",\n        {\n          \"globals\": [\n            \"Error\"\n          ]\n        }\n      ]\n    ],\n    \"presets\": [\n      [\n        \"env\",\n        {\n          \"node\": 8\n        }\n      ]\n    ]\n  },\n  \"bin\": {\n    \"jsxapi\": \"./lib/cli.js\"\n  },\n  \"bugs\": {\n    \"url\": \"https://github.com/cisco-ce/jsxapi/issues\"\n  },\n  \"bundleDependencies\": false,\n  \"dependencies\": {\n    \"commander\": \"^2.13.0\",\n    \"duplex-passthrough\": \"^1.0.2\",\n    \"duplexer\": \"^0.1.1\",\n    \"jsonparse\": \"^1.3.1\",\n    \"loglevel\": \"^1.6.1\",\n    \"ssh2\": \"^0.5.5\",\n    \"url-parse\": \"^1.2.0\",\n    \"ws\": \"^4.0.0\",\n    \"xml-escape\": \"^1.1.0\"\n  },\n  \"deprecated\": false,\n  \"description\": \"JavaScript bindings for XAPI\",\n  \"devDependencies\": {\n    \"babel-cli\": \"^6.23.0\",\n    \"babel-eslint\": \"^7.1.1\",\n    \"babel-plugin-transform-builtin-extend\": \"^1.1.2\",\n    \"babel-plugin-transform-class-properties\": \"^6.23.0\",\n    \"babel-preset-env\": \"^1.6.1\",\n    \"babel-register\": \"^6.23.0\",\n    \"chai\": \"^4.1.2\",\n    \"chai-as-promised\": \"^7.1.1\",\n    \"chai-properties\": \"^1.3.0\",\n    \"dirty-chai\": \"^2.0.1\",\n    \"esdoc\": \"^1.1.0\",\n    \"esdoc-ecmascript-proposal-plugin\": \"^1.0.0\",\n    \"esdoc-importpath-plugin\": \"^1.0.2\",\n    \"esdoc-standard-plugin\": \"^1.0.0\",\n    \"eslint\": \"^3.16.1\",\n    \"eslint-config-airbnb-base\": \"^11.1.0\",\n    \"eslint-plugin-import\": \"^2.2.0\",\n    \"json-loader\": \"^0.5.4\",\n    \"mocha\": \"^5.2.0\",\n    \"rimraf\": \"^2.6.1\",\n    \"sinon\": \"^4.5.0\",\n    \"sinon-chai\": \"^2.14.0\"\n  },\n  \"engines\": {\n    \"node\": \">=8.x\",\n    \"npm\": \">=5.x\"\n  },\n  \"homepage\": \"https://github.com/cisco-ce/jsxapi#readme\",\n  \"license\": \"MIT\",\n  \"main\": \"lib/index.js\",\n  \"name\": \"jsxapi\",\n  \"repository\": {\n    \"type\": \"git\",\n    \"url\": \"git+ssh://git@github.com/cisco-ce/jsxapi.git\"\n  },\n  \"scripts\": {\n    \"build\": \"npm run build:js && npm run build:docs\",\n    \"build:docs\": \"esdoc\",\n    \"build:js\": \"babel -d lib/ src/\",\n    \"clean\": \"rimraf docs lib\",\n    \"lint\": \"eslint .\",\n    \"prepare\": \"npm run build\",\n    \"prepublishOnly\": \"npm test\",\n    \"start\": \"node -r babel-register ./src/cli.js\",\n    \"tdd\": \"mocha --watch --reporter min\",\n    \"test\": \"npm run lint && mocha\"\n  },\n  \"version\": \"4.2.0\"\n}\n",
+    "longname": "C:\\Local\\tmp\\node_modules\\jsxapi\\package.json",
+    "name": "package.json",
+    "static": true,
+    "access": "public"
+  }
+]

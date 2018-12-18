@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../../">
+  <title data-ice="title">src/backend/tsh.js | jsxapi</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+<meta name="description" content="JavaScript bindings for XAPI"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="jsxapi"><meta property="twitter:description" content="JavaScript bindings for XAPI"></head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./">Home</a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+</header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/json-parser.js~JSONParser.html">JSONParser</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-connect">connect</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-parseJSON">parseJSON</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-external">E</span><span data-ice="name"><span><a href="https://nodejs.org/api/stream.html#stream_class_stream_transform">Transform</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#backend">backend</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/backend/tsh.js~TSHBackend.html">TSHBackend</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/backend/ws.js~WSBackend.html">WSBackend</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-interface">I</span><span data-ice="name"><span><a href="class/src/backend/index.js~Backend.html">Backend</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-external">E</span><span data-ice="name"><span><a href="https://nodejs.org/api/events.html#events_class_eventemitter">EventEmitter</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-external">E</span><span data-ice="name"><span><a href="https://nodejs.org/api/stream.html#stream_class_stream_duplex">Duplex</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-external">E</span><span data-ice="name"><span><a href="https://developer.mozilla.org/en-US/docs/Web/API/WebSocket">WebSocket</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#transport">transport</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/transport/stream.js~StreamTransport.html">StreamTransport</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-connectSSH">connectSSH</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-spawnTSH">spawnTSH</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#xapi">xapi</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/xapi/components.js~Config.html">Config</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/xapi/components.js~Event.html">Event</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/xapi/components.js~Status.html">Status</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/xapi/exc.js~IllegalValueError.html">IllegalValueError</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/xapi/exc.js~InvalidPathError.html">InvalidPathError</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/xapi/exc.js~ParameterError.html">ParameterError</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/xapi/exc.js~XAPIError.html">XAPIError</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/xapi/feedback.js~Feedback.html">Feedback</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/xapi/feedback.js~FeedbackGroup.html">FeedbackGroup</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/xapi/index.js~XAPI.html">XAPI</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-interface">I</span><span data-ice="name"><span><a href="class/src/xapi/components.js~Component.html">Component</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-interface">I</span><span data-ice="name"><span><a href="class/src/xapi/mixins.js~Gettable.html">Gettable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-interface">I</span><span data-ice="name"><span><a href="class/src/xapi/mixins.js~Listenable.html">Listenable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-interface">I</span><span data-ice="name"><span><a href="class/src/xapi/mixins.js~Settable.html">Settable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-mix">mix</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-normalizePath">normalizePath</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-collapse">collapse</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-createCommandResponse">createCommandResponse</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-createErrorResponse">createErrorResponse</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-createGetResponse">createGetResponse</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-createRequest">createRequest</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-createResponse">createResponse</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-createSetResponse">createSetResponse</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-parseFeedbackResponse">parseFeedbackResponse</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-COMMAND_ERROR">COMMAND_ERROR</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-ILLEGAL_VALUE">ILLEGAL_VALUE</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-INVALID_PATH">INVALID_PATH</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-INVALID_RESPONSE">INVALID_RESPONSE</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-INVALID_STATUS">INVALID_STATUS</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-METHOD_NOT_FOUND">METHOD_NOT_FOUND</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-PARAMETER_ERROR">PARAMETER_ERROR</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-UNKNOWN_ERROR">UNKNOWN_ERROR</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">src/backend/tsh.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">import log from &apos;../log&apos;;
+import { JSONParser } from &apos;../json-parser&apos;;
+import * as rpc from &apos;../xapi/rpc&apos;;
+
+import Backend from &apos;./&apos;;
+
+
+/**
+ * @external {Duplex} https://nodejs.org/api/stream.html#stream_class_stream_duplex
+ */
+
+
+function formatValue(value) {
+  switch (typeof value) {
+    case &apos;boolean&apos;:
+      return value ? &apos;True&apos; : &apos;False&apos;;
+    case &apos;number&apos;:
+    case &apos;string&apos;:
+      return JSON.stringify(value);
+    default:
+      throw new TypeError(`Invalid value ${JSON.stringify(value)}`);
+  }
+}
+
+
+function paramString(key, value) {
+  const values = Array.isArray(value) ? value : [value];
+  return values
+    .map(v =&gt; `${key}: ${formatValue(v)}`)
+    .join(&apos; &apos;);
+}
+
+
+/**
+ * Backend to communicate with a {@link Duplex} stream talking tshell (tsh).
+ *
+ * @extends {Backend}
+ */
+export default class TSHBackend extends Backend {
+  /**
+   * @param {Duplex} transport - Stream to interact with TSH.
+   */
+  constructor(transport) {
+    super();
+
+    this.feedbackQueries = {};
+    this.nextFeedbackId = 0;
+    this.parser = new JSONParser();
+    this.requests = {};
+    this.transport = transport;
+    this.setState(&apos;idle&apos;);
+    this.buffer = &apos;&apos;;
+
+    this.parser.on(&apos;data&apos;, this.onParserData.bind(this));
+    this.parser.on(&apos;error&apos;, error =&gt; this.emit(&apos;error&apos;, error));
+
+    Object.defineProperty(this, &apos;isReady&apos;, {
+      configurable: false,
+      enumerable: true,
+      writable: false,
+      value: new Promise((resolve, reject) =&gt; {
+        if (this.state !== &apos;idle&apos;) {
+          reject(new Error(&apos;TSHBackend is not in an idle state&apos;));
+          return;
+        }
+
+        this.connectResolve = resolve;
+        this.setState(&apos;connecting&apos;);
+      }),
+    });
+
+    this.transport
+      .on(&apos;data&apos;, data =&gt; this.onTransportData(data))
+      .on(&apos;error&apos;, error =&gt; this.emit(&apos;error&apos;, error))
+      .on(&apos;close&apos;, () =&gt; {
+        this.setState(&apos;closed&apos;);
+        this.emit(&apos;close&apos;);
+      });
+  }
+
+  bufferHasOK(buffer) {
+    const lines = (this.buffer + buffer.toString()).split(&apos;\n&apos;);
+    if (lines.length) {
+      this.buffer = lines[lines.length - 1];
+    }
+    return lines.some(line =&gt; line === &apos;OK&apos;);
+  }
+
+  setState(newState) {
+    this.state = newState;
+  }
+
+  /**
+   * @override
+   */
+  close() {
+    this.transport.close();
+  }
+
+  onParserData(data) {
+    if (!{}.hasOwnProperty.call(data, &apos;ResultId&apos;)) {
+      log.debug(&apos;[tsh] (feedback):&apos;, JSON.stringify(data));
+      this.onFeedback(rpc.parseFeedbackResponse(data));
+    } else {
+      log.debug(&apos;[tsh] (result):&apos;, JSON.stringify(data));
+      this.onResult(data.ResultId, data);
+    }
+  }
+
+  onTransportData(data) {
+    switch (this.state) {
+      case &apos;connecting&apos;:
+        if (this.bufferHasOK(data)) {
+          log.debug(&apos;[transport] (connecting)&apos;, data.toString());
+          this.setState(&apos;initializing&apos;);
+          this.write(&apos;echo off\n&apos;);
+          this.emit(&apos;initializing&apos;);
+        }
+        break;
+      case &apos;initializing&apos;:
+        if (this.bufferHasOK(data)) {
+          log.debug(&apos;[transport] (initializing)&apos;, data.toString());
+          this.buffer = &apos;&apos;;
+          this.write(&apos;xpreferences outputmode json\n&apos;);
+          this.setState(&apos;ready&apos;);
+          this.connectResolve(true);
+          this.emit(&apos;ready&apos;);
+        }
+        break;
+      case &apos;ready&apos;:
+        log.debug(`to parser: &quot;${data.toString()}&quot;`);
+        this.parser.write(data);
+        break;
+      default:
+        this.emit(&apos;error&apos;, new Error(&apos;TSHBackend is in an invalid state for input&apos;));
+    }
+  }
+
+  /**
+   * @override
+   */
+  send(id, command, body) {
+    let cmd = `${command} | resultId=&quot;${id}&quot;\n`;
+    if (body !== undefined) {
+      cmd += `${body}\n`;
+      const length = cmd.length;
+      cmd = `{${length}} \n${cmd}`;
+    }
+
+    this.write(cmd);
+  }
+
+  write(data) {
+    log.debug(`write: ${JSON.stringify(data)}`);
+    this.transport.write(data);
+  }
+
+  // XAPI json-rpc method handlers
+
+  /**
+   * @ignore
+   */
+  [&apos;xCommand()&apos;]({ method, params }, send) { // eslint-disable-line class-methods-use-this
+    const paramsCopy = Object.assign({}, params);
+    const body = paramsCopy.body;
+    delete paramsCopy.body;
+
+    const tshParams = paramsCopy
+      ? Object
+        .keys(paramsCopy)
+        .sort()
+        .map(k =&gt; paramString(k, paramsCopy[k]))
+      : [];
+
+    const cmd = method
+      .split(&apos;/&apos;)
+      .concat(tshParams)
+      .join(&apos; &apos;);
+
+    return send(cmd, body)
+      .then(rpc.createCommandResponse);
+  }
+
+  /**
+   * @ignore
+   */
+  [&apos;xFeedback/Subscribe()&apos;]({ params }, send) {
+    const query = params.Query
+      .map(part =&gt; (typeof part === &apos;number&apos; ? `[${part}]` : `/${part}`))
+      .join(&apos;&apos;);
+    return send(`xfeedback register ${query}`)
+      .then(() =&gt; {
+        const id = this.nextFeedbackId;
+        this.nextFeedbackId += 1;
+        this.feedbackQueries[id] = query;
+        return { Id: id };
+      });
+  }
+
+  /**
+   * @ignore
+   */
+  [&apos;xFeedback/Unsubscribe()&apos;]({ params }, send) {
+    const id = params.Id;
+
+    if (!{}.hasOwnProperty.call(this.feedbackQueries, id)) {
+      throw new Error(`Invalid feedback id: ${id}`);
+    }
+
+    const path = this.feedbackQueries[id];
+
+    return send(`xfeedback deregister ${path}`)
+      .then(() =&gt; {
+        delete this.feedbackQueries[id];
+        return true;
+      });
+  }
+
+  /**
+   * @ignore
+   */
+  [&apos;xGet()&apos;](request, send) { // eslint-disable-line class-methods-use-this
+    const path = request.params.Path.join(&apos; &apos;);
+    return send(`x${path}`)
+      .then(response =&gt; rpc.createGetResponse(request, response));
+  }
+
+  /**
+   * @ignore
+   */
+  [&apos;xSet()&apos;](request, send) { // eslint-disable-line class-methods-use-this
+    const { params } = request;
+    const path = params.Path.join(&apos; &apos;);
+    const value = formatValue(params.Value);
+    return send(`x${path}: ${value}`)
+      .then(response =&gt; rpc.createSetResponse(request, response));
+  }
+}
+</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.1.0)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>
