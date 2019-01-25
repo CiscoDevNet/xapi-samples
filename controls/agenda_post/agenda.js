@@ -1,64 +1,75 @@
 //
-// Copyright (c) 2018 Cisco Systems
+// Copyright (c) 2019 Cisco Systems
 // Licensed under the MIT License 
 //
 
 /**
- * Listen to User Interfaace control events via xAPI's feedback function
- * Pushes events to a Webex Teams space via a Bot Account
- * !!!Place your Bot token below!!!
+ * Pushes event details to a Webex Teams space
+ *    - deploy the 'agenda.xml' in-room control to your device
+ *    - run the agenda.js script as a standalone Node.js process
+ *      > npm install
+ *      > node agenda.js
+ *    - or create a macro with the contents of the main() function from agenda.js and invoke main() in your macro
+ * 
+ * /!\ Make sure to place your Bot token and RoomIt below
+ * 
+ * /!\ Also your device should be capable to send HTTP Post command to api.ciscospark.com
+ *      from a ssh session, type the commands below:
+ *      > xConfiguration HttpClient Mode: On
+ *      > xConfiguration HttpClient AllowInsecureHTTPS: True
+ *
  */
 
 //
 // Connect to the device
 //
 
-const jsxapi = require('jsxapi');
+const jsxapi = require('jsxapi')
 
 // Check args
 if (!process.env.JSXAPI_DEVICE_URL || !process.env.JSXAPI_USERNAME) {
-    console.error("Please specify info to connect to your device as JSXAPI_DEVICE_URL, JSXAPI_USERNAME, JSXAPI_PASSWORD env variables");
-    console.error("Bash example: JSXAPI_DEVICE_URL='ssh://192.168.1.34' JSXAPI_USERNAME='integrator' JSXAPI_PASSWORD='integrator' node agenda.js");
-    process.exit(1);
+    console.error("Please specify info to connect to your device as JSXAPI_DEVICE_URL, JSXAPI_USERNAME, JSXAPI_PASSWORD env variables")
+    console.error("Bash example: JSXAPI_DEVICE_URL='ssh://192.168.1.34' JSXAPI_USERNAME='integrator' JSXAPI_PASSWORD='integrator' node agenda.js")
+    process.exit(1)
 }
 
 // Empty passwords are supported
-const password = process.env.JSXAPI_PASSWORD ? process.env.JSXAPI_PASSWORD : "";
+const password = process.env.JSXAPI_PASSWORD ? process.env.JSXAPI_PASSWORD : ""
 
 // Connect to the device
-console.log("connecting to your device...");
+console.log("connecting to your device...")
 const xapi = jsxapi.connect(process.env.JSXAPI_DEVICE_URL, {
     username: process.env.JSXAPI_USERNAME,
     password: password
-});
+})
 xapi.on('error', (err) => {
     switch (err) {
         case "client-socket":
-            console.error("could not connect: invalid URL.");
-            break;
+            console.error("could not connect: invalid URL.")
+            break
 
         case "client-authentication":
-            console.error("could not connect: invalid credentials.");
-            break;
+            console.error("could not connect: invalid credentials.")
+            break
 
         case "client-timeout":
-            console.error("could not connect: timeout.");
-            break;
+            console.error("could not connect: timeout.")
+            break
 
         default:
-            console.error(`encountered error: ${err}.`);
-            break;
+            console.error(`encountered error: ${err}.`)
+            break
     }
 
-    console.log("exiting...");
-    process.exit(1);
+    console.log("exiting...")
+    process.exit(1)
 });
 
 xapi.on('ready', () => {
-    console.log("connexion successful");
+    console.log("connexion successful")
 
     // Begin main code logic
-    main();
+    main()
 });
 
 
@@ -68,40 +79,39 @@ xapi.on('ready', () => {
 
 function main() {
     // Listen to custom In-Room Controls events
-    console.log("added feedback event listener: UserInterface Extensions Event Clicked");
+    console.log("added feedback event listener: UserInterface Extensions Event Clicked")
     xapi.event.on('UserInterface Extensions Event Clicked', (event) => {
-        console.log(`new event from: ${event.Signal}`);
+        console.log(`new event from: ${event.Signal}`)
 
         // Identify session associated to button
-        let sessionId = extractSession(event.Signal);
+        let sessionId = extractSession(event.Signal)
         if (!sessionId) {
-            console.log("bad format, ignoring...");
-            return;
+            console.log("bad format, ignoring...")
+            return
         }
 
         // Fetch session details
-        let session = sessions[sessionId];
+        let session = sessions[sessionId]
         if (!session) {
-            console.log("could not find details for session, ignoring...");
-            return;
+            console.log("could not find details for session, ignoring...")
+            return
         }
 
         // Push info about the session
-        push(`${session.day}, ${session.time}: **${session.title}** in ${session.location}<br/>_${session.description}_`);
-    });
+        push(`${session.day}, ${session.time}: **${session.title}** in ${session.location}<br/>_${session.description}_`)
+    })
 }
 
 
 function extractSession(component) {
-    //let parsed = component.match(/^push_(DEVNET-\d{4}[A:B]?)$/);
-    let parsed = component.match(/^push_(.*)$/);
+    let parsed = component.match(/^push_(.*)$/)
 
     if (!parsed) {
-        console.log("format error, please comply with 'push_DEVNET-DDDD'");
-        return undefined;
+        console.log("format error, please comply with 'push_XXXXXXXXXXXX'")
+        return undefined
     }
 
-    return parsed[1];
+    return parsed[1]
 }
 
 //
@@ -109,8 +119,9 @@ function extractSession(component) {
 //
 
 // Replace with your bot token
-const token = "NGQ4YzkxOTgtZDc0Yy00NTQ4LTkyODEtOGYzNTFiN2FkZmRiOTgwNzgwMTAtM2E4"
-// replace with a space your bot is part of
+const token = process.env.ACCESS_TOKEN || "NGQ4YzkxOTgtZDc0Yy00NTQ4LTkyODEtOGYzNTFiN2FkZmRiOTgwNzgwMTAtM2E4"
+
+// Replace with a Teams space your bot is part of
 const roomId = "Y2lzY29zcGFyazovL3VzL1JPT00vMTQ0YTc0NTAtZWM1MS0xMWU4LWExZDAtYWRlYjI4NDZjZmI1"
 
 function push(msg, cb) {
@@ -130,9 +141,9 @@ function push(msg, cb) {
         JSON.stringify(payload))
         .then((response) => {
             if (response.StatusCode == 200) {
-                console.log("message pushed to Webex Teams");
-                if (cb) cb(null);
-                return;
+                console.log("message pushed to Webex Teams")
+                if (cb) cb(null)
+                return
             }
         })
         .catch((err) => {
@@ -146,7 +157,21 @@ function push(msg, cb) {
 // List of sessions
 //
 
-const sessions = {};
+const sessions = {}
+
+sessions["DEVNET-2074A"] = {
+    id: "push_DEVNET-2074A",
+    title: "Workshop 4 - Enhancement Meeting Rooms User Experience with xAPI and Macros",
+    description: "Are there days when you wake up and tell yourself: 'it's too bad, I wish I was born a decade or two earlier, there was so much to create then'? Well, at DevNet, we think you are lucky and in the exactly right decade! I joined DevNet - Cisco's Developer Program - a couple of years ago, looking forward to explore how applications could better leverage the pieces of infrastructure laying here and there. I'll share some use cases I discovered while building prototypes and supporting hackathons, in the hope of inspiring you for your next startup or simply learn and have fun on the way.",
+    location: "Workshop 4",
+    type: "workshop",
+    day: "Monday",
+    time: "3:00PM",
+    duration: "45",
+    speaker: "Stève Sfartz",
+    href: "https://ciscolive.cisco.com/emea/learn/sessions/content-catalog/?search=2074#/"
+}
+
 sessions["steve"] = {
     id: "push_steve",
     title: "KeyNote - When apps meet infrastructure",
@@ -238,4 +263,3 @@ sessions["demos"] = {
     speaker: "Janel Kratky",
     href: "https://developer.cisco.com/events/codemotion18/"
 }
-
