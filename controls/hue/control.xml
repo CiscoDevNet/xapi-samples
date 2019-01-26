@@ -1,7 +1,7 @@
 <Extensions>
   <Version>1.5</Version>
   <Panel>
-    <PanelId>panel_2</PanelId>
+    <PanelId>Hue</PanelId>
     <Type>Statusbar</Type>
     <Icon>Lightbulb</Icon>
     <Order>2</Order>
@@ -12,7 +12,7 @@
       <Row>
         <Name>Switch</Name>
         <Widget>
-          <WidgetId>switch</WidgetId>
+          <WidgetId>toggle</WidgetId>
           <Type>ToggleButton</Type>
           <Options>size=1</Options>
         </Widget>

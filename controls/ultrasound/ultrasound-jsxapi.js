@@ -67,7 +67,7 @@ xapi.on('ready', () => {
     // Update configuration from UI actions
     xapi.event.on('UserInterface Extensions Widget Action', (event) => {
         if (event.WidgetId !== 'volume_slider') return
-        if (event.Type !== 'changed') return
+        if (event.Type !== 'released') return
 
         // Update Ultrasound configuration
         const volume = Math.round(parseInt(event.Value) * MAX / 255);

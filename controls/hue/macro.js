@@ -1,12 +1,11 @@
 const xapi = require('xapi')
 
-
 // Listen to In-Room control events
 xapi.event.on('UserInterface Extensions Widget Action', (action) => {
   console.log(`new event from group: ${action.WidgetId}`)
 
   // Toggle (on/off)
-  if ((action.WidgetId === 'switch') && (action.Type === 'changed')) {
+  if ((action.WidgetId === 'toggle') && (action.Type === 'changed')) {
     console.info(`toggling light to: ${action.Value}`)
     toggleLight(4, (action.Value === 'on'))
     return
@@ -32,6 +31,33 @@ xapi.event.on('UserInterface Extensions Widget Action', (action) => {
     return
   }
 })
+
+// Init at launch
+xapi.event.on('UserInterface Extensions Panel Clicked PanelId', (panel) => {
+  console.debug(`new panel opened group: ${panel}`)
+
+  // Toggle (on/off)
+  if (panel === 'Hue') {
+    console.log(`resetting panel: turning off, and color to red`)
+    
+    // update lights
+    changeColorForLight(4, 65535)
+    toggleLight(4, false)
+    
+    // update UI
+    xapi.command('UserInterface Extensions Widget SetValue', {
+      WidgetId: 'color_group',
+      Value: 'color_red'
+    })
+    xapi.command('UserInterface Extensions Widget SetValue', {
+      WidgetId: 'toggle',
+      Value: 'Off'
+    })
+
+    return
+  }
+})
+
 
 console.info('Philips Hue macro listening...')
 
