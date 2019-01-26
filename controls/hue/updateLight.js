@@ -37,6 +37,3 @@ const BRIDGE_USER = 'SECRET'
 
 // Turn green color
 updateLight(BRIDGE_IP, BRIDGE_USER, 4, { "hue": 25500 }, console.log)
-
-
-

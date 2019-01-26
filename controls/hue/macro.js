@@ -5,14 +5,16 @@ const xapi = require('xapi')
 xapi.event.on('UserInterface Extensions Widget Action', (action) => {
   console.log(`new event from group: ${action.WidgetId}`)
 
-  // Toggle
+  // Toggle (on/off)
   if ((action.WidgetId === 'switch') && (action.Type === 'changed')) {
-    toggleLight((action.Value === 'on'))
+    console.info(`toggling light to: ${action.Value}`)
+    toggleLight(4, (action.Value === 'on'))
     return
   }
 
   // Color
   if (action.WidgetId === 'color_group') {
+    console.info(`color change requested by: ${action.Value}`)
     switch (action.Value) {
       case 'color_red':
         changeColorForLight(4, 65535)
@@ -27,10 +29,12 @@ xapi.event.on('UserInterface Extensions Widget Action', (action) => {
         changeColorForLight(4, 0)
         break
     }
-
     return
   }
 })
+
+console.info('Philips Hue macro listening...')
+
 
 //
 // Interact with Hue Lights
@@ -41,14 +45,18 @@ const BRIDGE_IP = '192.168.1.33'
 const BRIDGE_USER = 'SECRET'
 
 function changeColorForLight(light, color) {
+  console.debug(`changeColor: ${color} ForLight: ${light}`)
   updateLight(BRIDGE_IP, BRIDGE_USER, light, { "hue": color }, console.log)
 }
 
 function toggleLight(light, bool) {
+  console.debug(`toggleLight: ${light} to: ${bool}`)
   updateLight(BRIDGE_IP, BRIDGE_USER, light, { "on": bool }, console.log)
 }
 
 function updateLight(bridgeip, username, light, payload, cb) {
+  console.debug('updateLight: pushing payload')
+  console.debug(`bridgeip: ${bridgeip} light: ${light} payload: ${JSON.stringify(payload)}`)
 
   // Post message
   xapi.command(
@@ -65,11 +73,11 @@ function updateLight(bridgeip, username, light, payload, cb) {
         return
       }
 
-      console.log("failed with status code: " + response.StatusCode)
+      console.warn("updateLight: request failed with status code: " + response.StatusCode)
       if (cb) cb("failed with status code: " + response.StatusCode, response.StatusCode)
     })
     .catch((err) => {
-      console.log("failed with err: " + err.message)
+      console.error("updateLight: failed with err: " + err.message)
       if (cb) cb("Could not contact the bridge")
     })
 }
