@@ -4,12 +4,21 @@ const xapi = require('xapi')
 xapi.event.on('UserInterface Extensions Widget Action', (action) => {
   console.log(`new event from group: ${action.WidgetId}`)
 
-  // Toggle (on/off)
-  if ((action.WidgetId === 'toggle') && (action.Type === 'changed')) {
-    console.info(`toggling light to: ${action.Value}`)
-    toggleLight(4, (action.Value === 'on'))
-    return
-  }
+// Toggle (on/off)
+if ((action.WidgetId === 'toggle') && (action.Type === 'changed')) {
+  console.info(`toggling light to: ${action.Value}`)
+  
+  // [WORKAROUND] Switch Light and UI to Red as we cannot read from the macro
+  changeColorForLight(4, 65535)
+  xapi.command('UserInterface Extensions Widget SetValue', {
+    WidgetId: 'color_group',
+    Value: 'color_red'
+  })
+
+  // Switch on
+  toggleLight(4, (action.Value === 'on'))
+  return
+}
 
   // Color
   if (action.WidgetId === 'color_group') {
