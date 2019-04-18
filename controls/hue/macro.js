@@ -1,83 +1,19 @@
 const xapi = require('xapi')
 
-// Listen to In-Room control events
-xapi.event.on('UserInterface Extensions Widget Action', (action) => {
-  console.log(`new event from group: ${action.WidgetId}`)
 
-// Toggle (on/off)
-if ((action.WidgetId === 'toggle') && (action.Type === 'changed')) {
-  console.info(`toggling light to: ${action.Value}`)
-  
-  // [WORKAROUND] Switch Light and UI to Red as we cannot read from the macro
-  changeColorForLight(4, 65535)
-  xapi.command('UserInterface Extensions Widget SetValue', {
-    WidgetId: 'color_group',
-    Value: 'color_red'
-  })
-
-  // Switch on
-  toggleLight(4, (action.Value === 'on'))
-  return
-}
-
-  // Color
-  if (action.WidgetId === 'color_group') {
-    console.info(`color change requested by: ${action.Value}`)
-    switch (action.Value) {
-      case 'color_red':
-        changeColorForLight(4, 65535)
-        break
-      case 'color_blue':
-        changeColorForLight(4, 46920)
-        break
-      case 'color_green':
-        changeColorForLight(4, 25500)
-        break
-      default:
-        changeColorForLight(4, 0)
-        break
-    }
-    return
-  }
-})
-
-// Init at launch
-xapi.event.on('UserInterface Extensions Panel Clicked PanelId', (panel) => {
-  console.debug(`new panel opened group: ${panel}`)
-
-  // Toggle (on/off)
-  if (panel === 'Hue') {
-    console.log(`resetting panel: turning off, and color to red`)
-    
-    // update lights
-    changeColorForLight(4, 65535)
-    toggleLight(4, false)
-    
-    // update UI
-    xapi.command('UserInterface Extensions Widget SetValue', {
-      WidgetId: 'color_group',
-      Value: 'color_red'
-    })
-    xapi.command('UserInterface Extensions Widget SetValue', {
-      WidgetId: 'toggle',
-      Value: 'Off'
-    })
-
-    return
-  }
-})
-
-
-console.info('Philips Hue macro listening...')
+// Update with your Hue Deployment
+const BRIDGE_IP = '192.168.1.33'
+const BRIDGE_USER = 'SECRET'
+const LIGHT_ID = 1 // number of your Hue Light as registered on your Hue Bridge
 
 
 //
 // Interact with Hue Lights
 //
 
-// Update with your Hue Deployment
-const BRIDGE_IP = '192.168.1.33'
-const BRIDGE_USER = 'SECRET'
+const COLOR_RED = 65535
+const COLOR_BLUE = 46920
+const COLOR_GREEN = 25500
 
 function changeColorForLight(light, color) {
   console.debug(`changeColor: ${color} ForLight: ${light}`)
@@ -116,3 +52,74 @@ function updateLight(bridgeip, username, light, payload, cb) {
       if (cb) cb("Could not contact the bridge")
     })
 }
+
+
+// Listen to In-Room control events
+xapi.event.on('UserInterface Extensions Widget Action', (action) => {
+  console.log(`new event from group: ${action.WidgetId}`)
+
+  // Toggle (on/off)
+  if ((action.WidgetId === 'toggle') && (action.Type === 'changed')) {
+    console.info(`toggling light to: ${action.Value}`)
+    
+    // [WORKAROUND] Switch Light and UI to Red as we cannot read from the macro
+    changeColorForLight(LIGHT_ID, COLOR_RED)
+    xapi.command('UserInterface Extensions Widget SetValue', {
+      WidgetId: 'color_group',
+      Value: 'color_red'
+    })
+  
+    // Switch on
+    toggleLight(LIGHT_ID, (action.Value === 'on'))
+    return
+  }
+
+  // Color
+  if (action.WidgetId === 'color_group') {
+    console.info(`color change requested by: ${action.Value}`)
+    switch (action.Value) {
+      case 'color_red':
+        changeColorForLight(LIGHT_ID, COLOR_RED)
+        break
+      case 'color_blue':
+        changeColorForLight(LIGHT_ID, COLOR_BLUE)
+        break
+      case 'color_green':
+        changeColorForLight(LIGHT_ID, COLOR_GREEN)
+        break
+      default:
+        console.log(`WARNING: unsupported color change request: suspected wrong widget id: ${action.Value}`)
+        break
+    }
+    return
+  }
+})
+
+// Init at launch
+xapi.event.on('UserInterface Extensions Panel Clicked PanelId', (panel) => {
+  console.debug(`new panel opened group: ${panel}`)
+
+  // Toggle (on/off)
+  if (panel === 'Hue') {
+    console.log(`resetting panel: turning off, and color to red`)
+    
+    // update lights
+    changeColorForLight(LIGHT_ID, COLOR_RED)
+    toggleLight(LIGHT_ID, false)
+    
+    // update UI
+    xapi.command('UserInterface Extensions Widget SetValue', {
+      WidgetId: 'color_group',
+      Value: 'color_red'
+    })
+    xapi.command('UserInterface Extensions Widget SetValue', {
+      WidgetId: 'toggle',
+      Value: 'Off'
+    })
+
+    return
+  }
+})
+
+
+console.info('Philips Hue macro listening...')

@@ -3,9 +3,9 @@
   <Panel>
     <PanelId>Hue</PanelId>
     <Type>Statusbar</Type>
-    <Icon>Lightbulb</Icon>
+    <Icon>Sliders</Icon>
     <Order>2</Order>
-    <Color>#07C1E4</Color>
+    <Color>#A866FF</Color>
     <Name>Philips Hue</Name>
     <Page>
       <Name>Basic</Name>
