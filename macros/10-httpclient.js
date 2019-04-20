@@ -12,7 +12,7 @@
  */
 
 // Replace with your bot token
-const token = "NGQ4YzkxOTgtZDc0Yy00NTQ4LTkyODEtOGYzNTFiN2FkZmRiOTgwNzgwMTAtM2E4"
+const token = "YOUR_BOT_TOKEN"
 // replace with a space your bot is part of
 const roomId = "Y2lzY29zcGFyazovL3VzL1JPT00vMTQ0YTc0NTAtZWM1MS0xMWU4LWExZDAtYWRlYjI4NDZjZmI1"
 
