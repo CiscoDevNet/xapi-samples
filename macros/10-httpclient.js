@@ -1,20 +1,17 @@
 /**
  * Posts a message to a Webex Teams space via a Bot Account
- */
-
-
-/*
+ *
  * Prep work:
  *      from a ssh session, type the commands below:
  *      > xConfiguration HttpClient Mode: On
  *      > xConfiguration HttpClient AllowInsecureHTTPS: True
- *
+ * 
  */
 
 // Replace with your bot token
 const token = "YOUR_BOT_TOKEN"
 // replace with a space your bot is part of
-const roomId = "Y2lzY29zcGFyazovL3VzL1JPT00vMTQ0YTc0NTAtZWM1MS0xMWU4LWExZDAtYWRlYjI4NDZjZmI1"
+const roomId = "TEAMS_ROOMID"
 
 function push(msg, cb) {
 
@@ -23,6 +20,15 @@ function push(msg, cb) {
         "markdown": msg,
         "roomId": roomId
     }
+
+    // For the record, the code below correspond to the TSH command
+    //    > xcommand HttpClient Post
+    //        Url: https://api.ciscospark.com/v1/messages
+    //        Header: "Content-Type: application/json"
+    //        Header: "Authorization: Bearer BOT_TOKEN" \
+    //        AllowInsecureHTTPS: True
+    //    > {"markdown":"hey, this is Steve","roomId":"TEAMS_ROOMID"}
+    //    > .
     xapi.command(
         'HttpClient Post',
         {
