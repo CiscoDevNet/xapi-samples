@@ -39,10 +39,17 @@ function push(msg, cb) {
         JSON.stringify(payload))
         .then((response) => {
             if (response.StatusCode == 200) {
-                console.log("message pushed to Webex Teams");
-                if (cb) cb(null);
-                return;
+                console.log("message pushed to Webex Teams")
+
+                // Retrieve message id
+                let result = JSON.parse(response.Body)
+                console.log(`message id: ${result.id}`)
+                if (cb) cb(null, result.id)
+                return
             }
+
+            console.log("failed with status code: " + response.StatusCode)
+            if (cb) cb("failed with status code: " + response.StatusCode, response.StatusCode)
         })
         .catch((err) => {
             console.log("failed: " + err.message)
