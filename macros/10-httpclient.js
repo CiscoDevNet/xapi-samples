@@ -1,63 +1,100 @@
 /**
- * Posts a message to a Webex Teams space via a Bot Account
+ * Posts a message to a Webex Teams space via a Bot account
  *
  * Prep work:
  *      from a ssh session, type the commands below:
  *      > xConfiguration HttpClient Mode: On
  *      > xConfiguration HttpClient AllowInsecureHTTPS: True
  * 
+ * Example for tshell:
+ *      > xcommand HttpClient Post 
+ *          Url: https://api.ciscospark.com/v1/messages 
+ *          Header: "Content-Type: application/json" 
+ *          Header: "Authorization: Bearer BOT_TOKEN"
+ *          ResultBody: "plaintext"
+ *          AllowInsecureHTTPS: True
+ *      > {"markdown":"hey, this is Steve","roomId":"ROOM_ID"}
+ *      > .
+ * 
+ *
  */
 
+const xapi = require('xapi');
+
 // Replace with your bot token
-const token = "YOUR_BOT_TOKEN"
+const token = "BOT_TOKEN"
 // replace with a space your bot is part of
-const roomId = "TEAMS_ROOMID"
+const roomId = "ROOM_ID"
 
 function push(msg, cb) {
 
-    // Post message
-    let payload = {
-        "markdown": msg,
-        "roomId": roomId
-    }
-
-    // For the record, the code below correspond to the TSH command
-    //    > xcommand HttpClient Post
-    //        Url: https://api.ciscospark.com/v1/messages
-    //        Header: "Content-Type: application/json"
-    //        Header: "Authorization: Bearer BOT_TOKEN" \
-    //        AllowInsecureHTTPS: True
-    //    > {"markdown":"hey, this is Steve","roomId":"TEAMS_ROOMID"}
-    //    > .
-    xapi.command(
-        'HttpClient Post',
-        {
-            Header: ["Content-Type: application/json", "Authorization: Bearer " + token],
-            Url: "https://api.ciscospark.com/v1/messages",
-            AllowInsecureHTTPS: "True"
-        },
-        JSON.stringify(payload))
-        .then((response) => {
-            if (response.StatusCode == 200) {
-                console.log("message pushed to Webex Teams")
-
-                // Retrieve message id
-                let result = JSON.parse(response.Body)
-                console.log(`message id: ${result.id}`)
-                if (cb) cb(null, result.id)
-                return
+  // Post message
+  let payload = {
+    "markdown": msg,
+    "roomId": roomId
+  }
+  xapi.command(
+    'HttpClient Post',
+    {
+      Header: ["Content-Type: application/json", "Authorization: Bearer " + token],
+      Url: "https://api.ciscospark.com/v1/messages",
+      AllowInsecureHTTPS: "True",
+      ResultBody: 'plaintext'
+    },
+    JSON.stringify(payload))
+    .then((response) => {
+      console.debug(`received response with status code: ${response.StatusCode}`)
+      
+      if (response.StatusCode == 200) {
+        console.log("message pushed to Webex Teams")
+        
+        // Retrieve message id
+        let result = JSON.parse(response.Body)
+        console.log(`message id: ${result.id}`)
+        if (cb) cb(null, result.id)
+        return
+      }
+            
+      // This should not happen from current HttpClient behavior, an error is thrown is the response StatuCode is not 200 OK
+      console.log("failed with status code: " + response.StatusCode)
+      if (cb) cb("failed with status code: " + response.StatusCode, response.StatusCode)
+    })
+    .catch((err) => {
+      console.log(`failed with err message: ${err.message}`)
+      
+      switch (err.message) {
+        case 'Unknown command': 
+          // Can be caught at coding time
+          console.log("seems a wrong HttpClient Verb is used")
+          break
+          
+        case 'HttpClientPostResult': 
+        case 'HttpClientDeleteResult': 
+          console.log(`failed with err status: ${err.data.status}`)
+          console.log(Object.keys(err.data))
+          if (err.data.status === 'Error') {
+            
+            // Typically: hostname not found  
+            if (err.data.Message) {
+              console.log("data message: " + err.data.Message)
+              break
             }
-
-            console.log("failed with status code: " + response.StatusCode)
-            if (cb) cb("failed with status code: " + response.StatusCode, response.StatusCode)
-        })
-        .catch((err) => {
-            console.log("failed: " + err.message)
-            if (cb) cb("Could not post message to Webex Teams")
-        })
+            
+            // Typically: the response status code is not 200
+            if (err.data.StatusCode) {
+              console.log("status code: " + err.data.StatusCode)
+              
+              // Note: err.data.Headers can also be retrieved, though not the body of the response (no ResponseBody attribute here)
+              break
+            }
+          }
+      }
+      
+      if (cb) cb("Could not post message to Webex Teams", null)
+    })
 }
 
-push('Hello World')
+push('Hey, this is Steve', console.log)
 
 /*
 xapi.event.on('UserInterface Extensions Event Clicked', (event) => {

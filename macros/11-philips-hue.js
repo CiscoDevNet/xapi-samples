@@ -4,10 +4,8 @@
  */
 
 //
-// Philipps Hue library
+// Philipps Hue Library
 //
-
-const xapi = require('xapi');
 
 function updateLight(bridgeip, username, light, payload, cb) {
 
@@ -16,14 +14,32 @@ function updateLight(bridgeip, username, light, payload, cb) {
     'HttpClient Put',
     {
       Header: ["Content-Type: application/json"],
-      Url: `http://${bridgeip}/api/${username}/lights/${light}/state`
+      Url: `http://${bridgeip}/api/${username}/lights/${light}/state`,
+      AllowInsecureHTTPS: "True",
+      ResultBody: 'plaintext'
     },
     JSON.stringify(payload))
     .then((response) => {
       if (response.StatusCode == 200) {
         console.log("message pushed to bridge")
-        if (cb) cb(null, response.StatusCode)
+        
+        // Retrieve response
+        console.debug(`received response: ${response.Body}`)
+        let result = JSON.parse(response.Body)
+        if (result[0] && (result[0].success)) {
+          console.debug("success")
+          if (cb) cb(null, result[0].success)
+          return
+        }
+        
+        if (result[0] && (result[0].error)) {
+          console.debug("error")
+          if (cb) cb(null, result[0].error)
+          return
+        }
+        
         return
+        
       }
             
       console.log("failed with status code: " + response.StatusCode)
@@ -34,6 +50,7 @@ function updateLight(bridgeip, username, light, payload, cb) {
       if (cb) cb("Could not contact the bridge")
     })
 }
+
 
 // Your Philips Hue deployment
 const HUE_BRIDGE = '192.168.1.33'
