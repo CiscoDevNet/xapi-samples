@@ -31,9 +31,10 @@ function updateLight(bridgeip, username, light, payload, cb) {
     })
 }
 
-// Update with your Hue Deployment
+// Update for your Hue deployment
 const BRIDGE_IP = '192.168.1.33'
 const BRIDGE_USER = 'SECRET'
+const LIGHT_ID = 1 // number of your Bulb as registered at your Hue Bridge
 
 // Turn green color
-updateLight(BRIDGE_IP, BRIDGE_USER, 4, { "hue": 25500 }, console.log)
+updateLight(BRIDGE_IP, BRIDGE_USER, LIGHT_ID, { "hue": 25500 }, console.log)

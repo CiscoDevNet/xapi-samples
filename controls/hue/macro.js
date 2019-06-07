@@ -1,10 +1,10 @@
 const xapi = require('xapi')
 
 
-// Update with your Hue Deployment
+// Update for your Hue deployment
 const BRIDGE_IP = '192.168.1.33'
 const BRIDGE_USER = 'SECRET'
-const LIGHT_ID = 1 // number of your Hue Light as registered on your Hue Bridge
+const LIGHT_ID = 1 // number of your Bulb as registered at your Hue Bridge
 
 
 //

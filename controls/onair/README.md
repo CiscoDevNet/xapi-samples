@@ -12,6 +12,8 @@ Deploy the [control](./onair.xml) to your device
 
 Open the file `script.js` if you're planning to run/test/debug, or the `macro.js` if ready to deploy as a Macro.
 
+> Note: the `multi.js` file targets both the Macro runtime AND standalone Node.js execution.
+
 Update wih your Philipps Hue deployment settings.
 
 Example to run as the script from a shell terminal:

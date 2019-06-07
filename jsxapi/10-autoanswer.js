@@ -48,8 +48,8 @@ xapi.on('ready', () => {
     console.log("connexion successful");
 
     // Listen to call events
-    xapi.feedback
-        .on('/Status/Call', (call) => {
+    xapi.status
+        .on('Call', (call) => {
 
             switch (call.Status) {
                 case "Ringing":
