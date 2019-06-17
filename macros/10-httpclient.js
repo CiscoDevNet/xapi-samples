@@ -55,7 +55,7 @@ function push(msg, cb) {
         return
       }
             
-      // This should not happen from current HttpClient behavior, an error is thrown is the response StatuCode is not 200 OK
+      // This should not happen as Webex REST API always return 200 OK for POST requests
       console.log("failed with status code: " + response.StatusCode)
       if (cb) cb("failed with status code: " + response.StatusCode, response.StatusCode)
     })
@@ -80,7 +80,7 @@ function push(msg, cb) {
               break
             }
             
-            // Typically: the response status code is not 200
+            // Typically: the response status code is 4xx or 5xx
             if (err.data.StatusCode) {
               console.log("status code: " + err.data.StatusCode)
               
