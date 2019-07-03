@@ -1,5 +1,7 @@
 /**
- * Illustrates how to pass messages among macros, or to external APIs (via HTTP Feedback)
+ * Illustrates how to pass messages among local macros
+ * 
+ * see 12-master and 12-slave examples for communication through remote codecs
  */
 
 const xapi = require('xapi');
