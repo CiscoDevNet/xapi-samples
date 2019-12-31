@@ -1,11 +1,13 @@
 <Extensions>
-  <Version>1.5</Version>
+  <Version>1.6</Version>
   <Panel>
+    <PanelId>ULTRASOUND</PanelId>
     <Type>Home</Type>
     <Icon>Proximity</Icon>
     <Order>1</Order>
     <Color>#FFB400</Color>
     <Name>Ultrasound</Name>
+    <ActivityType>Custom</ActivityType>
     <Page>
       <Name>Ultrasound</Name>
       <Row>

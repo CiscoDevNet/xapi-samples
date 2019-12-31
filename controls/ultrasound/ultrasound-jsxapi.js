@@ -80,7 +80,7 @@ xapi.on('ready', () => {
     // Update UI from configuration changes
     xapi.config.on('Audio Ultrasound MaxVolume', updateUI)
 
-    // Initialize the widgets also as the controls are deployed
+    // Update if the controls is (re-)deployed
     xapi.event.on('UserInterface Extensions Widget LayoutUpdated', (event) => {
         console.log(`layout updated, let's refresh the widgets`)
         xapi.config.get('Audio Ultrasound MaxVolume')
@@ -106,10 +106,10 @@ function updateUI(volume) {
             }
 
             // Pick the message that suits your device's registration mode
-            // If spark-registered
+            // If cloud-registered
             xapi.config.set('UserInterface CustomMessage', "Tip: Launch Webex Teams to pair")
-            // If VCS or CUCM registered
-            //xapi.config.set('UserInterface CustomMessage', "Tip: pair with me from a Proximity client")
+            // If registered on-premises (VCS or CUCM )
+            //xapi.config.set('UserInterface CustomMessage', "Tip: Pair from a Proximity client")
         })
 
     // Update slider 
