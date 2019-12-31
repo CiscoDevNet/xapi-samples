@@ -1,11 +1,13 @@
 //
-// Copyright (c) 2018 Cisco Systems
+// Copyright (c) 2020 Cisco Systems
 // Licensed under the MIT License
 //
 
-// CE maximum volume for Ultrasound
-const MAX = 90 // for a DX80
+// CE maximum volume for Ultrasound 
+// note: Since CE 9.9, max is 70 across all devices
+//const MAX = 90 // for a DX80
 //const MAX = 70 // for a RoomKit
+const MAX = 70 
 
 //
 // Connect to the device
