@@ -3,75 +3,11 @@
 // Licensed under the MIT License
 //
 
-// Bootstraping sequence to support running either as a JS macro or as standalone Node.js
-let xapi;
-try {
-    // Run as a Macro
-    xapi = require('xapi')
-    console.log("running as a macro")
-}
-catch (err) {
-    if (err.code != "MODULE_NOT_FOUND") {
-        console.log(`unexpected error code: ${err.code}, exiting...`)
-        process.exit(1)
-    }
 
-    // Bind to a CE device
-    console.log("running as a standalone app")
-    xapi = connect(process.env.JSXAPI_DEVICE_URL, process.env.JSXAPI_USERNAME, process.env.JSXAPI_PASSWORD)
-}
+const xapi = require('xapi')
 
 xapi.on('ready', init)
 
-
-function connect(url, username, password) {
-    let jsxapi = require('jsxapi')
-
-    // Check args
-    if (!url || !username) {
-        console.error("Please specify info to connect to your device as JSXAPI_DEVICE_URL, JSXAPI_USERNAME, JSXAPI_PASSWORD env variables")
-        console.error("Bash example: JSXAPI_DEVICE_URL='ssh://192.168.1.34' JSXAPI_USERNAME='integrator' JSXAPI_PASSWORD='integrator' node ultrasound-jsxapi.js")
-        process.exit(1)
-    }
-
-    // Empty passwords are supported
-    password = password ? password : ""
-
-    // Connect to the device
-    console.log(`connecting to device with url: ${url}`)
-    let xapi = jsxapi.connect(url, {
-        username: username,
-        password: password
-    })
-    xapi.on('error', (err) => {
-        switch (err) {
-            case "client-socket":
-                console.error("could not connect: invalid URL.")
-                break
-
-            case "client-authentication":
-                console.error("could not connect: invalid credentials.")
-                break
-
-            case "client-timeout":
-                console.error("could not connect: timeout.")
-                break
-
-            default:
-                console.error(`encountered error: ${err}.`)
-                break
-        }
-
-        console.log("exiting...")
-        process.exit(1)
-    })
-
-    return xapi
-}
-
-//
-// Code logic
-// 
 
 // CE maximum volume for Ultrasound 
 // note: Since CE 9.9, max is 70 across all devices
@@ -80,7 +16,7 @@ function connect(url, username, password) {
 const MAX = 70
 
 function init() {
-    console.log("successfully binded to device")
+    console.log("connexion successful")
 
     // Initialize the widgets
     xapi.config.get('Audio Ultrasound MaxVolume')
@@ -107,6 +43,7 @@ function init() {
             .then(updateUI)
     })
 }
+
 
 function updateUI(volume) {
     console.log(`updating UI to new Ultrasound configuration: ${volume}`)

@@ -3,8 +3,9 @@
 **New to Controls & Macros? check the [QuickStart Guide](../../docs/QuickStart.md) to learn to load Controls and Macros to your device**
 
 Note that you can deploy the custom code logic for the Ultrasound panel:
-- either [as a Macro](./ultrasound.js) 
-- or [as a Node.js script](./ultrasound-jsxapi.js).
+- [as a Macro](./ultrasound-macro.js) 
+- [as a standalone Node.js script](./ultrasound-jsxapi.js).
+- or [as a script](./ultrasound-jsxapi.js) that can be used either as a Macro or a standalone script
 
 Simply move the slider around.
 
