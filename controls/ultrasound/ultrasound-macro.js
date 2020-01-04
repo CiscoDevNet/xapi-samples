@@ -60,7 +60,7 @@ function updateUI(volume) {
 
     // Update Widget: slider
     let newVolume = parseInt(volume)
-    const level = Math.round(parseInt(newVolume) * 255 / MAX)
+    const level = Math.round(newVolume * 255 / MAX)
     xapi.command('UserInterface Extensions Widget SetValue', {
         WidgetId: 'US_volume_slider',
         Value: level
