@@ -11,20 +11,20 @@
 const xapi = require('xapi');
 
 function parse(event) {
-    return JSON.parse(event);
+   return JSON.parse(event);
 }
 
 xapi.event.on('Message Send Text', event => {
-    event = event.replace(/'/g,'"');
-    try {
-        var command = parse(event);
-        for (var key in command) {
-          console.debug(`processing command: ${key}`)
-          xapi.command(key, command[key]);
-        }   
-    } catch(err) {
-        console.log(`cannot parse event: ${err.message}`);
-    }
+   event = event.replace(/'/g, '"');
+   try {
+      var command = parse(event);
+      for (var key in command) {
+         console.debug(`processing command: ${key}`)
+         xapi.command(key, command[key]);
+      }
+   } catch (err) {
+      console.log(`cannot parse event: ${err.message}`);
+   }
 });
 
-console.log('slave started')
+console.log('slave started');

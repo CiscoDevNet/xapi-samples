@@ -4,10 +4,10 @@
 const xapi = require('xapi');
 
 xapi.command('HttpFeedback Register', {
-    FeedbackSlot: 2,
-    ServerUrl: "https://requestb.in/szua2usz",
-    Format: "JSON",
-    Expression: ["/Status/RoomAnalytics/PeoplePresence", "/Status/RoomAnalytics/PeopleCount"]
+   FeedbackSlot: 2,
+   ServerUrl: "https://requestb.in/szua2usz",
+   Format: "JSON",
+   Expression: ["/Status/RoomAnalytics/PeoplePresence", "/Status/RoomAnalytics/PeopleCount"]
 })
-.then(console.log("successfully registered Webhook for PeoplePresence & PeopleCount"))
-.catch(console.error);
+   .then(console.log("successfully registered Webhook for PeoplePresence & PeopleCount"))
+   .catch(console.error);

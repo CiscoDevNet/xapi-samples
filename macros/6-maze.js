@@ -1,165 +1,165 @@
 function debug(entry) {
-    console.log(entry)
+   console.log(entry)
 };
 
 function fine(entry) {
-    console.log(entry)
+   console.log(entry)
 };
 
 function Maze(structure, walls, phrases) {
-    this.structure = structure;
-    this.walls = walls;
-    this.phrases = phrases;
+   this.structure = structure;
+   this.walls = walls;
+   this.phrases = phrases;
 };
 
 
 Maze.prototype.tryMove = function (direction) {
-    debug(`trying ${direction}`)
-    var result
-    switch (direction) {
-        case 'up':
-            result = this._move(this.position, -1, 0);
-            break
-        case 'down':
-            result = this._move(this.position, 1, 0)
-            break
-        case 'left':
-            result = this._move(this.position, 0, -1)
-            break
-        case 'right':
-            result = this._move(this.position, 0, 1)
-            break
-        default:
-            throw new Error("unknown direction");
-    }
+   debug(`trying ${direction}`)
+   var result
+   switch (direction) {
+      case 'up':
+         result = this._move(this.position, -1, 0);
+         break
+      case 'down':
+         result = this._move(this.position, 1, 0)
+         break
+      case 'left':
+         result = this._move(this.position, 0, -1)
+         break
+      case 'right':
+         result = this._move(this.position, 0, 1)
+         break
+      default:
+         throw new Error("unknown direction");
+   }
 
-    this.position = result.pos
-    result.direction = direction
-    return result
+   this.position = result.pos
+   result.direction = direction
+   return result
 }
 
 Maze.prototype.up = function () {
-    return this.tryMove('up');
+   return this.tryMove('up');
 }
 
 Maze.prototype.down = function () {
-    return this.tryMove('down');
+   return this.tryMove('down');
 }
 
 Maze.prototype.left = function () {
-    return this.tryMove('left');
+   return this.tryMove('left');
 }
 
 Maze.prototype.right = function () {
-    return this.tryMove('right');
+   return this.tryMove('right');
 }
 
 Maze.prototype._move = function (pos, x, y) {
-    let newX = pos[0] + x
-    let newY = pos[1] + y
+   let newX = pos[0] + x
+   let newY = pos[1] + y
 
-    let thing = this.structure[newX][newY]
+   let thing = this.structure[newX][newY]
 
-    // What did we meed
-    var story = this.phrases[thing]
-    debug('> ' + story)
+   // What did we meed
+   var story = this.phrases[thing]
+   debug('> ' + story)
 
-    // If this is a wall, stay at current position
-    if (this.walls.includes(thing)) {
-        fine(`still at: ${pos}`)
-        this.position = pos
-        return {
-            'success': false,
-            'outcome': story,
-            'thing': this.look(pos),
-            'pos': pos
-        }
-    }
+   // If this is a wall, stay at current position
+   if (this.walls.includes(thing)) {
+      fine(`still at: ${pos}`)
+      this.position = pos
+      return {
+         'success': false,
+         'outcome': story,
+         'thing': this.look(pos),
+         'pos': pos
+      }
+   }
 
-    var newPos = [newX, newY]
-    fine(`now at: ${newPos}`)
-    this.position = pos
-    return {
-        'success': true,
-        'thing': this.look(newPos),
-        'pos': newPos
-    }
+   var newPos = [newX, newY]
+   fine(`now at: ${newPos}`)
+   this.position = pos
+   return {
+      'success': true,
+      'thing': this.look(newPos),
+      'pos': newPos
+   }
 }
 
 
 Maze.prototype.look = function (pos) {
-    var x = pos[0]
-    var y = pos[1]
-    var thing = this.structure[x][y]
-    return this.phrases[thing];
+   var x = pos[0]
+   var y = pos[1]
+   var thing = this.structure[x][y]
+   return this.phrases[thing];
 }
 
 
 // Use this function if the output supports Newlines
 Maze.prototype.buildMap = function () {
-    var pos = this.position
-    var poster = ""
-    for (var y = 0; y < this.structure.length; y++) {
-        var line = ""
-        for (var x = 0; x < this.structure[0].length; x++) {
-            var char = this.structure[y][x]
-            if ((y == pos[0]) && x == pos[1]) {
-                char = 'o'
-            }
-            line += char
-        }
-        poster += line + "\n"
-    }
-    debug("map:\n" + poster)
-    return poster
+   var pos = this.position
+   var poster = ""
+   for (var y = 0; y < this.structure.length; y++) {
+      var line = ""
+      for (var x = 0; x < this.structure[0].length; x++) {
+         var char = this.structure[y][x]
+         if ((y == pos[0]) && x == pos[1]) {
+            char = 'o'
+         }
+         line += char
+      }
+      poster += line + "\n"
+   }
+   debug("map:\n" + poster)
+   return poster
 }
 
 // Use this function if the output does NOT supports newlines
 Maze.prototype.buildMapAsWrapped = function (linewidth, skipBorders) {
 
-    var map = ""
-    var pos = this.position
-    for (var y = 0; y < this.structure.length; y++) {
-        if (!(skipBorders && ((y == 0) || (y == this.structure.length - 1)))) {
-            var line = ""
-            for (var x = 0; x < this.structure[0].length; x++) {
-                var char = this.structure[y][x]
-                if ((y == pos[1]) && (x == pos[0])) {
-                    char = 'o'
-                }
-                line += char
+   var map = ""
+   var pos = this.position
+   for (var y = 0; y < this.structure.length; y++) {
+      if (!(skipBorders && ((y == 0) || (y == this.structure.length - 1)))) {
+         var line = ""
+         for (var x = 0; x < this.structure[0].length; x++) {
+            var char = this.structure[y][x]
+            if ((y == pos[1]) && (x == pos[0])) {
+               char = 'o'
             }
-            var left = Math.round((linewidth - line.length) / 2)
-            var mazeline = line.padStart(left + line.length, "-")
-            map += mazeline.padEnd(linewidth, "-")
-            map += " "
-        }
-    }
-    debug("maze map"); // newlines not supportes here
-    debug(map)
-    return map
+            line += char
+         }
+         var left = Math.round((linewidth - line.length) / 2)
+         var mazeline = line.padStart(left + line.length, "-")
+         map += mazeline.padEnd(linewidth, "-")
+         map += " "
+      }
+   }
+   debug("maze map"); // newlines not supportes here
+   debug(map)
+   return map
 }
 
 Maze.prototype.pickInitialPosition = function (emptyChar) {
-    if (!emptyChar) emptyChar = ' '
+   if (!emptyChar) emptyChar = ' '
 
-    // Ping a random number, on an empty spot
-    while (true) {
-        var y = Math.round(Math.random()*(this.structure.length - 2) + 1)
-        var x = Math.round(Math.random()*(this.structure[0].length - 2) + 1)
-        fine(`picked x: ${x}, y: ${y}`)
+   // Ping a random number, on an empty spot
+   while (true) {
+      var y = Math.round(Math.random() * (this.structure.length - 2) + 1)
+      var x = Math.round(Math.random() * (this.structure[0].length - 2) + 1)
+      fine(`picked x: ${x}, y: ${y}`)
 
-        if (this.structure[y][x] == emptyChar) {
-            fine(`position is clear, storing...`)
-            return this.setInitialPosition(x, y)
-        }
-    }
+      if (this.structure[y][x] == emptyChar) {
+         fine(`position is clear, storing...`)
+         return this.setInitialPosition(x, y)
+      }
+   }
 }
-        
+
 
 Maze.prototype.setInitialPosition = function (x, y) {
-    this.position = [x, y]
-    return this.position
+   this.position = [x, y]
+   return this.position
 }
 
 //
@@ -200,10 +200,10 @@ game.buildMap()
 console.log('moving up')
 var res = game.up()
 if (res.success) {
-    console.log("did went up :-)")
+   console.log("did went up :-)")
 }
 else {
-    console.log("stuck!")
+   console.log("stuck!")
 }
 
 // solution

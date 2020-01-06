@@ -6,23 +6,27 @@
 
 const xapi = require('xapi');
 
+
 xapi.event.on("Message Send Text", (text) => {
-  // Decode (from naive implementation) and deserialize
-  let decoded = text.replace(/\'/g, '"')
-  let data = JSON.parse(decoded)
-  
-  console.log(`Received score: ${data.score}, for player: ${data.player}`)
-})
+
+   // Decode if necessary (example: message sent over xAPI cloud)
+   let decoded = text.replace(/\'/g, '"');
+
+   // Parse JSON and print
+   let data = JSON.parse(decoded);
+   console.log(`Received score: ${data.score}, for player: ${data.player}`);
+});
 
 
 let data = {
-  score : 5,
-  player : "Stève"
+   score: 5,
+   player: "Stève"
 }
 
-// Serialize and encode
-// [WORKAROUND] as Duktape does not provide encoders, provide a naive implementation
-const serialized = JSON.stringify(data)
-const encoded = serialized.replace(/"/g, "\'")
+// Serialize as JSON
+const serialized = JSON.stringify(data);
 
-xapi.command("Message Send", { Text: encoded  })
+// [CONFIRM] Encoding is needed only if sending over HTTP
+const encoded = serialized.replace(/"/g, "\'");
+
+xapi.command("Message Send", { Text: encoded });
