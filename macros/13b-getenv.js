@@ -25,7 +25,7 @@ const xapi = require('xapi');
 xapi.on('env-ready', async () => {
 
    // Example
-   let variable = 'SECRET'
+   let variable = 'DEVICE_SECRET'
    let secret = await getenv(variable);
    console.log(`echo \$${variable} = ${secret}`);
 })

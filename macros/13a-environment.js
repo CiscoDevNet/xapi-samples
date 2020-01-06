@@ -22,10 +22,10 @@ const xapi = require('xapi');
 
 // List of variables for the environment
 const ENV = {
-   'PING': 'PONG'
+   'PING': 'PONG',
 
    // ADD environment variables below
-   //, 'SECRET' : 1234 
+   'DEVICE_SECRET' : 1234 
 };
 
 xapi.event.on('Message Send Text', (msg) => {
