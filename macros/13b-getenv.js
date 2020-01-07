@@ -5,8 +5,8 @@
 
 /**
  * Implements Environment Variables for Macro:
- *    A. environment.js  : this macro manages ENV variables (stores, returns values)
- *    B* getenv.js       : this is not a macro but a code snippet that you insert into existing macros to retrieve ENV variables (local to your device)
+ *    A. ENV.js     : this macro manages ENV variables (stores, returns values)
+ *    B* getenv.js  : this is not a macro but a code snippet that you insert into existing macros to retrieve ENV variables (local to your device)
  * 
  * Quick start:
  *    - customize the list of ENV variables for your device
@@ -22,7 +22,12 @@ const xapi = require('xapi');
 
 
 // Fired when the environnment Macro is ready to provide ENV variables
-xapi.on('env-ready', async () => {
+xapi.on('env-ready', async (ready) => {
+
+   if (!ready) {
+      console.log('ENV macro is not responding?, aborting...');
+      return;
+   }
 
    // Example
    let variable = 'DEVICE_SECRET'
@@ -109,10 +114,11 @@ function getenv(variable) {
 //
 const ENV_RETRY_DELAY = 500;
 xapi.on('ready', async () => {
+   const NB_RETRIES = 4;
    let retries = 0;
-   while (retries < 4) {
+   while (retries < NB_RETRIES) {
       if (await checkEnvironmentIsReady()) {
-         xapi.emit('env-ready', this);
+         xapi.emit('env-ready', true);
          return;
       }
       else {
@@ -122,6 +128,9 @@ xapi.on('ready', async () => {
          retries++;
       }
    }
+
+   console.debug(`no response from the ENV macro after ${NB_RETRIES} tentatives, is it running?`);
+   xapi.emit('env-ready', false);
 });
 function timeout(ms) {
    return new Promise(resolve => setTimeout(resolve, ms));

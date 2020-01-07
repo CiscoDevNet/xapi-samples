@@ -5,8 +5,8 @@
 
 /**
  * Implements Environment Variables for Macro:
- *    A* environment.js  : this macro manages ENV variables (stores, returns values)
- *    B. getenv.js       : this is not a macro but a code snippet that you insert into existing macros to retrieve ENV variables (local to your device)
+ *    A* ENV.js     : this macro manages ENV variables (stores, returns values)
+ *    B. getenv.js  : this is not a macro but a code snippet that you insert into existing macros to retrieve ENV variables (local to your device)
  * 
  * Quick start:
  *    - customize the list of ENV variables for your device
