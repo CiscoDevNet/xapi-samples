@@ -1,4 +1,4 @@
-# Handy samples for xAPI UI Extensions and Macros
+# Handy samples for xAPI UI Extensions and Macros [![published](https://static.production.devnetcloud.com/codeexchange/assets/images/devnet-published.svg)](https://developer.cisco.com/codeexchange/github/repo/CiscoDevNet/xapi-samples)
 
 This repo can get you quickly ramp up with CE programmability and xAPI, with examples for:
 - [UI Extensions](./controls), 
