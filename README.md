@@ -17,7 +17,7 @@ This repo can get you quickly ramp up with CE programmability and xAPI, with exa
 Once you're done browsing the examples in this repo, here are a few suggestions
 - check the [official Macro Samples repository](https://github.com/CiscoDevNet/roomdevices-macros-samples)
 - load the [Postman collection for xAPI](https://github.com/CiscoDevNet/postman-xapi) to invoke the xAPI from code external to the Room Device
-- read through the full [CE Customization PDF Guide](https://www.cisco.com/c/dam/en/us/td/docs/telepresence/endpoint/ce99/sx-mx-dx-room-kit-customization-guide-ce99.pdf)
+- read through the full [CE Customization PDF Guide](https://www.cisco.com/c/dam/en/us/td/docs/telepresence/endpoint/ce99/collaboration-endpoint-software-api-reference-guide-ce99.pdf)
 - check for the curated list of resources at [awesome-xapi](https://github.com/CiscoDevNet/awesome-xapi)
 
 
@@ -60,4 +60,4 @@ xfeedback register /Event/Message/Send
 xCommand Message Send Text: "This is random text"
 ```
 
-Check the [message Macro](../macros/8-message.js) for an example in JavaScript.
+Check the [message Macro](macros/8-message.js) for an example in JavaScript.
