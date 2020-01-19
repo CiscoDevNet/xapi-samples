@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <meta charset="utf8">
+
+   <title>xAPI from a Web Page</title>
+</head>
+
+<body>
+   
+   <form name="device">
+      device's ip:<br/>
+      <input type="text" name="ip" value="192.168.1.32"><br/>
+      username:<br/>
+      <input type="text" name="user" value="localadmin"><br/>
+      password:<br/>
+      <input type="password" name="passwd" value="ciscopsdt"><br/>
+      <br/>
+      <input type="button" value="Standby" onclick="standby()">
+      <input type="button" value="Awake" onclick="awake()">
+   </form>
+
+   <script src="./jsxapi-501.min.js"></script>
+   <script>
+      let xapi = jsxapi.connect(`wss://${document.device.ip.value}`, { username: document.device.user.value, password: document.device.passwd.value })
+      xapi.on('ready', ready);
+      function ready() {
+         console.log("connected to device, ready to send xAPI requests");
+      }
+
+      function standby() {
+         xapi.command("Standby Activate").then(() => console.log("device in Standby mode")).catch((err) => console.log(`error: ${err.message}`));
+      }
+
+      function awake() {
+         xapi.command("Standby Deactivate").then(() => console.log("device is now Active")).catch((err) => console.log(`error: ${err.message}`));
+      }
+
+   </script>
+</body>
+
+</html>
