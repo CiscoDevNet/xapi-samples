@@ -4,17 +4,31 @@
 //
 
 /**
- * Implements Environment Variables for Macro:
- *    A. ENV.js     : this macro manages ENV variables (stores, returns values)
- *    B* getenv.js  : this is not a macro but a code snippet that you insert into existing macros to retrieve ENV variables (local to your device)
+ * Implements Environment Variables for Macros:
+ *    A.  environment.js : this macro manages volatile ENV variables (stores/updates and returns the current values for an environment variable)
+ *    B*  getenv.js      : this is not a macro but a code snippet that you insert into existing macros to retrieve ENV variables (local to your device)
  * 
  * Quick start:
- *    - customize the list of ENV variables for your device
- *    - deploy the macro to your device
- *    - insert the getenv script into any other macros on the same device
+ *    - customize the default list of ENV variables for your device
+ *    - deploy the 'environment.js' macro to your device
+ *    - insert the 'getenv()' code snipped into other macros on the same device
  *    - access ENV variables from macros once 'env-ready' event is emmitted
  * 
  * Note: if a variable is not found in ENV, '' is returned (empty)
+ * 
+ * Example of a Macro using the getenv() function:
+ * 
+ *   // Fired when the environnment Macro is ready to provide ENV variables
+ *   xapi.on('env-ready', async (ready) => {
+ *      if (!ready) {
+ *         console.log('Environment macro is not responding! aborting...');
+ *         return;
+ *      }
+ *   
+ *      let variable = 'DEVICE_SECRET'
+ *      let secret = await getenv(variable);
+ *      console.log(`echo \$${variable} = ${secret}`);
+ *   });
  * 
  */
 
@@ -25,7 +39,7 @@ const xapi = require('xapi');
 xapi.on('env-ready', async (ready) => {
 
    if (!ready) {
-      console.log('ENV macro is not responding?, aborting...');
+      console.log('Environment macro is not responding! aborting...');
       return;
    }
 
@@ -33,7 +47,7 @@ xapi.on('env-ready', async (ready) => {
    let variable = 'DEVICE_SECRET'
    let secret = await getenv(variable);
    console.log(`echo \$${variable} = ${secret}`);
-})
+});
 
 
 //
@@ -129,7 +143,7 @@ xapi.on('ready', async () => {
       }
    }
 
-   console.debug(`no response from the ENV macro after ${NB_RETRIES} tentatives, is it running?`);
+   console.debug(`no response from the Environment macro after ${NB_RETRIES} tentatives, is it running?`);
    xapi.emit('env-ready', false);
 });
 function timeout(ms) {

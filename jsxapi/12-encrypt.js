@@ -1,5 +1,5 @@
 /*
- * JSEncrypt library
+ * JSEncrypt library under the MIT License
  * http://travistidwell.com/jsencrypt/
  */
 
