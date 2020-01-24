@@ -1,0 +1,24 @@
+<Extensions>
+  <Version>1.6</Version>
+  <Panel>
+    <PanelId>DISCO</PanelId>
+    <Type>Home</Type>
+    <Icon>Lightbulb</Icon>
+    <Order>1</Order>
+    <Color>#FFB400</Color>
+    <Name>Disco</Name>
+    <ActivityType>Custom</ActivityType>
+    <Page>
+      <Name>Settings</Name>
+      <Row>
+        <Name>Blink</Name>
+        <Widget>
+          <WidgetId>DISCO_slider</WidgetId>
+          <Type>Slider</Type>
+          <Options>size=4</Options>
+        </Widget>
+      </Row>
+      <Options/>
+    </Page>
+  </Panel>
+</Extensions>
