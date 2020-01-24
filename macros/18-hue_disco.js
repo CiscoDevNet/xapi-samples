@@ -7,7 +7,9 @@
  * This macro will enlighten your meeting room,
  * no complementary In-Room control needed:
  * 
- * configure the macro with your Hue Bridge info and you're good to go.
+ * pre-req:
+ *   - configure the macro with your Hue Bridge info and you're good to go.
+ *   - configure your device for HttpClient
  * 
  */
 
