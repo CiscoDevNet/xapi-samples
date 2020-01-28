@@ -21,11 +21,10 @@
    <script src="./jsxapi-501.min.js"></script>
    <script>
       let xapi = jsxapi.connect(`wss://${document.device.ip.value}`, 
-         { username: document.device.user.value, password: document.device.passwd.value })
-      xapi.on('ready', ready);
-      function ready() {
+         { username: document.device.user.value, password: document.device.passwd.value });
+      xapi.on('ready', () => {
          console.log("connected to device, ready to send xAPI requests");
-      }
+      });
 
       function standby() {
          xapi.command("Standby Activate")
