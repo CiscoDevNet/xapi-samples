@@ -44,7 +44,7 @@ xapi.on('ready', () => {
     console.log("connexion successful");
 
     // Start a call
-    xapi.command('Dial', { Number: 'roomkit@sparkdemos.com' })
+    xapi.command('Dial', { Number: 'fireplace@ivr.vc' })
         .then((call) => {
             console.log(`Started call with status: ${call.status}, id: ${call.CallId}`);
 
