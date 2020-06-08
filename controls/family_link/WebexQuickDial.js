@@ -2,16 +2,21 @@
 // Copyright (c) 2020 Cisco Systems
 // Licensed under the MIT License 
 //
+// by Peter Welburn (petwelbu@cisco.com)
+//
 
 const xapi = require('xapi');
 
 // Set this is you don't want to prompt users for a PIN
 let hostpin = '1234';
+
 // This is what every widget on the UI should have as a prefix for us to make a webex call
+// REPLACE with your UI Extensions
 const MATCH_STRING = 'wqd-';
 
-const DIALPREFIX_WEBEXURL = 'icu';
-const DIALPREPOSTFIX_WEBEXURL = '.sswhg-cv19';
+// REPLACE with values for your Webex Devicces deployment
+const DIALPREFIX_WEBEXURL = 'devnet';
+const DIALPREPOSTFIX_WEBEXURL = '.devnetzone';
 const DIALPOSTFIX_WEBEXURL = '@webex.com';
 
 const KEYBOARD_TYPES = {
