@@ -5,7 +5,7 @@
 
 /**
  * Listen to events sent from a remote Codec using the Message command and an HttpClient POST
- * This code needs a master: install the master.js macro on the remote Codec
+ * This code needs a primary: install the primary.js macro on the remote Codec
  * 
  */
 const xapi = require('xapi');
@@ -27,4 +27,4 @@ xapi.event.on('Message Send Text', event => {
    }
 });
 
-console.log('slave started');
+console.log('secondary started');

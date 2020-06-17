@@ -5,17 +5,17 @@
 
 /**
  * Pushes an event to a remote Codec using the Message command and an HttpClient POST
- * This code needs a listener: install the slave.js macro on the remote Codec
+ * This code needs a listener: install the secondary.js macro on the remote Codec
  * 
  */
 
 const xapi = require('xapi');
 
-const SLAVE_IP = "192.168.1.32";
-const SLAVE_BASICAUTH = "bG9jYWxhZG1pbjpjaXNjb3BzZHQ=";
+const SECONDARY_IP = "192.168.1.32";
+const SECONDARY_BASICAUTH = "bG9jYWxhZG1pbjpjaXNjb3BzZHQ=";
 
-var EVENTURL = `http://${SLAVE_IP}/putxml`;
-var HEADERS = ['Content-Type: text/xml', `Authorization: Basic ${SLAVE_BASICAUTH}`];
+var EVENTURL = `http://${SECONDARY_IP}/putxml`;
+var HEADERS = ['Content-Type: text/xml', `Authorization: Basic ${SECONDARY_BASICAUTH}`];
 
 function postRequest(url, payload, headers) {
    xapi.command('HttpClient Post', {
@@ -37,4 +37,4 @@ function volumeSync(volume) {
 
 xapi.status.on('Audio Volume', volumeSync);
 
-console.log('master started')
+console.log('primary started')
