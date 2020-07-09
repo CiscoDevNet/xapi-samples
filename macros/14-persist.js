@@ -39,8 +39,8 @@ async function read() {
    
    // Parse contents
    try {
+      let data = contents !== '' ? JSON.parse(contents) : '';
       console.debug(`DB contains: ${contents}`);
-      let data = JSON.parse(contents);
       console.debug('DB successfully parsed');
       return data;
    }
